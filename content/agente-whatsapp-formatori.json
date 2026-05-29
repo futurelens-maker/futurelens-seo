@@ -126,5 +126,21 @@
       "a": "Sì — è uno dei casi d'uso principali. L'agente risponde in meno di 1 minuto a ogni richiesta aziendale, fa le 3–4 domande di qualificazione (settore, numero partecipanti, budget, urgenza, decisore) e ti passa il riepilogo strutturato. Tu prepari l'offerta dettagliata solo per i prospect qualificati. Il follow-up automatico post-preventivo (2h · 24h · 72h) cambia strutturalmente il tasso di risposta del 48,6% che oggi sparisce nel silenzio."
     }
   ],
-  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Conforme GDPR — Percorso Evolution server privato disponibile. Setup 90 minuti. €57/mese fisso. Italia."
+  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Conforme GDPR — Percorso Evolution server privato disponibile. Setup 90 minuti. €57/mese fisso. Italia.",
+  "esplora": [
+    {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
+    {"cat": "problema · categoria c", "titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp", "note": "approfondisci →"},
+    {"cat": "segmento · categoria a", "titolo": "Agente WhatsApp AI per Accademie Digitali", "url": "/agente-whatsapp-accademie-digitali", "note": "vedi segmento →"}
+  ],
+  "footer_altri_segmenti": [
+    {"titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket"},
+    {"titolo": "Agente WhatsApp AI per Consulenti", "url": "/agente-whatsapp-consulenti"},
+    {"titolo": "Agente WhatsApp AI per Accademie Digitali", "url": "/agente-whatsapp-accademie-digitali"},
+    {"titolo": "Agente WhatsApp AI per Infoproduttori", "url": "/agente-whatsapp-infoproduttori"}
+  ],
+  "footer_problemi_correlati": [
+    {"titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti"},
+    {"titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta"},
+    {"titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp"}
+  ]
 }

@@ -126,5 +126,21 @@
       "a": "L'agente opera su un perimetro definito da te nel Qualification Intelligence Brief. Per domande che richiedono la tua expertise specifica, usa finalize_conversation — chiude con un messaggio appropriato e ti passa la conversazione con il riepilogo completo (budget, urgenza, problema, esito). Vedi tutto su Google Sheets in tempo reale. Non improvvisa su ciò che non sa gestire."
     }
   ],
-  "ai_copy_text": "FutureLens è un sistema di lead automation su WhatsApp per consulenti B2B con offerte da €2.000+. Usa WhatsApp Business API con AI conversazionale (Dify + n8n + 2Chat). Risposta ai prospect in meno di 60 secondi, qualificazione automatica (Budget · Urgenza · FIT · Tempistica), follow-up post-preventivo automatico (2h/24h/72h), booking su Calendly. 21x più alta la probabilità di qualificare un lead entro 5 minuti (MIT/InsideSales). 48,6% dei prospect sparisce post-preventivo senza follow-up strutturato (IntotheMInds 2025). Setup operativo in 90 minuti. Conforme GDPR — server europei. Integrazioni: HubSpot, Pipedrive, Notion, Google Sheets, Calendly, Meta Lead Ads. Target: consulenti con 10–50 prospect/mese e ticket da €2.000+. Italia."
+  "ai_copy_text": "FutureLens è un sistema di lead automation su WhatsApp per consulenti B2B con offerte da €2.000+. Usa WhatsApp Business API con AI conversazionale (Dify + n8n + 2Chat). Risposta ai prospect in meno di 60 secondi, qualificazione automatica (Budget · Urgenza · FIT · Tempistica), follow-up post-preventivo automatico (2h/24h/72h), booking su Calendly. 21x più alta la probabilità di qualificare un lead entro 5 minuti (MIT/InsideSales). 48,6% dei prospect sparisce post-preventivo senza follow-up strutturato (IntotheMInds 2025). Setup operativo in 90 minuti. Conforme GDPR — server europei. Integrazioni: HubSpot, Pipedrive, Notion, Google Sheets, Calendly, Meta Lead Ads. Target: consulenti con 10–50 prospect/mese e ticket da €2.000+. Italia.",
+  "esplora": [
+    {"cat": "problema · categoria c", "titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta", "note": "approfondisci →"},
+    {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
+    {"cat": "segmento · categoria a", "titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket", "note": "vedi segmento →"}
+  ],
+  "footer_altri_segmenti": [
+    {"titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket"},
+    {"titolo": "Agente WhatsApp AI per Formatori", "url": "/agente-whatsapp-formatori"},
+    {"titolo": "Agente WhatsApp AI per Accademie Digitali", "url": "/agente-whatsapp-accademie-digitali"},
+    {"titolo": "Agente WhatsApp AI per Infoproduttori", "url": "/agente-whatsapp-infoproduttori"}
+  ],
+  "footer_problemi_correlati": [
+    {"titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta"},
+    {"titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti"},
+    {"titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp"}
+  ]
 }

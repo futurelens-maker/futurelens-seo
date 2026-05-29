@@ -83,5 +83,16 @@
     {"q": "", "a": ""},
     {"q": "", "a": ""}
   ],
-  "ai_copy_text": ""
+  "ai_copy_text": "",
+  "esplora": [
+    {"cat": "problema · categoria c", "titolo": "", "url": "/", "note": "approfondisci →"},
+    {"cat": "problema · categoria c", "titolo": "", "url": "/", "note": "approfondisci →"},
+    {"cat": "segmento · categoria a", "titolo": "", "url": "/", "note": "vedi segmento →"}
+  ],
+  "footer_altri_segmenti": [
+    {"titolo": "", "url": "/"}
+  ],
+  "footer_problemi_correlati": [
+    {"titolo": "", "url": "/"}
+  ]
 }

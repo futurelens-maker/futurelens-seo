@@ -126,5 +126,21 @@
       "a": "Compili il Qualification Intelligence Brief con il tuo stile comunicativo, le FAQ del tuo corso, i criteri di qualificazione per ogni prodotto e il tono che usi normalmente. Poi usi il Prompt Compilatore — incolla in ChatGPT o Claude e ottieni il System Prompt calibrato su di te. Nessun codice. Il tuo brand rimane intatto — l'agente parla come parli tu, non come un template generico."
     }
   ],
-  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Costo infrastruttura €57/mese fisso. Setup 90 minuti. Conforme GDPR — server europei. Italia."
+  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Costo infrastruttura €57/mese fisso. Setup 90 minuti. Conforme GDPR — server europei. Italia.",
+  "esplora": [
+    {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
+    {"cat": "problema · categoria c", "titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp", "note": "approfondisci →"},
+    {"cat": "segmento · categoria a", "titolo": "Agente WhatsApp AI per Formatori", "url": "/agente-whatsapp-formatori", "note": "vedi segmento →"}
+  ],
+  "footer_altri_segmenti": [
+    {"titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket"},
+    {"titolo": "Agente WhatsApp AI per Consulenti", "url": "/agente-whatsapp-consulenti"},
+    {"titolo": "Agente WhatsApp AI per Formatori", "url": "/agente-whatsapp-formatori"},
+    {"titolo": "Agente WhatsApp AI per Infoproduttori", "url": "/agente-whatsapp-infoproduttori"}
+  ],
+  "footer_problemi_correlati": [
+    {"titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti"},
+    {"titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta"},
+    {"titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp"}
+  ]
 }

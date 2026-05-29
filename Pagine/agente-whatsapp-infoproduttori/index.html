@@ -10,7 +10,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Agente WhatsApp AI per Infoproduttori | FutureLens">
-<meta property="og:description" content="44,38% open rate email vs 98% WhatsApp. Gestisce obiezioni durante il lancio, qualifica lead 24/7, zero Spoki, zero ManyChat.">
+<meta property="og:description" content="44,38% open rate email vs 98% WhatsApp. Agente AI per infoproduttori: gestisce obiezioni durante il lancio, qualifica lead 24/7, zero Spoki, zero ManyChat.">
 <meta property="og:url" content="https://seo.futurelens.xyz/agente-whatsapp-infoproduttori">
 <meta property="og:site_name" content="FutureLens">
 <meta property="og:locale" content="it_IT">
@@ -71,7 +71,7 @@
         "name": "Ho già ManyChat. Perché questo è diverso?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ManyChat gestisce flow statici — se il lead risponde 'dipende' o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Dify è un agente LLM: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla."
+          "text": "ManyChat gestisce flow statici — se il lead risponde \"dipende\" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Dify è un agente LLM: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta."
         }
       },
       {
@@ -79,7 +79,7 @@
         "name": "Spoki mi ha cambiato i prezzi senza preavviso. Questo ha abbonamento mensile?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Blueprint = costo una tantum. Infrastruttura = €57/mese fisso (n8n Cloud €20 + 2Chat $40). Dify è free tier. Nessun abbonamento a piattaforme SaaS chiuse. Open source = nessun lock-in per sempre. Se domani 2Chat chiude, sostituisci un nodo in n8n — l'architettura è tua."
+          "text": "Blueprint = costo una tantum. Infrastruttura = €57/mese fisso (n8n Cloud €20 + 2Chat $40). Dify è free tier. Nessun abbonamento a piattaforme SaaS chiuse. Open source = nessun lock-in per sempre. Se domani 2Chat chiude, sostituisci un nodo in n8n — l'architettura è tua e nessuno può cambiarti i prezzi."
         }
       },
       {
@@ -87,7 +87,7 @@
         "name": "Come si integra con ActiveCampaign e Kajabi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Il n8n_crm_sync.json è il file di integrazione modificabile. n8n ha 400+ integrazioni native: ActiveCampaign, Kajabi, Teachable, HubSpot. Non si tocca il funnel esistente — WhatsApp si aggiunge come layer sopra. I tag che l'agente scrive su ActiveCampaign (es: warm_lead_lancio, obiezione_prezzo) possono triggerare automazioni email già esistenti."
+          "text": "Il n8n_crm_sync.json è il file di integrazione modificabile. n8n ha 400+ integrazioni native: ActiveCampaign, Kajabi, Teachable, HubSpot. Non si tocca il funnel esistente — WhatsApp si aggiunge come layer sopra. I tag che l'agente scrive su ActiveCampaign (es: warm_lead_lancio, obiezione_prezzo, pronto_acquisto) possono triggerare automazioni email già esistenti senza toccare niente di quello che hai costruito."
         }
       },
       {
@@ -95,7 +95,7 @@
         "name": "Rischio di bruciare la lista WhatsApp che ho costruito in anni?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Con 2Chat (percorso base) il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta. Il rischio ban colpisce chi fa broadcast aggressivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro. Percorso Evolution (€37 una tantum) = server privato, zero dipendenza da provider terzi, massimo controllo sulla lista."
+          "text": "Con 2Chat (percorso base) il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro. Percorso Evolution (€37 una tantum) = server privato, zero dipendenza da provider terzi, controllo totale sulla lista che hai costruito in anni."
         }
       },
       {
@@ -103,7 +103,7 @@
         "name": "Posso addestrarlo sulle obiezioni specifiche del mio corso?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sì. Il Qualification Intelligence Brief include una sezione dedicata alle obiezioni ricorrenti del tuo prodotto con le risposte che tu dai normalmente. Il Prompt Compilatore trasforma quel documento in un System Prompt. L'agente risponde con le tue parole alle obiezioni tipiche — 'posso fare il bonifico?', 'funziona se parto da zero?', 'c'è un piano rateale?' — prima ancora che vengano poste in modo diretto."
+          "text": "Sì. Il Qualification Intelligence Brief include una sezione dedicata alle obiezioni ricorrenti del tuo prodotto con le risposte che tu dai normalmente. Il Prompt Compilatore trasforma quel documento in un System Prompt. L'agente risponde con le tue parole — \"posso fare il bonifico?\", \"funziona se parto da zero?\", \"c'è un piano rateale?\" — prima ancora che vengano poste in modo diretto."
         }
       }
     ]
@@ -112,6 +112,10 @@
 </script>
 
 <style>
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — FutureLens SEO Pages
+   Stesso DNA visivo del blog di Angelo Ranieri.
+   ═══════════════════════════════════════════════════════════════ */
 :root {
   --c0:     #0a0a0a;
   --c1:     #0f0f0f;
@@ -129,9 +133,11 @@
   --cb:     rgba(248,250,252,0.07);
   --cbk:    rgba(248,250,252,0.13);
 }
+
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
 html { font-size:16px; -webkit-font-smoothing:antialiased; scroll-behavior:smooth; }
 body { background:var(--c0); color:var(--ctxt); font-family:'Inter',sans-serif; line-height:1.72; }
+
 h1 { font-size:clamp(1.85rem,4.2vw,2.9rem); font-weight:300; line-height:1.18; letter-spacing:-0.022em; }
 h2 { font-size:clamp(1.25rem,2.4vw,1.75rem); font-weight:300; line-height:1.22; letter-spacing:-0.018em; }
 h3 { font-size:1rem; font-weight:600; line-height:1.4; }
@@ -139,81 +145,379 @@ p  { line-height:1.75; }
 a  { color:var(--csec); text-decoration:none; transition:color 150ms; }
 a:hover { color:var(--ctxt); }
 strong { font-weight:600; color:var(--ctxt); }
+
 .wrap    { max-width:1060px; margin:0 auto; padding:0 32px; }
 .wrap-sm { max-width:720px;  margin:0 auto; padding:0 32px; }
 .wrap-md { max-width:860px;  margin:0 auto; padding:0 32px; }
+
+/* GRID TEXTURE */
 .grid-bg { position:relative; overflow:hidden; }
-.grid-bg::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px), linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px); background-size:52px 52px; pointer-events:none; z-index:0; }
-.grid-bg::after { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%); pointer-events:none; z-index:0; }
+.grid-bg::before {
+  content:''; position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px);
+  background-size:52px 52px; pointer-events:none; z-index:0;
+}
+.grid-bg::after {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%);
+  pointer-events:none; z-index:0;
+}
 .grid-bg > * { position:relative; z-index:1; }
-.scroll-progress { position:absolute; top:0; left:0; height:2px; background:var(--cacc); width:0%; transition:width 100ms linear; z-index:60; }
-.site-header { position:sticky; top:0; z-index:50; background:rgba(10,10,10,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--cb); padding:14px 0; }
-.hdr-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
-.hdr-cta { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:600; letter-spacing:0.055em; text-transform:uppercase; padding:9px 18px; border:1px solid var(--cacc-b); border-radius:2px; color:#f87171; background:transparent; transition:background 130ms, border-color 130ms, color 130ms; text-decoration:none; white-space:nowrap; }
+
+/* SCROLL PROGRESS BAR */
+.scroll-progress {
+  position:absolute; top:0; left:0; height:2px;
+  background:var(--cacc); width:0%;
+  transition:width 100ms linear; z-index:60;
+}
+
+/* ════════════════════════════════════════════════════
+   HEADER
+   ════════════════════════════════════════════════════ */
+.site-header {
+  position:sticky; top:0; z-index:50;
+  background:rgba(10,10,10,0.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--cb);
+  padding:14px 0;
+}
+.hdr-inner {
+  display:flex; align-items:center;
+  justify-content:space-between; gap:16px;
+}
+.logo { display:flex; flex-direction:column; gap:3px; text-decoration:none; flex-shrink:0; }
+.logo-name {
+  font-family:'JetBrains Mono',monospace; font-size:14px;
+  font-weight:600; letter-spacing:0.11em; text-transform:uppercase;
+  color:var(--ctxt); line-height:1;
+}
+.logo-name .h { color:var(--cmut); }
+.logo-role {
+  font-family:'JetBrains Mono',monospace; font-size:8.5px;
+  letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--cmut); line-height:1;
+}
+.hdr-nav {
+  display:flex; align-items:center; gap:28px;
+}
+.hdr-nav a {
+  font-family:'JetBrains Mono',monospace; font-size:10.5px;
+  letter-spacing:0.1em; text-transform:uppercase;
+  color:var(--cmut); transition:color 150ms;
+}
+.hdr-nav a:hover { color:var(--ctxt); }
+.hdr-cta {
+  font-family:'JetBrains Mono',monospace; font-size:11.5px;
+  font-weight:600; letter-spacing:0.055em; text-transform:uppercase;
+  padding:9px 18px; border:1px solid var(--cacc-b); border-radius:2px;
+  color:#f87171; background:transparent;
+  transition:background 130ms, border-color 130ms, color 130ms;
+  text-decoration:none; white-space:nowrap;
+}
 .hdr-cta:hover { background:var(--cacc-t); border-color:var(--cacc); color:#fca5a5; }
-.badge { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--cbk); color:var(--cmut); }
+
+/* Hamburger */
+.hamburger {
+  display:none; flex-direction:column; justify-content:center;
+  gap:5px; width:36px; height:36px;
+  background:none; border:1px solid var(--cb);
+  cursor:pointer; padding:8px 7px; flex-shrink:0;
+}
+.hamburger span {
+  display:block; height:1.5px;
+  background:var(--csec); transition:all 250ms ease;
+  transform-origin:center;
+}
+.hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  display:none; position:fixed; top:0; left:0; right:0; bottom:0;
+  background:rgba(10,9,8,0.98); backdrop-filter:blur(20px);
+  z-index:99; flex-direction:column;
+  align-items:center; justify-content:center;
+  opacity:0; pointer-events:none; transition:opacity 250ms ease;
+}
+.mobile-menu.open { opacity:1; pointer-events:all; }
+.mobile-menu a {
+  font-family:'JetBrains Mono',monospace;
+  font-size:clamp(1.1rem,5vw,1.6rem);
+  letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--csec); padding:18px 32px;
+  width:100%; text-align:center;
+  border-bottom:1px solid var(--cb); transition:color 150ms;
+}
+.mobile-menu a:first-child { border-top:1px solid var(--cb); }
+.mobile-menu a:hover { color:var(--ctxt); }
+.mobile-menu .m-cta {
+  margin-top:28px; color:var(--cacc);
+  border:1px solid var(--cacc-b) !important;
+  background:var(--cacc-t);
+  font-size:clamp(0.9rem,4vw,1.1rem) !important;
+  padding:14px 32px !important;
+}
+.mobile-close {
+  position:absolute; top:16px; right:20px;
+  font-family:'JetBrains Mono',monospace; font-size:11px;
+  letter-spacing:0.1em; text-transform:uppercase;
+  color:var(--cmut); background:none; border:none;
+  cursor:pointer; padding:8px;
+}
+
+/* ════════════════════════════════════════════════════
+   BADGE
+   ════════════════════════════════════════════════════ */
+.badge {
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace; font-size:9.5px;
+  font-weight:500; letter-spacing:0.13em; text-transform:uppercase;
+  padding:4px 10px; border:1px solid var(--cbk); color:var(--cmut);
+}
 .badge-r { border-color:var(--cacc-b); color:var(--cacc); background:var(--cacc-t); }
 .badge-g { border-color:rgba(74,222,128,0.18); color:var(--cgrn); background:rgba(74,222,128,0.05); }
-.btn { display:inline-flex; align-items:center; gap:8px; font-family:'Inter',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; padding:13px 26px; border:1px solid transparent; cursor:pointer; text-decoration:none; transition:all 150ms; white-space:nowrap; }
+
+/* ════════════════════════════════════════════════════
+   BUTTONS
+   ════════════════════════════════════════════════════ */
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'Inter',sans-serif; font-weight:600;
+  font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+  padding:13px 26px; border:1px solid transparent;
+  cursor:pointer; text-decoration:none; transition:all 150ms;
+  white-space:nowrap;
+}
 .btn-p { background:var(--cacc); color:#fff; border-color:var(--cacc); }
 .btn-p:hover { background:var(--cacc-d); border-color:var(--cacc-d); color:#fff; }
 .btn-g { background:transparent; color:var(--csec); border-color:var(--cbk); }
 .btn-g:hover { border-color:var(--csec); color:var(--ctxt); }
-.trust-row { display:flex; gap:0; flex-wrap:wrap; margin-top:32px; padding-top:24px; border-top:1px solid var(--cb); }
-.trust-item { padding:0 24px 0 0; margin-right:24px; border-right:1px solid var(--cb); display:flex; flex-direction:column; gap:4px; }
+
+/* ════════════════════════════════════════════════════
+   STATUS / TRUST BADGES
+   ════════════════════════════════════════════════════ */
+.trust-row {
+  display:flex; gap:0; flex-wrap:wrap;
+  margin-top:32px; padding-top:24px; border-top:1px solid var(--cb);
+}
+.trust-item {
+  padding:0 24px 0 0; margin-right:24px;
+  border-right:1px solid var(--cb);
+  display:flex; flex-direction:column; gap:4px;
+}
 .trust-item:last-child { border-right:none; margin-right:0; }
-.trust-val { font-family:'JetBrains Mono',monospace; font-size:1.35rem; font-weight:600; letter-spacing:-0.02em; color:var(--ctxt); line-height:1; }
-.trust-lbl { font-family:'JetBrains Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.1em; color:var(--cmut); }
-.data-box { background:var(--cterm); border:1px solid var(--cb); border-left:2px solid var(--cacc); padding:24px 28px; margin:24px 0; }
-.data-box-title { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cacc); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:16px; }
-.stat-row { display:flex; flex-direction:column; gap:12px; }
-.stat-item { display:flex; align-items:baseline; gap:12px; }
-.stat-num { font-family:'JetBrains Mono',monospace; font-size:1.45rem; font-weight:600; color:var(--ctxt); flex-shrink:0; min-width:64px; }
+.trust-val {
+  font-family:'JetBrains Mono',monospace; font-size:1.35rem;
+  font-weight:600; letter-spacing:-0.02em; color:var(--ctxt); line-height:1;
+}
+.trust-lbl {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  text-transform:uppercase; letter-spacing:0.1em; color:var(--cmut);
+}
+
+/* ════════════════════════════════════════════════════
+   DATA BOX
+   ════════════════════════════════════════════════════ */
+.data-box {
+  background:var(--cterm); border:1px solid var(--cb);
+  border-left:2px solid var(--cacc); padding:24px 28px; margin:24px 0;
+}
+.data-box-title {
+  font-family:'JetBrains Mono',monospace; font-size:9.5px;
+  color:var(--cacc); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:16px;
+}
+.stat-row {
+  display:flex; flex-direction:column; gap:12px;
+}
+.stat-item {
+  display:flex; align-items:baseline; gap:12px;
+}
+.stat-num {
+  font-family:'JetBrains Mono',monospace; font-size:1.45rem;
+  font-weight:600; color:var(--ctxt); flex-shrink:0; min-width:64px;
+}
 .stat-desc { font-size:13px; color:var(--csec); line-height:1.55; }
-.stat-src { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.08em; }
+.stat-src {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--cmut); text-transform:uppercase; letter-spacing:0.08em;
+}
+
+/* ════════════════════════════════════════════════════
+   STEPS (Come Funziona)
+   ════════════════════════════════════════════════════ */
 .steps { display:flex; flex-direction:column; gap:1px; background:var(--cb); margin:24px 0; }
-.step-item { background:var(--c2); padding:24px 28px; display:flex; gap:20px; align-items:flex-start; }
-.step-num { font-family:'JetBrains Mono',monospace; font-size:1.1rem; font-weight:600; color:var(--cacc); flex-shrink:0; min-width:28px; line-height:1.5; }
+.step-item {
+  background:var(--c2); padding:24px 28px;
+  display:flex; gap:20px; align-items:flex-start;
+}
+.step-num {
+  font-family:'JetBrains Mono',monospace; font-size:1.1rem;
+  font-weight:600; color:var(--cacc); flex-shrink:0; min-width:28px;
+  line-height:1.5;
+}
 .step-body { flex:1; }
 .step-title { font-size:14px; font-weight:600; color:var(--ctxt); margin-bottom:6px; }
 .step-desc { font-size:13px; color:var(--csec); line-height:1.65; }
-.step-output { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--cgrn); text-transform:uppercase; letter-spacing:0.08em; margin-top:8px; }
+.step-output {
+  font-family:'JetBrains Mono',monospace; font-size:10px;
+  color:var(--cgrn); text-transform:uppercase; letter-spacing:0.08em; margin-top:8px;
+}
+
+/* ════════════════════════════════════════════════════
+   CHECKLIST
+   ════════════════════════════════════════════════════ */
 .check-list { list-style:none; display:flex; flex-direction:column; gap:10px; margin:20px 0; }
-.check-list li { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--csec); line-height:1.6; }
+.check-list li {
+  display:flex; align-items:flex-start; gap:12px;
+  font-size:14px; color:var(--csec); line-height:1.6;
+}
 .check-list li .ck { flex-shrink:0; color:var(--cgrn); font-size:13px; margin-top:2px; }
 .check-list li .cx { flex-shrink:0; color:var(--cmut); font-size:13px; margin-top:2px; }
-.int-box { border:1px solid var(--cb); padding:18px 22px; margin-top:24px; background:var(--c1); }
-.int-title { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:12px; }
-.int-list { display:flex; flex-wrap:wrap; gap:8px; }
-.int-tag { font-family:'JetBrains Mono',monospace; font-size:10px; padding:3px 10px; border:1px solid var(--cbk); color:var(--csec); letter-spacing:0.06em; }
+
+/* ════════════════════════════════════════════════════
+   INTEGRATIONS BOX
+   ════════════════════════════════════════════════════ */
+.int-box {
+  border:1px solid var(--cb); padding:18px 22px; margin-top:24px; background:var(--c1);
+}
+.int-title {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:12px;
+}
+.int-list {
+  display:flex; flex-wrap:wrap; gap:8px;
+}
+.int-tag {
+  font-family:'JetBrains Mono',monospace; font-size:10px;
+  padding:3px 10px; border:1px solid var(--cbk); color:var(--csec);
+  letter-spacing:0.06em;
+}
+
+/* ════════════════════════════════════════════════════
+   TABLE
+   ════════════════════════════════════════════════════ */
 .cmp-table { width:100%; border-collapse:collapse; margin:24px 0; font-size:13.5px; }
-.cmp-table th { background:var(--c2); color:var(--csec); font-family:'JetBrains Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.1em; padding:10px 14px; border:1px solid var(--cb); text-align:left; font-weight:500; }
+.cmp-table th {
+  background:var(--c2); color:var(--csec);
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  text-transform:uppercase; letter-spacing:0.1em;
+  padding:10px 14px; border:1px solid var(--cb); text-align:left;
+  font-weight:500;
+}
 .cmp-table th.hl { color:var(--ctxt); background:var(--c3); }
-.cmp-table td { padding:10px 14px; border:1px solid var(--cb); color:var(--csec); line-height:1.5; vertical-align:top; }
+.cmp-table td {
+  padding:10px 14px; border:1px solid var(--cb);
+  color:var(--csec); line-height:1.5;
+  vertical-align:top;
+}
 .cmp-table td.hl { color:var(--ctxt); background:rgba(248,113,113,0.04); font-weight:500; }
+.cmp-table td.crit { font-size:12px; color:var(--cmut); }
 .cmp-table tr:hover td { background:var(--c2); }
-.tbl-note { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); letter-spacing:0.06em; margin-top:12px; border-left:2px solid var(--cb); padding-left:12px; }
+.tbl-note {
+  font-family:'JetBrains Mono',monospace; font-size:9.5px;
+  color:var(--cmut); letter-spacing:0.06em; margin-top:12px;
+  border-left:2px solid var(--cb); padding-left:12px;
+}
+
+/* ════════════════════════════════════════════════════
+   FAQ
+   ════════════════════════════════════════════════════ */
 .faq-list { display:flex; flex-direction:column; gap:1px; background:var(--cb); margin:24px 0; }
 .faq-item { background:var(--c2); padding:24px 28px; }
-.faq-q { font-size:15px; font-weight:600; color:var(--ctxt); margin-bottom:12px; line-height:1.4; }
+.faq-q {
+  font-size:15px; font-weight:600; color:var(--ctxt); margin-bottom:12px; line-height:1.4;
+}
 .faq-a { font-size:14px; color:var(--csec); line-height:1.72; }
-.cta-box { border:1px solid var(--cb); border-top:2px solid var(--cacc); background:var(--c1); padding:48px 44px; }
-.cta-box-sec { border:1px solid var(--cb); border-top:2px solid var(--cgrn); background:var(--c1); padding:36px 44px; margin-top:1px; }
-.cta-micro { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); letter-spacing:0.06em; margin-top:12px; }
+
+/* ════════════════════════════════════════════════════
+   EXPLORE CARDS
+   ════════════════════════════════════════════════════ */
+.exp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--cb); }
+.exp-card {
+  background:var(--c2); padding:24px 22px; text-decoration:none;
+  transition:all 180ms; border:1px solid transparent; margin:-1px;
+}
+.exp-card:hover { background:var(--c3); border-color:var(--cbk); }
+.exp-card:hover .exp-arrow { color:var(--cacc); }
+.exp-cat {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  letter-spacing:0.15em; text-transform:uppercase; color:var(--cmut); margin-bottom:10px;
+}
+.exp-title { font-size:14px; font-weight:600; color:var(--ctxt); line-height:1.42; margin-bottom:8px; }
+.exp-footer {
+  font-family:'JetBrains Mono',monospace; font-size:9.5px;
+  color:var(--cmut); text-transform:uppercase; letter-spacing:0.08em;
+  display:flex; justify-content:space-between;
+}
+.exp-arrow { color:var(--cb); transition:color 180ms; }
+
+/* ════════════════════════════════════════════════════
+   CTA BOX
+   ════════════════════════════════════════════════════ */
+.cta-box {
+  border:1px solid var(--cb); border-top:2px solid var(--cacc);
+  background:var(--c1); padding:48px 44px;
+}
+.cta-box-sec {
+  border:1px solid var(--cb); border-top:2px solid var(--cgrn);
+  background:var(--c1); padding:36px 44px; margin-top:1px;
+}
+.cta-micro {
+  font-family:'JetBrains Mono',monospace; font-size:9.5px;
+  color:var(--cmut); letter-spacing:0.06em; margin-top:12px;
+}
+
+/* ════════════════════════════════════════════════════
+   FOOTER CONTESTUALE
+   ════════════════════════════════════════════════════ */
+.ctx-footer {
+  background:var(--c0); border-top:1px solid var(--cb); padding:48px 0;
+}
+.ctx-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+.ctx-section-title {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--cmut); text-transform:uppercase; letter-spacing:0.15em;
+  margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid var(--cb);
+}
+.ctx-links { display:flex; flex-direction:column; gap:8px; }
+.ctx-links a {
+  font-size:13.5px; color:var(--csec); transition:color 150ms;
+}
+.ctx-links a:hover { color:var(--ctxt); }
+
+/* SITE FOOTER */
 .site-footer { background:var(--c0); border-top:1px solid var(--cb); padding:40px 0; }
 .ftr-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
 .ftr-copy { font-family:'JetBrains Mono',monospace; font-size:9.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--cmut); }
 .ftr-links { display:flex; gap:22px; }
 .ftr-links a { font-size:12.5px; color:var(--cmut); transition:color 150ms; }
 .ftr-links a:hover { color:var(--csec); }
-.ai-copy { background:var(--c1); border:1px solid var(--cb); padding:20px 24px; margin:0; font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.72; color:var(--cmut); letter-spacing:0.02em; }
+
+/* AI COPY (visibile ma secondario) */
+.ai-copy {
+  background:var(--c1); border:1px solid var(--cb);
+  padding:20px 24px; margin:0;
+  font-family:'JetBrains Mono',monospace; font-size:11px;
+  line-height:1.72; color:var(--cmut); letter-spacing:0.02em;
+}
+
+/* SECTION DIVIDER */
 .sec { border-top:1px solid var(--cb); padding:72px 0; }
 .sec-alt { background:var(--c1); }
+
+/* ════════════════════════════════════════════════════
+   MOBILE
+   ════════════════════════════════════════════════════ */
 @media(max-width:768px){
   .wrap,.wrap-sm,.wrap-md { padding:0 18px; }
   .trust-row { flex-direction:column; gap:16px; }
   .trust-item { border-right:none; padding-right:0; border-bottom:1px solid var(--cb); padding-bottom:16px; }
   .trust-item:last-child { border-bottom:none; }
+  .exp-grid { grid-template-columns:1fr; }
+  .ctx-grid { grid-template-columns:1fr; gap:32px; }
   .cta-box,.cta-box-sec { padding:28px 20px; }
   .btn-row { flex-direction:column; }
   .btn-row .btn { width:100%; justify-content:center; }
@@ -256,8 +560,7 @@ strong { font-weight:600; color:var(--ctxt); }
     </span>
 
     <h1 style="margin-bottom:18px;">
-      Agente WhatsApp AI<br>
-      per Infoproduttori
+      Agente WhatsApp AI<br>per Infoproduttori
     </h1>
 
     <p style="font-size:1.05rem; color:var(--csec); margin-bottom:6px; font-weight:500;">
@@ -319,7 +622,7 @@ strong { font-weight:600; color:var(--ctxt); }
     </p>
 
     <div class="data-box">
-      <div class="data-box-title">// dati — lancio e risposta rapida</div>
+      <div class="data-box-title">// dati — risposta rapida e conversione</div>
       <div class="stat-row">
         <div class="stat-item">
           <div class="stat-num">44.38%</div>
@@ -405,10 +708,9 @@ strong { font-weight:600; color:var(--ctxt); }
         <span class="int-tag">Dify — cervello AI</span>
         <span class="int-tag">n8n — orchestrazione</span>
         <span class="int-tag">2Chat — WhatsApp API</span>
-        <span class="int-tag">ActiveCampaign</span>
-        <span class="int-tag">Kajabi</span>
-        <span class="int-tag">Teachable</span>
-        <span class="int-tag">Google Sheets CRM</span>
+        <span class="int-tag">GoHighLevel</span>
+        <span class="int-tag">HubSpot</span>
+        <span class="int-tag">Calendly / Cal.com</span>
         <span class="int-tag">Meta Lead Ads</span>
       </div>
     </div>
@@ -444,9 +746,9 @@ strong { font-weight:600; color:var(--ctxt); }
     <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--cb);">
       <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:14px;">// cosa non fa</p>
       <ul class="check-list">
-        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non fa broadcasting massivo non segmentato — opera in conversazioni 1:1 per proteggere il quality score Meta</span></li>
-        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non gestisce l'erogazione del corso su Kajabi/Teachable — è ottimizzato per acquisizione e conversione pre-acquisto</span></li>
-        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non improvvisa su claim legali o garanzie specifiche — usa finalize_conversation per passarti la conversazione con riepilogo</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non fa broadcasting massivo non segmentato — opera in conversazioni 1:1 per proteggere il quality score Meta</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non gestisce l'erogazione del corso su Kajabi/Teachable — è ottimizzato per acquisizione e conversione pre-acquisto</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non improvvisa su claim legali o garanzie specifiche — usa finalize_conversation per passarti la conversazione con riepilogo</span></li>
       </ul>
     </div>
 
@@ -612,7 +914,7 @@ strong { font-weight:600; color:var(--ctxt); }
       </div>
       <div class="faq-item">
         <div class="faq-q">Come si integra con ActiveCampaign e Kajabi?</div>
-        <div class="faq-a">Il <code>n8n_crm_sync.json</code> è il file di integrazione modificabile. n8n ha 400+ integrazioni native: ActiveCampaign, Kajabi, Teachable, HubSpot. Non si tocca il funnel esistente — WhatsApp si aggiunge come layer sopra. I tag che l'agente scrive su ActiveCampaign (es: <em>warm_lead_lancio</em>, <em>obiezione_prezzo</em>, <em>pronto_acquisto</em>) possono triggerare automazioni email già esistenti senza toccare niente di quello che hai costruito.</div>
+        <div class="faq-a">Il n8n_crm_sync.json è il file di integrazione modificabile. n8n ha 400+ integrazioni native: ActiveCampaign, Kajabi, Teachable, HubSpot. Non si tocca il funnel esistente — WhatsApp si aggiunge come layer sopra. I tag che l'agente scrive su ActiveCampaign (es: warm_lead_lancio, obiezione_prezzo, pronto_acquisto) possono triggerare automazioni email già esistenti senza toccare niente di quello che hai costruito.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Rischio di bruciare la lista WhatsApp che ho costruito in anni?</div>
@@ -629,7 +931,7 @@ strong { font-weight:600; color:var(--ctxt); }
 
 
 <!-- ═══════════════════════════════════════════════════════════════
-     SEZIONE 8 — COPY FOR AI
+     SEZIONE 8 — COPY FOR AI (nascosta visivamente, ottimizzata per AI search)
      ═══════════════════════════════════════════════════════════════ -->
 <section class="sec sec-alt" style="display:none;">
   <div class="wrap-md">
@@ -639,6 +941,46 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
     </div>
   </div>
 </section>
+
+
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 9 — ESPLORA / APPROFONDISCI
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+    <h2 style="font-weight:300; margin-bottom:28px;">Approfondisci</h2>
+    <div class="exp-grid">
+      <a href="/perdo-clienti-whatsapp" class="exp-card">
+        <div class="exp-cat">problema · categoria c</div>
+        <div class="exp-title">Perdi Clienti su WhatsApp? Il Problema e la Soluzione</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/lead-whatsapp-senza-risposta" class="exp-card">
+        <div class="exp-cat">problema · categoria c</div>
+        <div class="exp-title">Lead WhatsApp Senza Risposta: Come Recuperarli</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-accademie-digitali" class="exp-card">
+        <div class="exp-cat">segmento · categoria a</div>
+        <div class="exp-title">Agente WhatsApp AI per Accademie Digitali</div>
+        <div class="exp-footer">
+          <span>vedi segmento →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -652,13 +994,13 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
       <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint ]</span>
       <h2 style="margin-bottom:16px; font-weight:300;">
         Parti da qui:<br>
-        <strong>attiva il sistema prima del prossimo lancio</strong>
+        <strong>il metodo completo in un documento</strong>
       </h2>
       <p style="color:var(--csec); max-width:520px; margin-bottom:8px; font-size:1rem;">
-        The WhatsApp Agent Blueprint include il sistema completo per gestire obiezioni durante i lanci, qualificare lead in meno di 60 secondi e nutrire la lista tra un lancio e l'altro. Architettura, script di obiezioni, sequenze nurturing, integrazione ActiveCampaign.
+        The WhatsApp Agent Blueprint è la guida operativa su come costruire e ottimizzare un sistema di lead automation su WhatsApp. Architettura, script di qualificazione, sequenze reminder, integrazione CRM.
       </p>
       <p style="color:var(--csec); max-width:520px; margin-bottom:28px; font-size:1rem;">
-        Non teoria. Istruzioni operative — configurabile in 90 minuti prima del tuo prossimo lancio.
+        Non teoria su come potrebbe funzionare. Istruzioni operative su come funziona.
       </p>
       <div class="btn-row" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
         <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
@@ -672,10 +1014,10 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
     <div class="cta-box-sec" style="margin-top:1px;">
       <span class="badge badge-g" style="display:inline-block;margin-bottom:16px;">[ the system log · newsletter ]</span>
       <h2 style="margin-bottom:14px; font-weight:300;">
-        Preferisci prima seguire il metodo nel tempo?
+        Preferisci prima capire meglio?
       </h2>
       <p style="color:var(--csec); max-width:520px; margin-bottom:24px; font-size:1rem;">
-        Ogni settimana un'analisi su lead automation, WhatsApp AI e sales process per infoproduttori e coach italiani. Gratis. Nessuno spam.
+        Ogni settimana un'analisi su lead automation, WhatsApp AI e sales process per coach e consulenti italiani. Gratis. Nessuno spam.
       </p>
       <a href="https://thesystemlog.substack.com/" target="_blank" rel="noopener" class="btn btn-g">
         Iscriviti a The System Log →
@@ -683,6 +1025,36 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
       <p class="cta-micro" style="margin-top:12px;">Gratis. Nessuno spam. Disdici quando vuoi.</p>
     </div>
 
+  </div>
+</section>
+
+
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 11 — FOOTER CONTESTUALE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="ctx-footer">
+  <div class="wrap">
+    <div class="ctx-grid">
+      <div>
+        <div class="ctx-section-title">altri segmenti</div>
+        <div class="ctx-links">
+          <a href="/agente-whatsapp-coach-high-ticket">Agente WhatsApp AI per Coach High-Ticket</a>
+          <a href="/agente-whatsapp-consulenti">Agente WhatsApp AI per Consulenti</a>
+          <a href="/agente-whatsapp-formatori">Agente WhatsApp AI per Formatori</a>
+          <a href="/agente-whatsapp-accademie-digitali">Agente WhatsApp AI per Accademie Digitali</a>
+        </div>
+      </div>
+      <div>
+        <div class="ctx-section-title">problemi correlati</div>
+        <div class="ctx-links">
+          <a href="/perdo-clienti-whatsapp">Perdi Clienti su WhatsApp? Il Problema e la Soluzione</a>
+          <a href="/lead-whatsapp-senza-risposta">Lead WhatsApp Senza Risposta: Come Recuperarli</a>
+          <a href="/riduzione-no-show-appuntamenti">Come Ridurre i No-Show agli Appuntamenti</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -709,6 +1081,7 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
 
 
 <script>
+/* Scroll progress bar */
 (function(){
   var bar = document.getElementById('scroll-progress');
   window.addEventListener('scroll', function(){
@@ -717,6 +1090,7 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
     bar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
   }, { passive:true });
 })();
+
 </script>
 
 </body>

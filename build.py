@@ -250,6 +250,31 @@ def render_correlati(correlati):
     return '\n'.join(parts)
 
 
+def render_ctx_footer(c):
+    groups = []
+    altri = c.get('footer_altri_segmenti', [])
+    problemi = c.get('footer_problemi_correlati', [])
+    for label, items in [('altri segmenti', altri), ('problemi correlati', problemi)]:
+        if not items:
+            continue
+        links = '\n'.join(
+            f'          <a href="{item["url"]}">{item["titolo"]}</a>'
+            for item in items
+        )
+        groups.append(
+            f'      <div>\n'
+            f'        <div class="ctx-section-title">{label}</div>\n'
+            f'        <div class="ctx-links">\n'
+            f'{links}\n'
+            f'        </div>\n'
+            f'      </div>'
+        )
+    if not groups:
+        return ''
+    inner = '\n'.join(groups)
+    return f'    <div class="ctx-grid">\n{inner}\n    </div>'
+
+
 def render_schema(c, page_title, date_modified):
     """Generate the full schema.org JSON-LD array using json.dumps for safety."""
     template_type = c.get('template_type', 'A')
@@ -347,7 +372,7 @@ def build_page(slug):
         c = json.load(f)
 
     template_type = c.get('template_type', 'A')
-    template_file = 'template-c.html' if template_type == 'C' else 'template.html'
+    template_file = 'template-c.html' if template_type == 'C' else 'template-a.html'
 
     if not os.path.exists(template_file):
         print(f'ERROR: {template_file} not found — run from project root')
@@ -433,6 +458,8 @@ def build_page(slug):
             '{{FAQ_H2}}':              c['faq_h2'],
             '{{FAQ_HTML}}':            render_faq_html(c['faqs']),
             '{{AI_COPY_TEXT}}':        c['ai_copy_text'],
+            '{{ESPLORA_HTML}}':        render_correlati(c.get('esplora', [])),
+            '{{CTX_FOOTER_HTML}}':     render_ctx_footer(c),
         }
 
     output = tmpl
@@ -445,8 +472,9 @@ def build_page(slug):
         print(f'WARNING: unreplaced markers: {sorted(set(remaining))}')
 
     # Write page
-    os.makedirs(slug, exist_ok=True)
-    out_path = os.path.join(slug, 'index.html')
+    out_dir = os.path.join('Pagine', slug)
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(output)
     print(f'OK {out_path}')
