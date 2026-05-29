@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agente WhatsApp AI per Formatori | FutureLens</title>
+<meta name="description" content="8–10 ore/settimana in burocrazia amministrativa. Agente WhatsApp AI per formatori: gestisce iscrizioni, reminder automatici, qualificazione preventivi aziendali.">
+<link rel="canonical" href="https://seo.futurelens.xyz/agente-whatsapp-formatori">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agente WhatsApp AI per Formatori | FutureLens">
+<meta property="og:description" content="8–10 ore/settimana in burocrazia. Gestisce iscrizioni corsi, reminder partecipanti, qualificazione preventivi aziendali. Setup 90 minuti, GDPR compliant.">
+<meta property="og:url" content="https://seo.futurelens.xyz/agente-whatsapp-formatori">
+<meta property="og:site_name" content="FutureLens">
+<meta property="og:locale" content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agente WhatsApp AI per Formatori | FutureLens">
+<meta name="twitter:description" content="Sistema operativo della tua attività formativa: iscrizioni, reminder, qualificazione preventivi B2B, nurturing ex-partecipanti. Setup 90 minuti.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Agente WhatsApp AI per Formatori | FutureLens",
+    "description": "8–10 ore/settimana in burocrazia amministrativa. Agente WhatsApp AI per formatori: gestisce iscrizioni, reminder automatici, qualificazione preventivi aziendali.",
+    "url": "https://seo.futurelens.xyz/agente-whatsapp-formatori",
+    "dateModified": "2026-05-29",
+    "inLanguage": "it-IT",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Agente WhatsApp AI per Formatori",
+    "description": "Sistema di gestione iscrizioni, reminder automatici, qualificazione preventivi aziendali e nurturing ex-partecipanti su WhatsApp per formatori italiani B2B e B2C.",
+    "provider": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italia"
+    },
+    "serviceType": "WhatsApp AI Automation",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Formatori Italiani B2B e B2C"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Posso usare un numero WhatsApp separato dal mio personale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, è la prima cosa da fare. 2Chat permette di connettere un secondo numero (SIM business o numero virtuale) via QR code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business — separazione completa, compliance GDPR semplificata."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come gestisce il GDPR con i dati dei partecipanti ai corsi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La differenza è tra WhatsApp personale (rischio GDPR) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Percorso Evolution (€37 una tantum) = self-hosting su server privato, dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo in Google Sheets — documentazione disponibile in caso di ispezione per formazione obbligatoria o fondi interprofessionali."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Non ho competenze tecniche. Quanto è complesso configurarlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Setup guidato in 90 minuti totali: Fase 1 (30–40 min) + Fase 2 (15–20 min) + Fase 3 (15–20 min) + Fase 4 (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso in un System Prompt — incolla in ChatGPT, copia il risultato. Fine. La guida è passo-passo con tempi dichiarati per ogni fase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ho già un LMS (Moodle, TalentLMS, Docebo). Come si integra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "n8n ha integrazioni con tutte le principali piattaforme LMS via API o webhook. WhatsApp si aggiunge come layer di comunicazione sopra l'LMS — non lo sostituisce. Il corsista accede al corso su Moodle come sempre, ma riceve i reminder e i materiali pre-corso via WhatsApp. I dati dell'iscrizione si sincronizzano automaticamente su Google Sheets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funziona anche per corsi aziendali B2B con preventivi personalizzati?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì — è uno dei casi d'uso principali. L'agente risponde in meno di 1 minuto a ogni richiesta aziendale, fa le 3–4 domande di qualificazione (settore, numero partecipanti, budget, urgenza, decisore) e ti passa il riepilogo strutturato. Tu prepari l'offerta dettagliata solo per i prospect qualificati. Il 48,6% dei preventivi non riceve risposta dopo l'invio — il follow-up automatico cambia questo dato."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<style>
+:root {
+  --c0:     #0a0a0a;
+  --c1:     #0f0f0f;
+  --c2:     #141414;
+  --c3:     #1c1c1c;
+  --cterm:  #0d1117;
+  --ctxt:   #f8fafc;
+  --csec:   #94a3b8;
+  --cmut:   #475569;
+  --cacc:   #f87171;
+  --cacc-d: #ef4444;
+  --cacc-t: rgba(248,113,113,0.07);
+  --cacc-b: rgba(248,113,113,0.18);
+  --cgrn:   #4ade80;
+  --cb:     rgba(248,250,252,0.07);
+  --cbk:    rgba(248,250,252,0.13);
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { font-size:16px; -webkit-font-smoothing:antialiased; scroll-behavior:smooth; }
+body { background:var(--c0); color:var(--ctxt); font-family:'Inter',sans-serif; line-height:1.72; }
+h1 { font-size:clamp(1.85rem,4.2vw,2.9rem); font-weight:300; line-height:1.18; letter-spacing:-0.022em; }
+h2 { font-size:clamp(1.25rem,2.4vw,1.75rem); font-weight:300; line-height:1.22; letter-spacing:-0.018em; }
+h3 { font-size:1rem; font-weight:600; line-height:1.4; }
+p  { line-height:1.75; }
+a  { color:var(--csec); text-decoration:none; transition:color 150ms; }
+a:hover { color:var(--ctxt); }
+strong { font-weight:600; color:var(--ctxt); }
+.wrap    { max-width:1060px; margin:0 auto; padding:0 32px; }
+.wrap-sm { max-width:720px;  margin:0 auto; padding:0 32px; }
+.wrap-md { max-width:860px;  margin:0 auto; padding:0 32px; }
+.grid-bg { position:relative; overflow:hidden; }
+.grid-bg::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px), linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px); background-size:52px 52px; pointer-events:none; z-index:0; }
+.grid-bg::after { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%); pointer-events:none; z-index:0; }
+.grid-bg > * { position:relative; z-index:1; }
+.scroll-progress { position:absolute; top:0; left:0; height:2px; background:var(--cacc); width:0%; transition:width 100ms linear; z-index:60; }
+.site-header { position:sticky; top:0; z-index:50; background:rgba(10,10,10,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--cb); padding:14px 0; }
+.hdr-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.hdr-cta { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:600; letter-spacing:0.055em; text-transform:uppercase; padding:9px 18px; border:1px solid var(--cacc-b); border-radius:2px; color:#f87171; background:transparent; transition:background 130ms, border-color 130ms, color 130ms; text-decoration:none; white-space:nowrap; }
+.hdr-cta:hover { background:var(--cacc-t); border-color:var(--cacc); color:#fca5a5; }
+.badge { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--cbk); color:var(--cmut); }
+.badge-r { border-color:var(--cacc-b); color:var(--cacc); background:var(--cacc-t); }
+.badge-g { border-color:rgba(74,222,128,0.18); color:var(--cgrn); background:rgba(74,222,128,0.05); }
+.btn { display:inline-flex; align-items:center; gap:8px; font-family:'Inter',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; padding:13px 26px; border:1px solid transparent; cursor:pointer; text-decoration:none; transition:all 150ms; white-space:nowrap; }
+.btn-p { background:var(--cacc); color:#fff; border-color:var(--cacc); }
+.btn-p:hover { background:var(--cacc-d); border-color:var(--cacc-d); color:#fff; }
+.btn-g { background:transparent; color:var(--csec); border-color:var(--cbk); }
+.btn-g:hover { border-color:var(--csec); color:var(--ctxt); }
+.trust-row { display:flex; gap:0; flex-wrap:wrap; margin-top:32px; padding-top:24px; border-top:1px solid var(--cb); }
+.trust-item { padding:0 24px 0 0; margin-right:24px; border-right:1px solid var(--cb); display:flex; flex-direction:column; gap:4px; }
+.trust-item:last-child { border-right:none; margin-right:0; }
+.trust-val { font-family:'JetBrains Mono',monospace; font-size:1.35rem; font-weight:600; letter-spacing:-0.02em; color:var(--ctxt); line-height:1; }
+.trust-lbl { font-family:'JetBrains Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.1em; color:var(--cmut); }
+.data-box { background:var(--cterm); border:1px solid var(--cb); border-left:2px solid var(--cacc); padding:24px 28px; margin:24px 0; }
+.data-box-title { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cacc); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:16px; }
+.stat-row { display:flex; flex-direction:column; gap:12px; }
+.stat-item { display:flex; align-items:baseline; gap:12px; }
+.stat-num { font-family:'JetBrains Mono',monospace; font-size:1.45rem; font-weight:600; color:var(--ctxt); flex-shrink:0; min-width:64px; }
+.stat-desc { font-size:13px; color:var(--csec); line-height:1.55; }
+.stat-src { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.08em; }
+.steps { display:flex; flex-direction:column; gap:1px; background:var(--cb); margin:24px 0; }
+.step-item { background:var(--c2); padding:24px 28px; display:flex; gap:20px; align-items:flex-start; }
+.step-num { font-family:'JetBrains Mono',monospace; font-size:1.1rem; font-weight:600; color:var(--cacc); flex-shrink:0; min-width:28px; line-height:1.5; }
+.step-body { flex:1; }
+.step-title { font-size:14px; font-weight:600; color:var(--ctxt); margin-bottom:6px; }
+.step-desc { font-size:13px; color:var(--csec); line-height:1.65; }
+.step-output { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--cgrn); text-transform:uppercase; letter-spacing:0.08em; margin-top:8px; }
+.check-list { list-style:none; display:flex; flex-direction:column; gap:10px; margin:20px 0; }
+.check-list li { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--csec); line-height:1.6; }
+.check-list li .ck { flex-shrink:0; color:var(--cgrn); font-size:13px; margin-top:2px; }
+.check-list li .cx { flex-shrink:0; color:var(--cmut); font-size:13px; margin-top:2px; }
+.int-box { border:1px solid var(--cb); padding:18px 22px; margin-top:24px; background:var(--c1); }
+.int-title { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:12px; }
+.int-list { display:flex; flex-wrap:wrap; gap:8px; }
+.int-tag { font-family:'JetBrains Mono',monospace; font-size:10px; padding:3px 10px; border:1px solid var(--cbk); color:var(--csec); letter-spacing:0.06em; }
+.cmp-table { width:100%; border-collapse:collapse; margin:24px 0; font-size:13.5px; }
+.cmp-table th { background:var(--c2); color:var(--csec); font-family:'JetBrains Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.1em; padding:10px 14px; border:1px solid var(--cb); text-align:left; font-weight:500; }
+.cmp-table th.hl { color:var(--ctxt); background:var(--c3); }
+.cmp-table td { padding:10px 14px; border:1px solid var(--cb); color:var(--csec); line-height:1.5; vertical-align:top; }
+.cmp-table td.hl { color:var(--ctxt); background:rgba(248,113,113,0.04); font-weight:500; }
+.cmp-table tr:hover td { background:var(--c2); }
+.tbl-note { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); letter-spacing:0.06em; margin-top:12px; border-left:2px solid var(--cb); padding-left:12px; }
+.faq-list { display:flex; flex-direction:column; gap:1px; background:var(--cb); margin:24px 0; }
+.faq-item { background:var(--c2); padding:24px 28px; }
+.faq-q { font-size:15px; font-weight:600; color:var(--ctxt); margin-bottom:12px; line-height:1.4; }
+.faq-a { font-size:14px; color:var(--csec); line-height:1.72; }
+.cta-box { border:1px solid var(--cb); border-top:2px solid var(--cacc); background:var(--c1); padding:48px 44px; }
+.cta-box-sec { border:1px solid var(--cb); border-top:2px solid var(--cgrn); background:var(--c1); padding:36px 44px; margin-top:1px; }
+.cta-micro { font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); letter-spacing:0.06em; margin-top:12px; }
+.site-footer { background:var(--c0); border-top:1px solid var(--cb); padding:40px 0; }
+.ftr-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+.ftr-copy { font-family:'JetBrains Mono',monospace; font-size:9.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--cmut); }
+.ftr-links { display:flex; gap:22px; }
+.ftr-links a { font-size:12.5px; color:var(--cmut); transition:color 150ms; }
+.ftr-links a:hover { color:var(--csec); }
+.ai-copy { background:var(--c1); border:1px solid var(--cb); padding:20px 24px; margin:0; font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.72; color:var(--cmut); letter-spacing:0.02em; }
+.sec { border-top:1px solid var(--cb); padding:72px 0; }
+.sec-alt { background:var(--c1); }
+@media(max-width:768px){
+  .wrap,.wrap-sm,.wrap-md { padding:0 18px; }
+  .trust-row { flex-direction:column; gap:16px; }
+  .trust-item { border-right:none; padding-right:0; border-bottom:1px solid var(--cb); padding-bottom:16px; }
+  .trust-item:last-child { border-bottom:none; }
+  .cta-box,.cta-box-sec { padding:28px 20px; }
+  .btn-row { flex-direction:column; }
+  .btn-row .btn { width:100%; justify-content:center; }
+  .cmp-table { font-size:12px; }
+  .cmp-table th, .cmp-table td { padding:8px 10px; }
+  .step-item { flex-direction:column; gap:10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="wrap">
+    <div class="hdr-inner">
+      <a href="https://futurelens.xyz" style="display:flex; flex-direction:column; gap:4px; text-decoration:none; flex-shrink:0;">
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:28px; width:auto; display:block;"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span style="display:none; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:1.05rem; letter-spacing:0.18em; color:var(--ctxt); text-transform:uppercase;">FUTURELENS</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--cmut);">Autonomous Systems Studio</span>
+      </a>
+      <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="hdr-cta">Accedi al Blueprint →</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 1 — HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section style="padding:80px 0 72px; background:var(--c0);" class="grid-bg">
+  <div class="wrap-md">
+
+    <span class="badge badge-r" style="display:block;width:fit-content;margin-bottom:22px;">
+      [ agente whatsapp ai · categoria a · segmento ]
+    </span>
+
+    <h1 style="margin-bottom:18px;">
+      Agente WhatsApp AI<br>
+      per Formatori
+    </h1>
+
+    <p style="font-size:1.05rem; color:var(--csec); margin-bottom:6px; font-weight:500;">
+      Per formatori con corsi B2B e B2C, preventivi aziendali e gestione manuale delle iscrizioni
+    </p>
+
+    <p style="font-size:1rem; color:var(--cmut); max-width:600px; margin-bottom:8px; line-height:1.75;">
+      Sei in aula a formare. Nel frattempo, sul tuo WhatsApp arrivano tre richieste di preventivo da aziende, due iscrizioni per il corso di settembre, e sei messaggi da partecipanti che chiedono l'orario di domani. Quando esci dall'aula, hai perso 4 ore di finestra di risposta. E il 48,6% di quei preventivi non risponderà dopo che li avrai mandati.
+    </p>
+    <p style="font-size:1rem; color:var(--cmut); max-width:600px; margin-bottom:32px; line-height:1.75;">
+      Non sei diventato formatore per fare burocrazia. Eppure ci passi 8–10 ore ogni settimana: iscrizioni, conferme, reminder, preventivi che spariscono nel silenzio, lista di ex-partecipanti in un Excel che non guardi mai. Il sistema operativo della tua attività formativa non esiste ancora — o esiste su WhatsApp personale, che non è scalabile.
+    </p>
+
+    <!-- Trust badges -->
+    <div class="trust-row">
+      <div class="trust-item">
+        <div class="trust-val">8–10h</div>
+        <div class="trust-lbl">settimana in burocrazia</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-val">48.6%</div>
+        <div class="trust-lbl">silenzio post-preventivo</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-val">90 min</div>
+        <div class="trust-lbl">setup operativo</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-val">GDPR</div>
+        <div class="trust-lbl">server europei</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 2 — IL PROBLEMA DEL SEGMENTO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ diagnosi ]</span>
+    <h2 style="margin-bottom:24px;">
+      Perché i formatori perdono tempo, preventivi<br>e clienti senza un sistema
+    </h2>
+
+    <p style="color:var(--csec); margin-bottom:16px;">
+      Il ciclo operativo del formatore ha tre gap sistematici. Acquisizione: le richieste di preventivo arrivano mentre sei in aula. Il 48,6% dei prospect non risponde dopo aver ricevuto l'offerta — e i formatori raramente hanno un sistema di follow-up strutturato. Gestione iscrizioni: ogni edizione del corso richiede le stesse operazioni manuali — conferme, reminder, attestati. Post-corso: la lista di ex-partecipanti esiste in un Excel che non viene mai ricontattato.
+    </p>
+
+    <p style="color:var(--csec); margin-bottom:16px;">
+      Il costo del gap acquisizione è concreto. Se prepari 6 ore di lavoro per ogni preventivo aziendale su misura, e il 48,6% dei prospect sparisce dopo l'invio, stai sprecando circa <strong>400 ore all'anno su prospect che non porteranno mai a nulla</strong>. Senza un sistema di follow-up automatico, quella statistica non cambia.
+    </p>
+
+    <p style="color:var(--csec); margin-bottom:28px;">
+      Il paradosso documentato: il formatore investe anni a costruire autorevolezza e reputazione, poi perde clienti non perché il corso non valga, ma perché risponde in ritardo o non fa follow-up dopo il preventivo. WhatsApp è già il canale che le aziende usano per scriverti — il problema è che non hai un sistema che lo gestisca in modo professionale e scalabile.
+    </p>
+
+    <div class="data-box">
+      <div class="data-box-title">// dati — preventivi e gestione operativa</div>
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="stat-num">48.6%</div>
+          <div>
+            <div class="stat-desc">dei prospect non risponde dopo aver ricevuto il preventivo. Ogni offerta preparata rappresenta in media 6 ore di lavoro — spesso sprecate.</div>
+            <div class="stat-src">IntotheMInds — studio B2B EU 2025 · 🟡 affidabilità media</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8–10h</div>
+          <div>
+            <div class="stat-desc">ore settimanali risparmiate con sistemi di gestione automatizzata dei corsi. Il formatore le passa in attività amministrative ripetitive.</div>
+            <div class="stat-src">Anolla.com — test su piattaforme formative 2026 · 🟡 affidabilità media</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">67%</div>
+          <div>
+            <div class="stat-desc">dei no-show ai corsi si dimentica semplicemente dell'evento. Tre reminder WhatsApp automatici risolvono il problema strutturalmente.</div>
+            <div class="stat-src">Contrast.io — 1M+ registranti analizzati · 🟢 alta affidabilità</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 3 — COME FUNZIONA
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ come funziona ]</span>
+    <h2 style="margin-bottom:16px;">
+      Come funziona l'agente WhatsApp AI<br>per formatori
+    </h2>
+
+    <p style="color:var(--csec); margin-bottom:24px; max-width:580px;">
+      Non è uno strumento di marketing. È il sistema operativo della tua attività formativa: gestisce le richieste di preventivo mentre sei in aula, manda i reminder ai partecipanti, raccoglie le iscrizioni e aggiorna il registro automaticamente. Quattro flussi distinti configurati sul tuo calendario formativo.
+    </p>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div class="step-title">Qualificazione preventivi aziendali: risposta in &lt;1 minuto</div>
+          <div class="step-desc">Un'azienda scrive su WhatsApp chiedendo un corso su X per Y persone. In meno di 1 minuto l'agente risponde, fa le 3–4 domande di qualificazione — settore, numero partecipanti, budget, urgenza, decisore reale. Quando esci dall'aula trovi il riepilogo strutturato. Prepari l'offerta dettagliata solo per i prospect qualificati.</div>
+          <div class="step-output">→ output: riepilogo qualificato sul prospect, pronto per l'offerta personalizzata</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div class="step-title">Gestione iscrizioni corsi aperti: conferma automatica + reminder</div>
+          <div class="step-desc">Il partecipante scrive su WhatsApp o compila il form. Riceve conferma automatica con dettagli del corso e istruzioni per il pagamento. Il sistema invia i reminder automaticamente: −7 giorni, −24 ore, −2 ore prima del corso. Il 67% dei no-show si dimentica — questi tre messaggi lo risolvono senza intervento manuale.</div>
+          <div class="step-output">→ output: +27% attendance, zero reminder dimenticati, registro aggiornato in automatico</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div class="step-title">Gestione partecipanti aziendali: comunicazione scalabile con l'HR</div>
+          <div class="step-desc">L'azienda conferma il corso. L'agente raccoglie la lista dei partecipanti dall'HR, invia a ognuno il messaggio di benvenuto con istruzioni, gestisce le domande pre-corso e manda i reminder. Post-corso: raccoglie il feedback e invia il link all'attestato. Nessun messaggio manuale a 20 persone — stessa email per tutti.</div>
+          <div class="step-output">→ output: comunicazione professionale con ogni partecipante, attestati inviati automaticamente</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div class="step-title">Nurturing ex-partecipanti: la lista non dorme tra una stagione e l'altra</div>
+          <div class="step-desc">A +7 giorni dal corso: "Come stai applicando X?". A +30 giorni: contenuto gratuito correlato al tema. A +60 giorni: preview della prossima edizione o del corso avanzato. Alla riapertura delle iscrizioni: messaggio personalizzato con il contesto della conversazione precedente. Il riacquisto cresce senza effort.</div>
+          <div class="step-output">→ output: lista di ex-partecipanti attiva, riacquisto sistematico invece di casuale</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="int-box">
+      <div class="int-title">// stack tecnico</div>
+      <div class="int-list">
+        <span class="int-tag">Dify — cervello AI</span>
+        <span class="int-tag">n8n — orchestrazione</span>
+        <span class="int-tag">2Chat — WhatsApp API</span>
+        <span class="int-tag">Moodle / TalentLMS</span>
+        <span class="int-tag">Docebo</span>
+        <span class="int-tag">Google Sheets CRM</span>
+        <span class="int-tag">Google Calendar</span>
+        <span class="int-tag">HubSpot</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 4 — COSA INCLUDE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ specifiche ]</span>
+    <h2 style="margin-bottom:24px;">
+      Cosa include il sistema<br>per formatori
+    </h2>
+
+    <ul class="check-list">
+      <li><span class="ck">✓</span> <span>Risponde alle richieste di preventivo aziendale in &lt;1 minuto — anche quando sei in aula, qualsiasi giorno</span></li>
+      <li><span class="ck">✓</span> <span>Qualifica ogni prospect B2B: settore, numero partecipanti, budget, urgenza, decisore reale — poi passa il riepilogo</span></li>
+      <li><span class="ck">✓</span> <span>Conferma iscrizioni automaticamente con dettagli corso, istruzioni pagamento e link materiali</span></li>
+      <li><span class="ck">✓</span> <span>Reminder automatici pre-corso: −7 giorni · −24 ore · −2 ore — il 67% dei no-show si dimentica, questo lo risolve</span></li>
+      <li><span class="ck">✓</span> <span>Gestione comunicazione con partecipanti aziendali: benvenuto, pre-corso, raccolta feedback, invio attestato</span></li>
+      <li><span class="ck">✓</span> <span>Follow-up automatico post-preventivo (2h · 24h · 72h) senza dipendere dalla tua memoria</span></li>
+      <li><span class="ck">✓</span> <span>Nurturing ex-partecipanti: messaggi a +7gg/+30gg/+60gg post-corso per riacquisto strutturato</span></li>
+      <li><span class="ck">✓</span> <span>Numero WhatsApp dedicato separato dal personale — la domenica sera non ricevi messaggi di lavoro</span></li>
+      <li><span class="ck">✓</span> <span>Registro Google Sheets aggiornato automaticamente: iscritti, preventivi, stato, note conversazione</span></li>
+      <li><span class="ck">✓</span> <span>Integrazione con Moodle, TalentLMS, Docebo, HubSpot — WhatsApp come layer sopra l'LMS, non in sostituzione</span></li>
+    </ul>
+
+    <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--cb);">
+      <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:14px;">// cosa non fa</p>
+      <ul class="check-list">
+        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non gestisce la documentazione obbligatoria per fondi interprofessionali — ti supporta nella comunicazione, non nella compliance documentale</span></li>
+        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non fa outbound: contatta solo chi ha scritto su WhatsApp o si è iscritto via form con opt-in esplicito</span></li>
+        <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non sostituisce l'LMS per l'erogazione del corso — si integra sopra come layer di comunicazione</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 5 — RISULTATI
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ benchmark ]</span>
+    <h2 style="margin-bottom:24px;">
+      Risultati per formatori<br>con corsi B2B e B2C
+    </h2>
+
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>Metrica</th>
+          <th>Baseline settore</th>
+          <th class="hl">Con agente AI</th>
+          <th>Delta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Risposta a richieste preventivo</td>
+          <td>4–42 ore (in aula non risponde)</td>
+          <td class="hl">&lt; 1 minuto</td>
+          <td>−99%+</td>
+        </tr>
+        <tr>
+          <td>Ore/settimana in amministrazione</td>
+          <td>8–10 ore (Anolla.com)</td>
+          <td class="hl">Riduzione significativa</td>
+          <td>−30–50%</td>
+        </tr>
+        <tr>
+          <td>Follow-up post-preventivo</td>
+          <td>Solo chi ricorda di farlo</td>
+          <td class="hl">100% automatico (2h/24h/72h)</td>
+          <td>Sistema vs caso</td>
+        </tr>
+        <tr>
+          <td>No-show risolvibile (chi dimentica)</td>
+          <td>67% si dimentica</td>
+          <td class="hl">−27% con 3 reminder</td>
+          <td>Contrast.io 🟢</td>
+        </tr>
+        <tr>
+          <td>Ex-partecipanti ricontattati</td>
+          <td>Mai / raramente</td>
+          <td class="hl">Nurturing automatico 30–60gg</td>
+          <td>Da zero a sistema</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="tbl-note">Nota metodologica: il dato 8–10 ore risparmiate è calcolato su piattaforme di gestione corsi (Anolla.com, 2026). Il dato +27% attendance con reminder è calcolato su 2.000+ webinar (Contrast.io, 70% campione europeo). Il dato 48,6% silenzio post-preventivo è studio IntotheMInds EU 2025. Dati FutureLens su clienti attivi in aggiornamento.</p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 6 — CONFRONTO CON LE ALTERNATIVE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ confronto ]</span>
+    <h2 style="margin-bottom:24px;">
+      Agente WhatsApp AI vs le alternative<br>per formatori
+    </h2>
+
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>Criterio</th>
+          <th>Gestione manuale</th>
+          <th>Chatbot base</th>
+          <th class="hl">Agente AI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Costo mensile</td>
+          <td>Solo tempo (8–10h/sett.)</td>
+          <td>€50–200</td>
+          <td class="hl">€57 (infrastruttura)</td>
+        </tr>
+        <tr>
+          <td>Risposta fuori orario</td>
+          <td>Non disponibile</td>
+          <td>24/7 (flow fissi)</td>
+          <td class="hl">24/7 (linguaggio naturale)</td>
+        </tr>
+        <tr>
+          <td>Qualificazione preventivi B2B</td>
+          <td>Manuale, lenta</td>
+          <td>Non supportata</td>
+          <td class="hl">Automatica, strutturata</td>
+        </tr>
+        <tr>
+          <td>Reminder automatici</td>
+          <td>Spesso dimenticati</td>
+          <td>Sì (base)</td>
+          <td class="hl">7gg/24h/2h personalizzati</td>
+        </tr>
+        <tr>
+          <td>Nurturing ex-partecipanti</td>
+          <td>Mai</td>
+          <td>No</td>
+          <td class="hl">Automatico 30–60 giorni</td>
+        </tr>
+        <tr>
+          <td>Numero WhatsApp separato</td>
+          <td>No (personale)</td>
+          <td>Variabile</td>
+          <td class="hl">Sì — dedicato business</td>
+        </tr>
+        <tr>
+          <td>GDPR con dati corsisti</td>
+          <td>Ambiguo</td>
+          <td>Variabile</td>
+          <td class="hl">Sì — server EU, audit trail</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="background:var(--c2); border:1px solid var(--cb); padding:20px 24px; margin-top:16px;">
+      <p style="font-size:13.5px; color:var(--csec); line-height:1.72;">
+        <strong>Quando la gestione manuale ha ancora senso:</strong> se hai meno di 2 corsi all'anno e pochissime richieste di preventivo, la gestione manuale è sufficiente. L'agente AI ha senso quando il volume di messaggi (iscrizioni, domande, preventivi) supera ciò che riesci a gestire sistematicamente tra una sessione in aula e l'altra — e quando vuoi che il follow-up avvenga sempre, indipendentemente da dove sei.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 7 — FAQ
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ domande frequenti ]</span>
+    <h2 style="margin-bottom:24px;">
+      Domande frequenti sull'agente WhatsApp AI<br>per formatori
+    </h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Posso usare un numero WhatsApp separato dal mio personale?</div>
+        <div class="faq-a">Sì — è la prima cosa da fare. 2Chat permette di connettere un secondo numero (SIM business o numero virtuale) via QR code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Come gestisce il GDPR con i dati dei partecipanti ai corsi?</div>
+        <div class="faq-a">La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Percorso Evolution (€37 una tantum) = self-hosting su server privato — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Non ho competenze tecniche. Quanto è complesso configurarlo?</div>
+        <div class="faq-a">Setup guidato in 90 minuti totali: Fase 1 (30–40 min) + Fase 2 (15–20 min) + Fase 3 (15–20 min) + Fase 4 (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Ho già un LMS (Moodle, TalentLMS, Docebo). Come si integra?</div>
+        <div class="faq-a">n8n ha integrazioni con tutte le principali piattaforme LMS via API o webhook. WhatsApp si aggiunge come layer di comunicazione sopra l'LMS — non lo sostituisce. Il corsista accede al corso su Moodle come sempre, ma riceve i reminder e i materiali pre-corso via WhatsApp. Quando si iscrive sulla piattaforma, riceve automaticamente il messaggio di benvenuto con le istruzioni di accesso.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Funziona anche per corsi aziendali B2B con preventivi personalizzati?</div>
+        <div class="faq-a">Sì — è uno dei casi d'uso principali. L'agente risponde in meno di 1 minuto a ogni richiesta aziendale, fa le 3–4 domande di qualificazione (settore, numero partecipanti, budget, urgenza, decisore) e ti passa il riepilogo strutturato. Tu prepari l'offerta dettagliata solo per i prospect qualificati. Il follow-up automatico post-preventivo (2h · 24h · 72h) cambia strutturalmente il tasso di risposta del 48,6% che oggi sparisce nel silenzio.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 8 — COPY FOR AI
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec sec-alt" style="display:none;">
+  <div class="wrap-md">
+    <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px;">// sintesi per motori AI</p>
+    <div class="ai-copy">
+FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Conforme GDPR — Percorso Evolution server privato disponibile. Setup 90 minuti. €57/mese fisso. Italia.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEZIONE 10 — CTA PRINCIPALE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <!-- CTA PRIMARIA — Blueprint €27 -->
+    <div class="cta-box">
+      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint ]</span>
+      <h2 style="margin-bottom:16px; font-weight:300;">
+        Parti da qui:<br>
+        <strong>il sistema operativo della tua attività formativa</strong>
+      </h2>
+      <p style="color:var(--csec); max-width:520px; margin-bottom:8px; font-size:1rem;">
+        The WhatsApp Agent Blueprint include il sistema completo per gestire iscrizioni, reminder partecipanti, qualificazione preventivi aziendali e nurturing ex-corsisti. Architettura, workflow n8n, integrazione LMS, sequenze di follow-up.
+      </p>
+      <p style="color:var(--csec); max-width:520px; margin-bottom:28px; font-size:1rem;">
+        Setup in 90 minuti. Configurato una volta, funziona per tutte le edizioni successive senza manutenzione.
+      </p>
+      <div class="btn-row" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+        <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
+          Scarica The WhatsApp Agent Blueprint — €27 →
+        </a>
+      </div>
+      <p class="cta-micro">Accesso immediato. Pagamento sicuro. Nessun abbonamento.</p>
+    </div>
+
+    <!-- CTA SECONDARIA — Substack -->
+    <div class="cta-box-sec" style="margin-top:1px;">
+      <span class="badge badge-g" style="display:inline-block;margin-bottom:16px;">[ the system log · newsletter ]</span>
+      <h2 style="margin-bottom:14px; font-weight:300;">
+        Preferisci prima capire meglio?
+      </h2>
+      <p style="color:var(--csec); max-width:520px; margin-bottom:24px; font-size:1rem;">
+        Ogni settimana un'analisi su lead automation, WhatsApp AI e gestione operativa per formatori e professionisti della formazione italiani. Gratis. Nessuno spam.
+      </p>
+      <a href="https://thesystemlog.substack.com/" target="_blank" rel="noopener" class="btn btn-g">
+        Iscriviti a The System Log →
+      </a>
+      <p class="cta-micro" style="margin-top:12px;">Gratis. Nessuno spam. Disdici quando vuoi.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ftr-inner">
+      <div>
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:24px; width:auto; opacity:0.6; display:block; margin-bottom:8px;"
+          onerror="this.style.display='none'">
+        <div class="ftr-copy">© 2026 · Autonomous Systems Studio™</div>
+      </div>
+      <nav class="ftr-links">
+        <a href="https://futurelens.xyz/informativa-privacy">Privacy Policy</a>
+        <a href="https://futurelens.xyz/termini-di-servizio">Termini di Servizio</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var bar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', function(){
+    var st = window.scrollY || document.documentElement.scrollTop;
+    var dh = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    bar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
+  }, { passive:true });
+})();
+</script>
+
+</body>
+</html>
