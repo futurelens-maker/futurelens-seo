@@ -1,0 +1,120 @@
+{
+  "template_type": "C",
+  "slug": "",
+  "meta_title": "",
+  "meta_description": "",
+  "twitter_description": "",
+  "canonical_url": "https://seo.futurelens.xyz/",
+  "date_modified": "",
+
+  "schema_problem": "",
+  "schema_audience": "",
+
+  "hero_badge_label": "problema · categoria c · [tipo problema]",
+  "h1_title": "",
+  "hero_subtitle": "",
+  "hero_pain_p1": "",
+
+  "nav_items": [
+    "Le cause reali del problema",
+    "Perché le soluzioni comuni non bastano",
+    "Il protocollo step-by-step",
+    "Il calcolo dell'impatto economico",
+    "Domande frequenti"
+  ],
+
+  "diffusione_h2": "Quanto È Diffuso [Problema] tra [Profilo Target]",
+  "diffusione_p1": "",
+
+  "data_box": [
+    {"value": "", "label": "", "source": ""},
+    {"value": "", "label": "", "source": ""},
+    {"value": "", "label": "", "source": ""}
+  ],
+
+  "calcolo_h3": "Calcola il Tuo Impatto",
+  "calcolo_formula": "Prendi i tuoi numeri: [formula specifica del problema]",
+  "calcolo_esempio": "Esempio: [N] lead × [%] × €[costo] = €[perdita]/mese",
+
+  "cause_h2": "Perché [Problema] Succede: Le Cause Reali",
+  "cause_intro": "",
+
+  "cause_items": [
+    {"titolo": "Causa 1 — [Nome causa operativa]", "testo": ""},
+    {"titolo": "Causa 2 — [Nome causa comportamentale del lead]", "testo": ""},
+    {"titolo": "Causa 3 — [Nome errore comune]", "testo": ""},
+    {"titolo": "Causa 4 — [Nome lacuna di processo]", "testo": ""}
+  ],
+
+  "cause_sintesi": [
+    "",
+    "",
+    "",
+    ""
+  ],
+
+  "soluzioni_h2": "Le Soluzioni Esistenti per [Problema] (e Perché Non Bastano)",
+
+  "soluzioni": [
+    {
+      "nome": "",
+      "promette": "",
+      "limite": "",
+      "per_chi": "",
+      "costo": ""
+    }
+  ],
+
+  "soluzioni_transizione": "",
+
+  "protocollo_h2": "Il Protocollo per [Risolvere il Problema]",
+  "protocollo_intro": "",
+
+  "steps": [
+    {"title": "", "body": "", "output": ""},
+    {"title": "", "body": "", "output": ""},
+    {"title": "", "body": "", "output": ""},
+    {"title": "", "body": "", "output": ""}
+  ],
+
+  "risultati_h2": "Risultati con il Protocollo Completo",
+  "risultati_main_before": "",
+  "risultati_main_after": "",
+  "risultati_main_time": "",
+
+  "risultati_table": [
+    {"metric": "", "baseline": "", "with_agent": "", "delta": ""},
+    {"metric": "", "baseline": "", "with_agent": "", "delta": ""},
+    {"metric": "", "baseline": "", "with_agent": "", "delta": ""},
+    {"metric": "", "baseline": "", "with_agent": "", "delta": ""},
+    {"metric": "", "baseline": "", "with_agent": "", "delta": ""}
+  ],
+
+  "risultati_note": "",
+
+  "roi_h3": "L'Impatto Economico per il Tuo Business",
+  "roi_scenario": "",
+  "roi_prima": "",
+  "roi_con_sistema": "",
+  "roi_delta_mensile": "",
+  "roi_delta_annuo": "",
+
+  "correlati_h2": "Problemi Correlati",
+
+  "correlati": [
+    {"cat": "problema · categoria c", "titolo": "", "url": "/", "note": "approfondisci →"},
+    {"cat": "problema · categoria c", "titolo": "", "url": "/", "note": "approfondisci →"}
+  ],
+
+  "faq_h2": "Domande Frequenti su [Problema]",
+
+  "faqs": [
+    {"q": "Q1: variante del problema", "a": ""},
+    {"q": "Q2: auto-diagnosi — come capisco la gravità nel mio caso?", "a": ""},
+    {"q": "Q3: tempo di risoluzione", "a": ""},
+    {"q": "Q4: compatibilità con soluzione già in uso", "a": ""},
+    {"q": "Q5: primo passo concreto", "a": ""}
+  ],
+
+  "ai_copy_text": ""
+}
