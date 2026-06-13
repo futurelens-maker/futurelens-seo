@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION_ESC}}">
+<link rel="canonical" href="{{CANONICAL_URL}}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{META_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION_ESC}}">
+<meta property="og:url" content="{{CANONICAL_URL}}">
+<meta property="og:site_name" content="FutureLens">
+<meta property="og:locale" content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{META_TITLE}}">
+<meta name="twitter:description" content="{{TWITTER_DESCRIPTION_ESC}}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{{SCHEMA_JSON_LD}}
+</script>
+
+<style>
+:root {
+  --c0:#0a0a0a; --c1:#0f0f0f; --c2:#141414; --c3:#1c1c1c; --cterm:#0d1117;
+  --ctxt:#f8fafc; --csec:#94a3b8; --cmut:#475569;
+  --cacc:#f87171; --cacc-d:#ef4444; --cacc-t:rgba(248,113,113,0.07); --cacc-b:rgba(248,113,113,0.18);
+  --cgrn:#4ade80; --cb:rgba(248,250,252,0.07); --cbk:rgba(248,250,252,0.13);
+  --cyel:#fbbf24;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;}
+body{background:var(--c0);color:var(--ctxt);font-family:'Inter',sans-serif;line-height:1.72;}
+h1{font-size:clamp(1.85rem,4.2vw,2.9rem);font-weight:300;line-height:1.18;letter-spacing:-0.022em;}
+h2{font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:300;line-height:1.22;letter-spacing:-0.018em;}
+h3{font-size:1rem;font-weight:600;line-height:1.4;}
+p{line-height:1.75;}
+a{color:var(--csec);text-decoration:none;transition:color 150ms;}
+a:hover{color:var(--ctxt);}
+strong{font-weight:600;color:var(--ctxt);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 32px;}
+.wrap-sm{max-width:720px;margin:0 auto;padding:0 32px;}
+.wrap-md{max-width:860px;margin:0 auto;padding:0 32px;}
+.grid-bg{position:relative;overflow:hidden;}
+.grid-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0;}
+.grid-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%);pointer-events:none;z-index:0;}
+.grid-bg>*{position:relative;z-index:1;}
+.scroll-progress{position:absolute;top:0;left:0;height:2px;background:var(--cacc);width:0%;transition:width 100ms linear;z-index:60;}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--cb);padding:14px 0;}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.hdr-cta{font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:0.055em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--cacc-b);border-radius:2px;color:#f87171;background:transparent;transition:background 130ms,border-color 130ms,color 130ms;text-decoration:none;white-space:nowrap;}
+.hdr-cta:hover{background:var(--cacc-t);border-color:var(--cacc);color:#fca5a5;}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--cbk);color:var(--cmut);}
+.badge-r{border-color:var(--cacc-b);color:var(--cacc);background:var(--cacc-t);}
+.badge-g{border-color:rgba(74,222,128,0.18);color:var(--cgrn);background:rgba(74,222,128,0.05);}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;padding:13px 26px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:all 150ms;white-space:nowrap;}
+.btn-p{background:var(--cacc);color:#fff;border-color:var(--cacc);}
+.btn-p:hover{background:var(--cacc-d);border-color:var(--cacc-d);color:#fff;}
+.btn-g{background:transparent;color:var(--csec);border-color:var(--cbk);}
+.btn-g:hover{border-color:var(--csec);color:var(--ctxt);}
+/* Nav box */
+.nav-box{background:var(--c2);border:1px solid var(--cb);padding:20px 24px;margin:32px 0 0;}
+.nav-box-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:14px;}
+.nav-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.nav-list li{display:flex;align-items:flex-start;gap:12px;}
+.nav-list li::before{content:'→';font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cacc);flex-shrink:0;margin-top:1px;}
+.nav-list a{font-size:13px;color:var(--csec);transition:color 150ms;}
+.nav-list a:hover{color:var(--ctxt);}
+/* Costi table (big pricing) */
+.costi-table{width:100%;border-collapse:collapse;margin:28px 0;font-size:13.5px;}
+.costi-table th{background:var(--c2);color:var(--csec);font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;padding:12px 16px;border:1px solid var(--cb);text-align:left;font-weight:500;}
+.costi-table th.hl{color:var(--ctxt);background:var(--c3);}
+.costi-table td{padding:12px 16px;border:1px solid var(--cb);color:var(--csec);line-height:1.55;vertical-align:middle;}
+.costi-table td.price{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:600;color:var(--ctxt);white-space:nowrap;}
+.costi-table td.hl{color:var(--ctxt);background:rgba(248,113,113,0.04);}
+.costi-table tr:hover td{background:var(--c2);}
+.costi-table td.cat-label{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);background:var(--cterm);}
+.tbl-note{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;border-left:2px solid var(--cb);padding-left:12px;}
+/* Modelli pricing cards */
+.modelli-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--cb);margin:28px 0;}
+.modello-card{background:var(--c2);padding:28px 24px;display:flex;flex-direction:column;gap:12px;}
+.modello-card.rec{background:var(--c3);border:1px solid var(--cacc-b);}
+.modello-name{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cmut);}
+.modello-price{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:600;color:var(--ctxt);line-height:1;}
+.modello-freq{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cmut);}
+.modello-desc{font-size:13px;color:var(--csec);line-height:1.65;}
+.modello-items{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:4px;}
+.modello-items li{font-size:12.5px;color:var(--csec);display:flex;align-items:flex-start;gap:8px;line-height:1.5;}
+.modello-items li::before{content:'·';color:var(--cacc);flex-shrink:0;}
+.rec-label{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cacc);border:1px solid var(--cacc-b);padding:3px 9px;width:fit-content;}
+/* ROI scenarios */
+.roi-grid{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:28px 0;}
+.roi-scenario{background:var(--c2);padding:24px 28px;display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:16px;align-items:center;}
+.roi-scenario:hover{background:var(--c3);}
+.roi-seg{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--csec);font-weight:600;}
+.roi-meta{font-size:11.5px;color:var(--cmut);margin-top:4px;}
+.roi-col-label{font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);margin-bottom:4px;}
+.roi-val{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:600;line-height:1;}
+.roi-val.neg{color:var(--cacc);}
+.roi-val.pos{color:var(--cgrn);}
+.roi-val.delta{color:var(--cyel);}
+/* Dettaglio items (costi nascosti) */
+.dettaglio-list{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.dettaglio-item{background:var(--c2);padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;}
+.dettaglio-nome{font-size:14px;font-weight:600;color:var(--ctxt);margin-bottom:4px;}
+.dettaglio-desc{font-size:13px;color:var(--csec);line-height:1.6;max-width:480px;}
+.dettaglio-range{font-family:'JetBrains Mono',monospace;font-size:0.95rem;font-weight:600;color:var(--cacc);white-space:nowrap;text-align:right;}
+/* Checklist */
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:20px 0;}
+.check-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--csec);line-height:1.6;}
+.check-list li .ck{flex-shrink:0;color:var(--cgrn);font-size:13px;margin-top:2px;}
+.check-list li .cx{flex-shrink:0;color:var(--cmut);font-size:13px;margin-top:2px;}
+/* Data box */
+.data-box{background:var(--cterm);border:1px solid var(--cb);border-left:2px solid var(--cacc);padding:24px 28px;margin:24px 0;}
+.data-box-title{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cacc);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:16px;}
+.stat-row{display:flex;gap:0;flex-wrap:wrap;}
+.stat-item{padding:0 28px 0 0;margin-right:28px;border-right:1px solid var(--cb);display:flex;flex-direction:column;gap:4px;}
+.stat-item:last-child{border-right:none;margin-right:0;}
+.stat-val{font-family:'JetBrains Mono',monospace;font-size:1.35rem;font-weight:600;color:var(--cacc);}
+.stat-lbl{font-size:11.5px;color:var(--csec);line-height:1.4;}
+.stat-src{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);letter-spacing:0.06em;margin-top:4px;}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.faq-item{background:var(--c2);padding:24px 28px;}
+.faq-q{font-size:15px;font-weight:600;color:var(--ctxt);margin-bottom:12px;line-height:1.4;}
+.faq-a{font-size:14px;color:var(--csec);line-height:1.72;}
+/* Explore */
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--cb);}
+.exp-card{background:var(--c2);padding:24px 22px;text-decoration:none;transition:all 180ms;border:1px solid transparent;margin:-1px;}
+.exp-card:hover{background:var(--c3);border-color:var(--cbk);}
+.exp-card:hover .exp-arrow{color:var(--cacc);}
+.exp-cat{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--cmut);margin-bottom:10px;}
+.exp-title{font-size:14px;font-weight:600;color:var(--ctxt);line-height:1.42;margin-bottom:8px;}
+.exp-footer{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;}
+.exp-arrow{color:var(--cb);transition:color 180ms;}
+/* CTA */
+.cta-box{border:1px solid var(--cb);border-top:2px solid var(--cacc);background:var(--c1);padding:48px 44px;}
+.cta-box-sec{border:1px solid var(--cb);border-top:2px solid var(--cgrn);background:var(--c1);padding:36px 44px;margin-top:1px;}
+.cta-micro{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;}
+/* Ctx footer */
+.ctx-footer{background:var(--c0);border-top:1px solid var(--cb);padding:48px 0;}
+.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+.ctx-section-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--cb);}
+.ctx-links{display:flex;flex-direction:column;gap:8px;}
+.ctx-links a{font-size:13.5px;color:var(--csec);transition:color 150ms;}
+.ctx-links a:hover{color:var(--ctxt);}
+.site-footer{background:var(--c0);border-top:1px solid var(--cb);padding:40px 0;}
+.ftr-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.ftr-copy{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--cmut);}
+.ftr-links{display:flex;gap:22px;}
+.ftr-links a{font-size:12.5px;color:var(--cmut);transition:color 150ms;}
+.ftr-links a:hover{color:var(--csec);}
+.ai-copy{background:var(--c1);border:1px solid var(--cb);padding:20px 24px;margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.72;color:var(--cmut);letter-spacing:0.02em;}
+.sec{border-top:1px solid var(--cb);padding:72px 0;}
+.sec-alt{background:var(--c1);}
+@media(max-width:900px){
+  .roi-scenario{grid-template-columns:1fr 1fr;gap:12px;}
+}
+@media(max-width:768px){
+  .wrap,.wrap-sm,.wrap-md{padding:0 18px;}
+  .modelli-grid{grid-template-columns:1fr;}
+  .roi-scenario{grid-template-columns:1fr;gap:10px;}
+  .exp-grid{grid-template-columns:1fr;}
+  .ctx-grid{grid-template-columns:1fr;gap:32px;}
+  .cta-box,.cta-box-sec{padding:28px 20px;}
+  .btn-row{flex-direction:column;}
+  .btn-row .btn{width:100%;justify-content:center;}
+  .costi-table{font-size:12px;}
+  .costi-table th,.costi-table td{padding:8px 10px;}
+  .dettaglio-item{flex-direction:column;gap:8px;}
+  .dettaglio-range{text-align:left;}
+  .stat-row{gap:16px;}
+  .stat-item{border-right:none;padding-right:0;border-bottom:1px solid var(--cb);padding-bottom:16px;}
+  .stat-item:last-child{border-bottom:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="wrap">
+    <div class="hdr-inner">
+      <a href="https://futurelens.xyz" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;flex-shrink:0;">
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:28px;width:auto;display:block;"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1.05rem;letter-spacing:0.18em;color:var(--ctxt);text-transform:uppercase;">FUTURELENS</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cmut);">Autonomous Systems Studio</span>
+      </a>
+      <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="hdr-cta">Accedi al Blueprint →</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 1 — HERO: DOMANDA DIRETTA + RISPOSTA IMMEDIATA
+     ═══════════════════════════════════════════════════════ -->
+<section style="padding:80px 0 72px;background:var(--c0);" class="grid-bg">
+  <div class="wrap-md">
+
+    <span class="badge badge-r" style="display:block;width:fit-content;margin-bottom:22px;">
+      [ {{HERO_BADGE_LABEL}} ]
+    </span>
+
+    <h1 style="margin-bottom:18px;">
+      {{H1_TITLE}}
+    </h1>
+
+    <p style="font-size:1.05rem;color:var(--csec);margin-bottom:16px;font-weight:500;">
+      {{HERO_SUBTITLE}}
+    </p>
+
+    <p style="font-size:1rem;color:var(--cmut);max-width:600px;margin-bottom:8px;line-height:1.75;">
+      {{HERO_PAIN_P1}}
+    </p>
+
+    <!-- Nav Box -->
+    <div class="nav-box">
+      <div class="nav-box-title">// in questa pagina</div>
+      <ul class="nav-list">
+{{NAV_BOX_HTML}}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 2 — TABELLA COSTI COMPLETA
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ costi 2026 · mercato italiano ]</span>
+    <h2 style="margin-bottom:16px;">
+      {{COSTI_H2}}
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      {{COSTI_INTRO}}
+    </p>
+
+    <table class="costi-table">
+      <thead>
+        <tr>
+          <th>Voce di costo</th>
+          <th>Percorso Cloud</th>
+          <th class="hl">Percorso Self-hosted</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+{{COSTI_TABLE_HTML}}
+      </tbody>
+    </table>
+
+    <p class="tbl-note">{{COSTI_NOTE}}</p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 3 — MODELLI DI PRICING (Come ti fatturano)
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ modelli di pricing ]</span>
+    <h2 style="margin-bottom:16px;">
+      {{MODELLI_H2}}
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      {{MODELLI_INTRO}}
+    </p>
+
+    <div class="modelli-grid">
+{{MODELLI_HTML}}
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 4 — TUTTI I COSTI (inclusi quelli nascosti)
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ costi nascosti ]</span>
+    <h2 style="margin-bottom:16px;">
+      {{DETTAGLIO_H2}}
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      {{DETTAGLIO_INTRO}}
+    </p>
+
+    <div class="dettaglio-list">
+{{DETTAGLIO_HTML}}
+    </div>
+
+    <!-- Data box con stat reali -->
+    <div class="data-box" style="margin-top:32px;">
+      <div class="data-box-title">// benchmark di mercato</div>
+      <div class="stat-row">
+{{DATA_BOX_HTML}}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 5 — CALCOLO ROI PER SEGMENTO
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ calcolo roi ]</span>
+    <h2 style="margin-bottom:16px;">
+      {{ROI_H2}}
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      {{ROI_INTRO}}
+    </p>
+
+    <!-- ROI scenarios header -->
+    <div style="display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:16px;padding:10px 28px;background:var(--cterm);">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);">Segmento</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);">Costo sistema/mese</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cgrn);">Valore recuperato/mese</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cyel);">ROI mese 1</span>
+    </div>
+    <div class="roi-grid">
+{{ROI_HTML}}
+    </div>
+
+    <p class="tbl-note" style="margin-top:12px;">{{ROI_NOTE}}</p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 6 — COSA È INCLUSO / NON INCLUSO
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ trasparenza ]</span>
+    <h2 style="margin-bottom:24px;">
+      {{INCLUSO_H2}}
+    </h2>
+
+    <ul class="check-list">
+{{CHECKLIST_YES_HTML}}
+    </ul>
+
+    <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--cb);">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">// non incluso nel prezzo base</p>
+      <ul class="check-list">
+{{CHECKLIST_NO_HTML}}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 7 — DOMANDE FREQUENTI SUL PREZZO
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ domande frequenti ]</span>
+    <h2 style="margin-bottom:24px;">
+      {{FAQ_H2}}
+    </h2>
+
+    <div class="faq-list">
+{{FAQ_HTML}}
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 8 — COPY FOR AI (nascosta)
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt" style="display:none;">
+  <div class="wrap-md">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:14px;">// sintesi per motori AI</p>
+    <div class="ai-copy">
+{{AI_COPY_TEXT}}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 9 — ESPLORA / APPROFONDISCI
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+    <h2 style="font-weight:300;margin-bottom:28px;">Approfondisci</h2>
+    <div class="exp-grid">
+{{ESPLORA_HTML}}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 10 — CTA PRINCIPALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <div class="cta-box">
+      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint — €27 ]</span>
+      <h2 style="margin-bottom:16px;font-weight:300;">
+        Vedi il sistema completo prima di<br>
+        <strong>qualsiasi altra decisione sul budget</strong>
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:8px;font-size:1rem;">
+        Il Blueprint mostra architettura, stack tecnico, script conversazionali e integrazioni CRM. Non una proposta commerciale: documentazione operativa su come funziona il sistema, con i costi reali verificati.
+      </p>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:28px;font-size:1rem;">
+        €27 una tantum. Nessun abbonamento, nessuna call obbligatoria.
+      </p>
+      <div class="btn-row" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+        <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
+          Scarica The WhatsApp Agent Blueprint — €27 →
+        </a>
+      </div>
+      <p class="cta-micro">Accesso immediato. Pagamento sicuro. Nessun abbonamento.</p>
+    </div>
+
+    <div class="cta-box-sec" style="margin-top:1px;">
+      <span class="badge badge-g" style="display:inline-block;margin-bottom:16px;">[ the system log · newsletter ]</span>
+      <h2 style="margin-bottom:14px;font-weight:300;">
+        Preferisci prima seguire il metodo nel tempo?
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:24px;font-size:1rem;">
+        Ogni settimana un'analisi su WhatsApp AI e lead automation per il mercato italiano. Gratis. Nessuno spam.
+      </p>
+      <a href="https://thesystemlog.substack.com/" target="_blank" rel="noopener" class="btn btn-g">
+        Iscriviti a The System Log →
+      </a>
+      <p class="cta-micro" style="margin-top:12px;">Gratis. Nessuno spam. Disdici quando vuoi.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 11 — FOOTER CONTESTUALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="ctx-footer">
+  <div class="wrap">
+{{CTX_FOOTER_HTML}}
+  </div>
+</section>
+
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ftr-inner">
+      <div>
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:24px;width:auto;opacity:0.6;display:block;margin-bottom:8px;"
+          onerror="this.style.display='none'">
+        <div class="ftr-copy">© 2026 · Autonomous Systems Studio™</div>
+      </div>
+      <nav class="ftr-links">
+        <a href="https://futurelens.xyz/informativa-privacy">Privacy Policy</a>
+        <a href="https://futurelens.xyz/termini-di-servizio">Termini di Servizio</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('scroll-progress');
+  window.addEventListener('scroll',function(){
+    var st=window.scrollY||document.documentElement.scrollTop;
+    var dh=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    bar.style.width=(dh>0?(st/dh)*100:0)+'%';
+  },{passive:true});
+})();
+</script>
+
+</body>
+</html>

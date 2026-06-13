@@ -234,6 +234,134 @@ def render_roi_html(c):
     )
 
 
+# ── Cat. D render helpers ────────────────────────────────────────────────────
+
+def render_hero_specs(specs):
+    parts = []
+    for spec in specs:
+        parts.append(
+            f'      <div class="spec-item">\n'
+            f'        <div class="spec-val">{spec["value"]}</div>\n'
+            f'        <div class="spec-lbl">{spec["label"]}</div>\n'
+            f'      </div>'
+        )
+    return '\n'.join(parts)
+
+
+def render_tech_box_items(items):
+    parts = []
+    for item in items:
+        parts.append(f'        <span class="int-tag">{item}</span>')
+    return '\n'.join(parts)
+
+
+# ── Cat. G render helpers ────────────────────────────────────────────────────
+
+def render_data_box_g(stats):
+    parts = []
+    for stat in stats:
+        parts.append(
+            f'        <div class="stat-item">\n'
+            f'          <div class="stat-val">{stat["value"]}</div>\n'
+            f'          <div>\n'
+            f'            <div class="stat-lbl">{stat["label"]}</div>\n'
+            f'            <div class="stat-src">{stat["source"]}</div>\n'
+            f'          </div>\n'
+            f'        </div>'
+        )
+    return '\n'.join(parts)
+
+
+def render_costi_table(rows):
+    parts = []
+    for row in rows:
+        cat = row.get('category_label')
+        if cat:
+            parts.append(
+                f'        <tr>\n'
+                f'          <td colspan="4" class="cat-label">{cat}</td>\n'
+                f'        </tr>'
+            )
+        else:
+            parts.append(
+                f'        <tr>\n'
+                f'          <td>{row["voce"]}</td>\n'
+                f'          <td class="price">{row["cloud"]}</td>\n'
+                f'          <td class="price hl">{row["selfhosted"]}</td>\n'
+                f'          <td>{row["note"]}</td>\n'
+                f'        </tr>'
+            )
+    return '\n'.join(parts)
+
+
+def render_modelli_pricing(modelli):
+    parts = []
+    for m in modelli:
+        rec = m.get('recommended', False)
+        card_class = 'modello-card rec' if rec else 'modello-card'
+        rec_label = '      <div class="rec-label">consigliato</div>\n' if rec else ''
+        items_html = '\n'.join(
+            f'          <li>{item}</li>'
+            for item in m.get('items', [])
+        )
+        parts.append(
+            f'      <div class="{card_class}">\n'
+            f'        <div class="modello-name">{m["nome"]}</div>\n'
+            f'{rec_label}'
+            f'        <div>\n'
+            f'          <div class="modello-price">{m["price"]}</div>\n'
+            f'          <div class="modello-freq">{m["freq"]}</div>\n'
+            f'        </div>\n'
+            f'        <div class="modello-desc">{m["desc"]}</div>\n'
+            f'        <ul class="modello-items">\n'
+            f'{items_html}\n'
+            f'        </ul>\n'
+            f'      </div>'
+        )
+    return '\n'.join(parts)
+
+
+def render_roi_scenarios(scenarios):
+    parts = []
+    for s in scenarios:
+        parts.append(
+            f'      <div class="roi-scenario">\n'
+            f'        <div>\n'
+            f'          <div class="roi-seg">{s["segmento"]}</div>\n'
+            f'          <div class="roi-meta">{s["meta"]}</div>\n'
+            f'        </div>\n'
+            f'        <div>\n'
+            f'          <div class="roi-col-label">Costo sistema/mese</div>\n'
+            f'          <div class="roi-val neg">{s["costo"]}</div>\n'
+            f'        </div>\n'
+            f'        <div>\n'
+            f'          <div class="roi-col-label">Valore recuperato/mese</div>\n'
+            f'          <div class="roi-val pos">{s["valore"]}</div>\n'
+            f'        </div>\n'
+            f'        <div>\n'
+            f'          <div class="roi-col-label">ROI mese 1</div>\n'
+            f'          <div class="roi-val delta">{s["roi"]}</div>\n'
+            f'        </div>\n'
+            f'      </div>'
+        )
+    return '\n'.join(parts)
+
+
+def render_dettaglio_items(items):
+    parts = []
+    for item in items:
+        parts.append(
+            f'      <div class="dettaglio-item">\n'
+            f'        <div>\n'
+            f'          <div class="dettaglio-nome">{item["nome"]}</div>\n'
+            f'          <div class="dettaglio-desc">{item["desc"]}</div>\n'
+            f'        </div>\n'
+            f'        <div class="dettaglio-range">{item["range"]}</div>\n'
+            f'      </div>'
+        )
+    return '\n'.join(parts)
+
+
 def render_correlati(correlati):
     parts = []
     for item in correlati:
@@ -334,6 +462,36 @@ def render_schema(c, page_title, date_modified):
             ]
         }
         schema = [webpage, howto, faqpage]
+    elif template_type == 'G':
+        service = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": page_title,
+            "description": c['schema_service_desc'],
+            "provider": {
+                "@type": "Organization",
+                "name": "FutureLens",
+                "url": "https://futurelens.xyz"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+            },
+            "serviceType": "WhatsApp AI Automation",
+            "audience": {
+                "@type": "Audience",
+                "audienceType": c['schema_audience']
+            },
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "description": c.get('schema_offer_desc', '')
+                }
+            }
+        }
+        schema = [webpage, service, faqpage]
     else:
         service = {
             "@context": "https://schema.org",
@@ -372,7 +530,8 @@ def build_page(slug):
         c = json.load(f)
 
     template_type = c.get('template_type', 'A')
-    template_file = 'template-c.html' if template_type == 'C' else 'template-a.html'
+    template_map = {'C': 'template-c.html', 'D': 'template-d.html', 'G': 'template-g.html'}
+    template_file = template_map.get(template_type, 'template-a.html')
 
     if not os.path.exists(template_file):
         print(f'ERROR: {template_file} not found — run from project root')
@@ -385,7 +544,77 @@ def build_page(slug):
     date_modified = c.get('date_modified') or date.today().isoformat()
     page_title = re.sub(r'<br\s*/?>', ' ', c['h1_title']).strip()
 
-    if template_type == 'C':
+    if template_type == 'D':
+        replacements = {
+            '{{META_TITLE}}':             c['meta_title'],
+            '{{META_DESCRIPTION_ESC}}':   html.escape(c['meta_description']),
+            '{{TWITTER_DESCRIPTION_ESC}}': html.escape(c['twitter_description']),
+            '{{CANONICAL_URL}}':          c['canonical_url'],
+            '{{SCHEMA_JSON_LD}}':         render_schema(c, page_title, date_modified),
+            '{{HERO_BADGE_LABEL}}':       c['hero_badge_label'],
+            '{{H1_TITLE}}':               c['h1_title'],
+            '{{HERO_SUBTITLE}}':          c['hero_subtitle'],
+            '{{HERO_PAIN_P1}}':           c['hero_pain_p1'],
+            '{{HERO_SPECS_HTML}}':        render_hero_specs(c['hero_specs']),
+            '{{COS_E_H2}}':               c['cos_e_h2'],
+            '{{COS_E_P1}}':               c['cos_e_p1'],
+            '{{COS_E_P2}}':               c['cos_e_p2'],
+            '{{COS_E_P3}}':               c['cos_e_p3'],
+            '{{TECH_BOX_HTML}}':          render_tech_box_items(c['tech_box_items']),
+            '{{COSA_FA_H2}}':             c['cosa_fa_h2'],
+            '{{CHECKLIST_YES_HTML}}':     render_checklist(c['checklist_yes'], 'yes'),
+            '{{CHECKLIST_NO_HTML}}':      render_checklist(c['checklist_no'], 'no'),
+            '{{IMPL_H2}}':                c['impl_h2'],
+            '{{IMPL_INTRO}}':             c['impl_intro'],
+            '{{STEPS_HTML}}':             render_steps(c['steps']),
+            '{{PERF_H2}}':                c['perf_h2'],
+            '{{RISULTATI_TABLE_HTML}}':   render_results_table(c['risultati_table']),
+            '{{RISULTATI_NOTE}}':         c['risultati_note'],
+            '{{CASI_DUSO_H2}}':           c['casi_duso_h2'],
+            '{{CASI_DUSO_HTML}}':         render_correlati(c['casi_duso']),
+            '{{FAQ_H2}}':                 c['faq_h2'],
+            '{{FAQ_HTML}}':               render_faq_html(c['faqs']),
+            '{{AI_COPY_TEXT}}':           c['ai_copy_text'],
+            '{{ESPLORA_HTML}}':           render_correlati(c.get('esplora', [])),
+            '{{CTX_FOOTER_HTML}}':        render_ctx_footer(c),
+        }
+    elif template_type == 'G':
+        replacements = {
+            '{{META_TITLE}}':             c['meta_title'],
+            '{{META_DESCRIPTION_ESC}}':   html.escape(c['meta_description']),
+            '{{TWITTER_DESCRIPTION_ESC}}': html.escape(c['twitter_description']),
+            '{{CANONICAL_URL}}':          c['canonical_url'],
+            '{{SCHEMA_JSON_LD}}':         render_schema(c, page_title, date_modified),
+            '{{HERO_BADGE_LABEL}}':       c['hero_badge_label'],
+            '{{H1_TITLE}}':               c['h1_title'],
+            '{{HERO_SUBTITLE}}':          c['hero_subtitle'],
+            '{{HERO_PAIN_P1}}':           c['hero_pain_p1'],
+            '{{NAV_BOX_HTML}}':           render_nav_box(c['nav_items']),
+            '{{COSTI_H2}}':               c['costi_h2'],
+            '{{COSTI_INTRO}}':            c['costi_intro'],
+            '{{COSTI_TABLE_HTML}}':       render_costi_table(c['costi_table']),
+            '{{COSTI_NOTE}}':             c['costi_note'],
+            '{{MODELLI_H2}}':             c['modelli_h2'],
+            '{{MODELLI_INTRO}}':          c['modelli_intro'],
+            '{{MODELLI_HTML}}':           render_modelli_pricing(c['modelli']),
+            '{{DETTAGLIO_H2}}':           c['dettaglio_h2'],
+            '{{DETTAGLIO_INTRO}}':        c['dettaglio_intro'],
+            '{{DETTAGLIO_HTML}}':         render_dettaglio_items(c['dettaglio_items']),
+            '{{DATA_BOX_HTML}}':          render_data_box_g(c['data_box']),
+            '{{ROI_H2}}':                 c['roi_h2'],
+            '{{ROI_INTRO}}':              c['roi_intro'],
+            '{{ROI_HTML}}':               render_roi_scenarios(c['roi_scenarios']),
+            '{{ROI_NOTE}}':               c['roi_note'],
+            '{{INCLUSO_H2}}':             c['incluso_h2'],
+            '{{CHECKLIST_YES_HTML}}':     render_checklist(c['checklist_yes'], 'yes'),
+            '{{CHECKLIST_NO_HTML}}':      render_checklist(c['checklist_no'], 'no'),
+            '{{FAQ_H2}}':                 c['faq_h2'],
+            '{{FAQ_HTML}}':               render_faq_html(c['faqs']),
+            '{{AI_COPY_TEXT}}':           c['ai_copy_text'],
+            '{{ESPLORA_HTML}}':           render_correlati(c.get('esplora', [])),
+            '{{CTX_FOOTER_HTML}}':        render_ctx_footer(c),
+        }
+    elif template_type == 'C':
         replacements = {
             '{{META_TITLE}}':             c['meta_title'],
             '{{META_DESCRIPTION_ESC}}':   html.escape(c['meta_description']),

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cos'è un Agente AI WhatsApp e Come Funziona | FutureLens</title>
+<meta name="description" content="Agente AI WhatsApp: definizione tecnica, stack (Dify + n8n + 2Chat), benchmark performance, GDPR compliance. Tutto quello che serve sapere prima di implementarlo.">
+<link rel="canonical" href="https://seo.futurelens.xyz/agente-ai-whatsapp">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cos'è un Agente AI WhatsApp e Come Funziona | FutureLens">
+<meta property="og:description" content="Agente AI WhatsApp: definizione tecnica, stack (Dify + n8n + 2Chat), benchmark performance, GDPR compliance. Tutto quello che serve sapere prima di implementarlo.">
+<meta property="og:url" content="https://seo.futurelens.xyz/agente-ai-whatsapp">
+<meta property="og:site_name" content="FutureLens">
+<meta property="og:locale" content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cos'è un Agente AI WhatsApp e Come Funziona | FutureLens">
+<meta name="twitter:description" content="Agente AI WhatsApp: come funziona davvero, stack tecnico, benchmark e GDPR. Senza hype.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cos'è un Agente AI WhatsApp e Come Funziona | FutureLens",
+    "description": "Agente AI WhatsApp: definizione tecnica, stack (Dify + n8n + 2Chat), benchmark performance, GDPR compliance. Tutto quello che serve sapere prima di implementarlo.",
+    "url": "https://seo.futurelens.xyz/agente-ai-whatsapp",
+    "dateModified": "2026-06-13",
+    "inLanguage": "it-IT",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Cos'è un Agente AI WhatsApp e Come Funziona",
+    "description": "Sistema di automazione conversazionale su WhatsApp con AI per qualifica lead, appointment setting e supporto — stack Dify + n8n + 2Chat per PMI italiane.",
+    "provider": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italia"
+    },
+    "serviceType": "WhatsApp AI Automation",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "PMI, Coach, Formatori, Hotel Manager"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra un chatbot WhatsApp e un agente AI WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un chatbot segue flussi predefiniti e risponde a parole chiave: \"costo?\" → listino prezzi. Si blocca con domande non previste. Un agente AI comprende il linguaggio naturale in qualsiasi formulazione, mantiene il contesto su più messaggi, prende decisioni autonome e può chiamare strumenti esterni come il CRM o il calendario. Funziona anche con domande che nessuno ha previsto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Serve l'API ufficiale WhatsApp per avere un agente AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — soluzioni come 2Chat o Evolution API permettono di connettere l'AI senza passare dall'API ufficiale Meta, con setup in 30-40 minuti. Tuttavia, per compliance GDPR piena, template pre-approvati e volumi enterprise (oltre 200-300 conversazioni/giorno), l'API ufficiale tramite BSP certificato rimane la scelta raccomandata. Il percorso non ufficiale ha rischio di ban account con volumi alti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto costa in media uno stack agente AI WhatsApp al mese?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con architettura no-code self-managed (Dify + n8n + 2Chat): €65-90/mese di stack fisso. Con self-hosted completo (VPS + Evolution API): €25-60/mese. Costi variabili aggiuntivi: API LLM ~€0.01-0.10 per conversazione (dipende dal volume e dal modello). I SaaS all-in-one (Wati, Respond.io) costano €49-500+/mese con vendor lock-in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il GDPR e l'EU AI Act si applicano a un agente AI WhatsApp in Italia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, integralmente. Il GDPR si applica a qualsiasi trattamento di dati di residenti UE. Dal 2025, l'EU AI Act Art. 50 impone che qualsiasi sistema AI interagente con persone si identifichi come tale all'inizio della conversazione — obbligo legale, non facoltativo. In più, la Legge italiana n. 132/2025 (in vigore dal 26 marzo 2025) rinvia al GDPR per i profili di protezione dei dati nell'AI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In quanto tempo si può avere un agente AI WhatsApp operativo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con architettura no-code self-managed (Dify + n8n + 2Chat): 90 minuti di setup base, stesso giorno. Con SaaS all-in-one (Wati, ManyChat): 30-60 minuti per setup base. Con self-hosted completo (Evolution API + VPS): 3-5 ore incluso provisioning. La configurazione avanzata (RAG su knowledge base, integrazioni CRM multiple, sistema di qualifica su misura) richiede 1-3 giorni."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quali problemi tecnici sono più comuni nelle prime implementazioni?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I più frequenti: (1) loop di messaggi — il sistema risponde ai propri messaggi perché manca il filtro fromMe=true nel webhook; (2) perdita del contesto conversazionale — il conversation_id non viene persistito tra i messaggi; (3) hallucination su dati specifici (prezzi, date) — si risolve con RAG su knowledge base o tool calling in tempo reale; (4) disconnessione del gateway non ufficiale — si risolve con VPS con almeno 2GB RAM e Docker restart policy automatica."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<style>
+:root {
+  --c0:#0a0a0a; --c1:#0f0f0f; --c2:#141414; --c3:#1c1c1c; --cterm:#0d1117;
+  --ctxt:#f8fafc; --csec:#94a3b8; --cmut:#475569;
+  --cacc:#f87171; --cacc-d:#ef4444; --cacc-t:rgba(248,113,113,0.07); --cacc-b:rgba(248,113,113,0.18);
+  --cgrn:#4ade80; --cb:rgba(248,250,252,0.07); --cbk:rgba(248,250,252,0.13);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;}
+body{background:var(--c0);color:var(--ctxt);font-family:'Inter',sans-serif;line-height:1.72;}
+h1{font-size:clamp(1.85rem,4.2vw,2.9rem);font-weight:300;line-height:1.18;letter-spacing:-0.022em;}
+h2{font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:300;line-height:1.22;letter-spacing:-0.018em;}
+h3{font-size:1rem;font-weight:600;line-height:1.4;}
+p{line-height:1.75;}
+a{color:var(--csec);text-decoration:none;transition:color 150ms;}
+a:hover{color:var(--ctxt);}
+strong{font-weight:600;color:var(--ctxt);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 32px;}
+.wrap-sm{max-width:720px;margin:0 auto;padding:0 32px;}
+.wrap-md{max-width:860px;margin:0 auto;padding:0 32px;}
+.grid-bg{position:relative;overflow:hidden;}
+.grid-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0;}
+.grid-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%);pointer-events:none;z-index:0;}
+.grid-bg>*{position:relative;z-index:1;}
+.scroll-progress{position:absolute;top:0;left:0;height:2px;background:var(--cacc);width:0%;transition:width 100ms linear;z-index:60;}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--cb);padding:14px 0;}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.hdr-cta{font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:0.055em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--cacc-b);border-radius:2px;color:#f87171;background:transparent;transition:background 130ms,border-color 130ms,color 130ms;text-decoration:none;white-space:nowrap;}
+.hdr-cta:hover{background:var(--cacc-t);border-color:var(--cacc);color:#fca5a5;}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--cbk);color:var(--cmut);}
+.badge-r{border-color:var(--cacc-b);color:var(--cacc);background:var(--cacc-t);}
+.badge-g{border-color:rgba(74,222,128,0.18);color:var(--cgrn);background:rgba(74,222,128,0.05);}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;padding:13px 26px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:all 150ms;white-space:nowrap;}
+.btn-p{background:var(--cacc);color:#fff;border-color:var(--cacc);}
+.btn-p:hover{background:var(--cacc-d);border-color:var(--cacc-d);color:#fff;}
+.btn-g{background:transparent;color:var(--csec);border-color:var(--cbk);}
+.btn-g:hover{border-color:var(--csec);color:var(--ctxt);}
+/* Spec row (hero specs) */
+.spec-row{display:flex;gap:0;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid var(--cb);}
+.spec-item{padding:0 24px 0 0;margin-right:24px;border-right:1px solid var(--cb);display:flex;flex-direction:column;gap:4px;}
+.spec-item:last-child{border-right:none;margin-right:0;}
+.spec-val{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:600;letter-spacing:-0.02em;color:var(--cacc);line-height:1;}
+.spec-lbl{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);}
+/* Data box */
+.data-box{background:var(--cterm);border:1px solid var(--cb);border-left:2px solid var(--cacc);padding:24px 28px;margin:24px 0;}
+.data-box-title{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cacc);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:16px;}
+/* Steps */
+.steps{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.step-item{background:var(--c2);padding:24px 28px;display:flex;gap:20px;align-items:flex-start;}
+.step-num{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:600;color:var(--cacc);flex-shrink:0;min-width:28px;line-height:1.5;}
+.step-body{flex:1;}
+.step-title{font-size:14px;font-weight:600;color:var(--ctxt);margin-bottom:6px;}
+.step-desc{font-size:13px;color:var(--csec);line-height:1.65;}
+.step-output{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cgrn);text-transform:uppercase;letter-spacing:0.08em;margin-top:8px;}
+/* Checklist */
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:20px 0;}
+.check-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--csec);line-height:1.6;}
+.check-list li .ck{flex-shrink:0;color:var(--cgrn);font-size:13px;margin-top:2px;}
+.check-list li .cx{flex-shrink:0;color:var(--cmut);font-size:13px;margin-top:2px;}
+/* Int box */
+.int-box{border:1px solid var(--cb);padding:18px 22px;margin-top:24px;background:var(--c1);}
+.int-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:12px;}
+.int-list{display:flex;flex-wrap:wrap;gap:8px;}
+.int-tag{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 10px;border:1px solid var(--cbk);color:var(--csec);letter-spacing:0.06em;}
+/* Table */
+.cmp-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:13.5px;}
+.cmp-table th{background:var(--c2);color:var(--csec);font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;padding:10px 14px;border:1px solid var(--cb);text-align:left;font-weight:500;}
+.cmp-table th.hl{color:var(--ctxt);background:var(--c3);}
+.cmp-table td{padding:10px 14px;border:1px solid var(--cb);color:var(--csec);line-height:1.5;vertical-align:top;}
+.cmp-table td.hl{color:var(--ctxt);background:rgba(248,113,113,0.04);font-weight:500;}
+.cmp-table tr:hover td{background:var(--c2);}
+.tbl-note{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;border-left:2px solid var(--cb);padding-left:12px;}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.faq-item{background:var(--c2);padding:24px 28px;}
+.faq-q{font-size:15px;font-weight:600;color:var(--ctxt);margin-bottom:12px;line-height:1.4;}
+.faq-a{font-size:14px;color:var(--csec);line-height:1.72;}
+/* Explore */
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--cb);}
+.exp-card{background:var(--c2);padding:24px 22px;text-decoration:none;transition:all 180ms;border:1px solid transparent;margin:-1px;}
+.exp-card:hover{background:var(--c3);border-color:var(--cbk);}
+.exp-card:hover .exp-arrow{color:var(--cacc);}
+.exp-cat{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--cmut);margin-bottom:10px;}
+.exp-title{font-size:14px;font-weight:600;color:var(--ctxt);line-height:1.42;margin-bottom:8px;}
+.exp-footer{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;}
+.exp-arrow{color:var(--cb);transition:color 180ms;}
+/* CTA */
+.cta-box{border:1px solid var(--cb);border-top:2px solid var(--cacc);background:var(--c1);padding:48px 44px;}
+.cta-box-sec{border:1px solid var(--cb);border-top:2px solid var(--cgrn);background:var(--c1);padding:36px 44px;margin-top:1px;}
+.cta-micro{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;}
+/* Ctx footer */
+.ctx-footer{background:var(--c0);border-top:1px solid var(--cb);padding:48px 0;}
+.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+.ctx-section-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--cb);}
+.ctx-links{display:flex;flex-direction:column;gap:8px;}
+.ctx-links a{font-size:13.5px;color:var(--csec);transition:color 150ms;}
+.ctx-links a:hover{color:var(--ctxt);}
+.site-footer{background:var(--c0);border-top:1px solid var(--cb);padding:40px 0;}
+.ftr-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.ftr-copy{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--cmut);}
+.ftr-links{display:flex;gap:22px;}
+.ftr-links a{font-size:12.5px;color:var(--cmut);transition:color 150ms;}
+.ftr-links a:hover{color:var(--csec);}
+.ai-copy{background:var(--c1);border:1px solid var(--cb);padding:20px 24px;margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.72;color:var(--cmut);letter-spacing:0.02em;}
+.sec{border-top:1px solid var(--cb);padding:72px 0;}
+.sec-alt{background:var(--c1);}
+@media(max-width:768px){
+  .wrap,.wrap-sm,.wrap-md{padding:0 18px;}
+  .spec-row{flex-direction:column;gap:16px;}
+  .spec-item{border-right:none;padding-right:0;border-bottom:1px solid var(--cb);padding-bottom:16px;}
+  .spec-item:last-child{border-bottom:none;}
+  .exp-grid{grid-template-columns:1fr;}
+  .ctx-grid{grid-template-columns:1fr;gap:32px;}
+  .cta-box,.cta-box-sec{padding:28px 20px;}
+  .btn-row{flex-direction:column;}
+  .btn-row .btn{width:100%;justify-content:center;}
+  .cmp-table{font-size:12px;}
+  .cmp-table th,.cmp-table td{padding:8px 10px;}
+  .step-item{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="wrap">
+    <div class="hdr-inner">
+      <a href="https://futurelens.xyz" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;flex-shrink:0;">
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:28px;width:auto;display:block;"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1.05rem;letter-spacing:0.18em;color:var(--ctxt);text-transform:uppercase;">FUTURELENS</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cmut);">Autonomous Systems Studio</span>
+      </a>
+      <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="hdr-cta">Accedi al Blueprint →</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 1 — HERO: DEFINIZIONE E DIFFERENZIAZIONE
+     ═══════════════════════════════════════════════════════ -->
+<section style="padding:80px 0 72px;background:var(--c0);" class="grid-bg">
+  <div class="wrap-md">
+
+    <span class="badge badge-r" style="display:block;width:fit-content;margin-bottom:22px;">
+      [ servizio · categoria d · definizione tecnica ]
+    </span>
+
+    <h1 style="margin-bottom:18px;">
+      Cos'è un Agente AI WhatsApp<br>e Come Funziona
+    </h1>
+
+    <p style="font-size:1.05rem;color:var(--csec);margin-bottom:16px;font-weight:500;">
+      Per chi vuole capire la tecnologia prima di scegliere lo stack
+    </p>
+
+    <p style="font-size:1rem;color:var(--cmut);max-width:600px;margin-bottom:32px;line-height:1.75;">
+      Un agente AI WhatsApp è un sistema software che riceve messaggi in entrata su un numero WhatsApp, li elabora attraverso un modello di linguaggio con logica di ragionamento autonomo, e genera risposte pertinenti in tempo reale — senza intervento umano. A differenza di un chatbot a keyword, comprende il linguaggio naturale, mantiene il contesto della conversazione e può chiamare strumenti esterni.
+    </p>
+
+    <!-- Tech specs -->
+    <div class="spec-row">
+      <div class="spec-item">
+        <div class="spec-val">2-8s</div>
+        <div class="spec-lbl">latenza end-to-end</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">70-85%</div>
+        <div class="spec-lbl">risoluzione automatica FAQ</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">€65-90</div>
+        <div class="spec-lbl">stack cloud/mese</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">EU AI Act</div>
+        <div class="spec-lbl">disclosure obbligatoria 2025</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 2 — COS'È: SPIEGAZIONE TECNICA
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ definizione tecnica ]</span>
+    <h2 style="margin-bottom:24px;">
+      Cosa distingue un agente AI da un chatbot WhatsApp
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:16px;">
+      Un chatbot a regole segue flussi predefiniti: "costo?" → listino prezzi. Un agente AI comprende il linguaggio naturale in qualsiasi formulazione, mantiene il contesto su più messaggi, prende decisioni multi-step e può chiamare API esterne — prenotare nel calendario, aggiornare il CRM, inviare link specifici — in base all'esito della conversazione.
+    </p>
+
+    <p style="color:var(--csec);margin-bottom:16px;">
+      Il flusso tecnico di base: il lead invia un messaggio → il gateway WhatsApp lo riceve via webhook → il sistema di orchestrazione (n8n) passa il messaggio all'LLM con il contesto completo → l'LLM genera la risposta con il system prompt configurato → la risposta viene inviata al lead → se si raggiunge un esito, si triggerano azioni downstream (CRM update, notifica team, link calendario).
+    </p>
+
+    <p style="color:var(--csec);margin-bottom:28px;">
+      Esistono tre architetture principali. Self-built custom (LangChain + Python): massimo controllo, tempi di settimane, costo €200-2.000+/mese. No-code self-managed (Dify + n8n + 2Chat): bilanciamento semplicità-potenza, 90 minuti di setup, €65-90/mese. SaaS all-in-one (Wati, Respond.io, ManyChat): massima semplicità, minimo controllo, €50-500+/mese con vendor lock-in.
+    </p>
+
+    <div class="int-box">
+      <div class="int-title">// stack tecnico · requisiti · certificazioni</div>
+      <div class="int-list">
+        <span class="int-tag">Dify (AI framework)</span>
+        <span class="int-tag">n8n Cloud (orchestrazione)</span>
+        <span class="int-tag">2Chat (gateway WhatsApp)</span>
+        <span class="int-tag">Evolution API (self-hosted)</span>
+        <span class="int-tag">WhatsApp Business API ufficiale</span>
+        <span class="int-tag">Claude Sonnet 4 / GPT-4o</span>
+        <span class="int-tag">Claude Haiku (fallback economico)</span>
+        <span class="int-tag">Google Sheets / HubSpot / Pipedrive</span>
+        <span class="int-tag">Calendly / Cal.com</span>
+        <span class="int-tag">EU AI Act Art. 50</span>
+        <span class="int-tag">GDPR server EU</span>
+        <span class="int-tag">Docker + Ubuntu 22.04 (self-hosted)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 3 — COSA FA: SPECIFICHE COMPLETE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ specifiche ]</span>
+    <h2 style="margin-bottom:24px;">
+      Cosa fa (e cosa non fa) un agente AI WhatsApp
+    </h2>
+
+    <ul class="check-list">
+      <li><span class="ck">✓</span> <span>Risponde ai messaggi WhatsApp in 2-8 secondi, 24/7 inclusi weekend e festivi</span></li>
+      <li><span class="ck">✓</span> <span>Gestisce conversazioni in linguaggio naturale — nessuno script rigido, nessun menu a bottoni</span></li>
+      <li><span class="ck">✓</span> <span>Qualifica i lead su criteri configurabili: budget, urgenza, fit con il cliente ideale</span></li>
+      <li><span class="ck">✓</span> <span>Mantiene il contesto su più messaggi e sessioni — il lead non ricomincia da capo</span></li>
+      <li><span class="ck">✓</span> <span>Chiama strumenti esterni: aggiorna il CRM, invia link calendario, notifica il team</span></li>
+      <li><span class="ck">✓</span> <span>Gestisce il 70-85% delle FAQ standard senza escalation umana</span></li>
+      <li><span class="ck">✓</span> <span>Identifica l'intento e produce output strutturato (qualified / nurture / rejected) nel CRM</span></li>
+      <li><span class="ck">✓</span> <span>Si integra con GoHighLevel, HubSpot, Pipedrive, Calendly, Meta Lead Ads, n8n, Make</span></li>
+      <li><span class="ck">✓</span> <span>Rispetta l'EU AI Act Art. 50 con disclosure AI configurabile nel primo messaggio</span></li>
+      <li><span class="ck">✓</span> <span>Opera su architettura GDPR-compliant con server in Europa</span></li>
+    </ul>
+
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--cb);">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">// cosa non fa</p>
+      <ul class="check-list">
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non sostituisce la call di vendita: prepara il terreno, non chiude il contratto</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non gestisce contenuto multimediale (immagini, audio, PDF) senza processing aggiuntivo</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non ha accesso ai sistemi interni del business senza integrazione API esplicita</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non garantisce risposta corretta al 100%: senza RAG su knowledge base, può allucinare su prezzi e date</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non scala senza limiti su gateway non ufficiali: oltre 200-300 conversazioni/giorno per numero aumenta il rischio di ban</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non è plug-and-play senza configurazione: richiede system prompt, criteri di qualifica e test</span></li>
+      </ul>
+    </div>
+
+    <div class="int-box" style="margin-top:24px;">
+      <div class="int-title">// integrazioni supportate</div>
+      <div class="int-list">
+        <span class="int-tag">GoHighLevel</span>
+        <span class="int-tag">HubSpot</span>
+        <span class="int-tag">Pipedrive</span>
+        <span class="int-tag">Calendly / Cal.com</span>
+        <span class="int-tag">Meta Lead Ads</span>
+        <span class="int-tag">Make / n8n / Zapier</span>
+        <span class="int-tag">Google Sheets</span>
+        <span class="int-tag">Slack / Teams</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 4 — IMPLEMENTAZIONE: PROCESSO REALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ implementazione ]</span>
+    <h2 style="margin-bottom:16px;">
+      Come si implementa un agente AI WhatsApp
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      Il percorso no-code self-managed (Dify + n8n + 2Chat) richiede 90 minuti di setup operativo divisi in 6 fasi. Il percorso self-hosted con Evolution API aggiunge 60-90 minuti di provisioning VPS.
+    </p>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div class="step-title">Fase 0 — Prerequisiti e definizione caso d'uso (20-40 min)</div>
+          <div class="step-desc">Definire il caso d'uso preciso: qualifica lead, FAQ, supporto post-vendita o prenotazioni. Scegliere il percorso: SaaS all-in-one vs no-code self-managed vs self-hosted. Procurarsi un numero WhatsApp dedicato (SIM prepagata o numero virtuale). Preparare il testo della disclosure AI per l'apertura di ogni conversazione — obbligatoria per l'EU AI Act Art. 50.</div>
+          <div class="step-output">→ output: caso d'uso definito, numero WhatsApp pronto, testo disclosure AI scritto</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div class="step-title">Fase 1 — Setup gateway WhatsApp (20-40 min)</div>
+          <div class="step-desc">Percorso 2Chat: creare account su 2chat.io → aggiungere numero → scansionare QR code → configurare webhook URL. Percorso Evolution API (self-hosted): installare Docker su VPS Ubuntu 22.04 → docker-compose up evolution-api → configurare istanza → scansionare QR code. Percorso API ufficiale: richiedere accesso tramite BSP certificato → verifica Meta (1-7 giorni) → configurare numero.</div>
+          <div class="step-output">→ output: gateway attivo, webhook configurato, numero connesso al sistema</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div class="step-title">Fase 2 — Setup AI reasoning layer (30-45 min)</div>
+          <div class="step-desc">Creare account Dify su dify.ai → creare nuova Application tipo Agent → configurare il modello LLM (Claude Sonnet 4 o GPT-4o) → configurare il system prompt con i criteri di business specifici (profilo cliente ideale, domande di qualifica, tono) → creare il Custom Tool finalize_conversation con schema OpenAPI → testare l'agente nella console Dify prima di collegarlo al gateway.</div>
+          <div class="step-output">→ output: agente Dify configurato, system prompt testato, tool finalize_conversation funzionante</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div class="step-title">Fase 3 — Orchestrazione, CRM sync e go-live (30-45 min)</div>
+          <div class="step-desc">In n8n: configurare il nodo Webhook (riceve i messaggi da 2Chat) → configurare HTTP Request verso Dify API → HTTP Request verso 2Chat per inviare risposte → aggiungere filtro fromMe=true per evitare loop → configurare Google Sheets per CRM sync → testare il flusso end-to-end con un numero di test prima di attivare in produzione.</div>
+          <div class="step-output">→ output: sistema live, flusso testato, dati lead salvati nel CRM automaticamente</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <div class="step-title">Fase 4 — Compliance check (30-60 min)</div>
+          <div class="step-desc">Verificare che la disclosure AI sia nel primo messaggio. Firmare DPA con Dify, n8n e il provider LLM scelto. Aggiornare la privacy policy del sito con menzione dell'AI agent. Documentare il trattamento nel ROPA (Registro dei Trattamenti). Impostare la retention policy (cancellazione automatica conversazioni dopo 12-24 mesi).</div>
+          <div class="step-output">→ output: sistema GDPR-compliant, DPA firmati, privacy policy aggiornata</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 5 — PERFORMANCE: DATI TECNICI
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ benchmark ]</span>
+    <h2 style="margin-bottom:24px;">
+      Benchmark di performance: agente AI vs gestione manuale
+    </h2>
+
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>Metrica</th>
+          <th>Senza sistema</th>
+          <th class="hl">Con agente AI</th>
+          <th>Delta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First Response Time</td>
+          <td>42h (media B2B)</td>
+          <td class="hl">2-8 secondi</td>
+          <td>−99.9%</td>
+        </tr>
+        <tr>
+          <td>Risoluzione automatica FAQ</td>
+          <td>0% (solo umano)</td>
+          <td class="hl">70-85%</td>
+          <td>+70-85 pp</td>
+        </tr>
+        <tr>
+          <td>Conversazioni simultanee</td>
+          <td>15-20 per agente umano</td>
+          <td class="hl">illimitate (cloud)</td>
+          <td>+4-5x produttività</td>
+        </tr>
+        <tr>
+          <td>Latenza risposta LLM</td>
+          <td>N/A</td>
+          <td class="hl">2-8s (cloud normale)</td>
+          <td>standard di mercato</td>
+        </tr>
+        <tr>
+          <td>Uptime sistema (cloud)</td>
+          <td>orario lavorativo</td>
+          <td class="hl">99,9% SLA (n8n Cloud)</td>
+          <td>24/7/365</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="tbl-note">Fonte: AuroraInbox 2026, d7networks 2025, Synaptica 2025, n8n.io SLA. Benchmark su architettura cloud Dify + n8n + 2Chat.</p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 6 — CASI D'USO PER SEGMENTO
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ per chi è ]</span>
+    <h2 style="margin-bottom:28px;">
+      Per chi funziona un agente AI WhatsApp
+    </h2>
+
+    <div class="exp-grid">
+      <a href="/agente-whatsapp-coach-high-ticket" class="exp-card">
+        <div class="exp-cat">coach high-ticket</div>
+        <div class="exp-title">Qualifica automatica lead Meta Ads — risposta < 60s, booking Calendly, zero setter umani</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-hotel" class="exp-card">
+        <div class="exp-cat">hotel e strutture ricettive</div>
+        <div class="exp-title">Gestione richieste, disponibilità, offerte e check-in via WhatsApp — 24/7 multilingue</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-formatori" class="exp-card">
+        <div class="exp-cat">istituti di formazione</div>
+        <div class="exp-title">Qualifica lead, riduzione no-show corsi, reminder iscrizioni e follow-up automatico</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-consulenti" class="exp-card">
+        <div class="exp-cat">consulenti e professionisti</div>
+        <div class="exp-title">Primo contatto, pre-qualifica, prenotazione consulenza e gestione FAQ — senza centralino</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-ecommerce" class="exp-card">
+        <div class="exp-cat">e-commerce e PMI</div>
+        <div class="exp-title">Supporto post-vendita, tracking ordini, upsell automatizzato e gestione resi via WhatsApp</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/quanto-costa-agente-whatsapp-ai" class="exp-card">
+        <div class="exp-cat">pricing e roi</div>
+        <div class="exp-title">Quanto costa implementarlo? Calcolo ROI per il tuo segmento — dati reali 2026</div>
+        <div class="exp-footer">
+          <span>vedi i costi →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 7 — DOMANDE FREQUENTI TECNICHE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ domande frequenti ]</span>
+    <h2 style="margin-bottom:24px;">
+      Domande frequenti sull'agente AI WhatsApp
+    </h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Qual è la differenza tra un chatbot WhatsApp e un agente AI WhatsApp?</div>
+        <div class="faq-a">Un chatbot segue flussi predefiniti e risponde a parole chiave: "costo?" → listino prezzi. Si blocca con domande non previste. Un agente AI comprende il linguaggio naturale in qualsiasi formulazione, mantiene il contesto su più messaggi, prende decisioni autonome e può chiamare strumenti esterni come il CRM o il calendario. Funziona anche con domande che nessuno ha previsto.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Serve l'API ufficiale WhatsApp per avere un agente AI?</div>
+        <div class="faq-a">No — soluzioni come 2Chat o Evolution API permettono di connettere l'AI senza passare dall'API ufficiale Meta, con setup in 30-40 minuti. Tuttavia, per compliance GDPR piena, template pre-approvati e volumi enterprise (oltre 200-300 conversazioni/giorno), l'API ufficiale tramite BSP certificato rimane la scelta raccomandata. Il percorso non ufficiale ha rischio di ban account con volumi alti.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanto costa in media uno stack agente AI WhatsApp al mese?</div>
+        <div class="faq-a">Con architettura no-code self-managed (Dify + n8n + 2Chat): €65-90/mese di stack fisso. Con self-hosted completo (VPS + Evolution API): €25-60/mese. Costi variabili aggiuntivi: API LLM ~€0.01-0.10 per conversazione (dipende dal volume e dal modello). I SaaS all-in-one (Wati, Respond.io) costano €49-500+/mese con vendor lock-in.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Il GDPR e l'EU AI Act si applicano a un agente AI WhatsApp in Italia?</div>
+        <div class="faq-a">Sì, integralmente. Il GDPR si applica a qualsiasi trattamento di dati di residenti UE. Dal 2025, l'EU AI Act Art. 50 impone che qualsiasi sistema AI interagente con persone si identifichi come tale all'inizio della conversazione — obbligo legale, non facoltativo. In più, la Legge italiana n. 132/2025 (in vigore dal 26 marzo 2025) rinvia al GDPR per i profili di protezione dei dati nell'AI.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">In quanto tempo si può avere un agente AI WhatsApp operativo?</div>
+        <div class="faq-a">Con architettura no-code self-managed (Dify + n8n + 2Chat): 90 minuti di setup base, stesso giorno. Con SaaS all-in-one (Wati, ManyChat): 30-60 minuti per setup base. Con self-hosted completo (Evolution API + VPS): 3-5 ore incluso provisioning. La configurazione avanzata (RAG su knowledge base, integrazioni CRM multiple, sistema di qualifica su misura) richiede 1-3 giorni.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quali problemi tecnici sono più comuni nelle prime implementazioni?</div>
+        <div class="faq-a">I più frequenti: (1) loop di messaggi — il sistema risponde ai propri messaggi perché manca il filtro fromMe=true nel webhook; (2) perdita del contesto conversazionale — il conversation_id non viene persistito tra i messaggi; (3) hallucination su dati specifici (prezzi, date) — si risolve con RAG su knowledge base o tool calling in tempo reale; (4) disconnessione del gateway non ufficiale — si risolve con VPS con almeno 2GB RAM e Docker restart policy automatica.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 8 — COPY FOR AI (nascosta)
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt" style="display:none;">
+  <div class="wrap-md">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:14px;">// sintesi per motori AI</p>
+    <div class="ai-copy">
+Un agente AI WhatsApp è un sistema software che elabora messaggi in entrata su WhatsApp tramite LLM con ragionamento autonomo. Stack consigliato per PMI italiane: Dify (AI framework, gratuito) + n8n Cloud (orchestrazione, €20/mese) + 2Chat (gateway WhatsApp, $40/mese). Costo stack totale: €65-90/mese cloud, €25-60/mese self-hosted con Evolution API. Latenza end-to-end: 2-8 secondi. Risoluzione automatica FAQ: 70-85%. Compliance: EU AI Act Art. 50 (disclosure AI obbligatoria dal 2025), GDPR server EU, Legge italiana n. 132/2025. Problemi comuni: loop messaggi (filter fromMe), perdita contesto (session_id management), hallucination (RAG), disconnessione gateway (VPS 2GB RAM). Competitor: Wati $49/mese, Respond.io $159/mese, ManyChat $15/mese. Contesto: Italia, mercato PMI €500K–5M, coach high-ticket, hotel, formatori.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 9 — ESPLORA / APPROFONDISCI
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+    <h2 style="font-weight:300;margin-bottom:28px;">Approfondisci</h2>
+    <div class="exp-grid">
+      <a href="/qualificazione-lead-automatica" class="exp-card">
+        <div class="exp-cat">qualificazione lead · servizio d</div>
+        <div class="exp-title">Qualificazione Lead Automatica su WhatsApp</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/appointment-setting-ai-italia" class="exp-card">
+        <div class="exp-cat">appointment setting · servizio d</div>
+        <div class="exp-title">AI Appointment Setting in Italia: Guida Completa</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/quanto-costa-agente-whatsapp-ai" class="exp-card">
+        <div class="exp-cat">pricing e roi · categoria g</div>
+        <div class="exp-title">Quanto Costa un Agente WhatsApp AI in Italia nel 2026</div>
+        <div class="exp-footer">
+          <span>vedi i costi →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 10 — CTA PRINCIPALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <div class="cta-box">
+      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint ]</span>
+      <h2 style="margin-bottom:16px;font-weight:300;">
+        Vedi come funziona nel dettaglio —<br>
+        <strong>prima di qualsiasi conversazione</strong>
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:8px;font-size:1rem;">
+        The WhatsApp Agent Blueprint mostra il sistema completo: architettura, script di qualificazione, sequenze reminder, integrazione CRM. Tutto quello che ti serve per capire se fa al caso tuo.
+      </p>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:28px;font-size:1rem;">
+        Non teoria su come potrebbe funzionare. Istruzioni operative su come funziona.
+      </p>
+      <div class="btn-row" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+        <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
+          Scarica The WhatsApp Agent Blueprint — €27 →
+        </a>
+      </div>
+      <p class="cta-micro">Accesso immediato. Pagamento sicuro. Nessun abbonamento.</p>
+    </div>
+
+    <div class="cta-box-sec" style="margin-top:1px;">
+      <span class="badge badge-g" style="display:inline-block;margin-bottom:16px;">[ the system log · newsletter ]</span>
+      <h2 style="margin-bottom:14px;font-weight:300;">
+        Preferisci prima seguire il metodo nel tempo?
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:24px;font-size:1rem;">
+        Ogni settimana un'analisi su WhatsApp AI e lead automation per il mercato italiano. Gratis. Nessuno spam.
+      </p>
+      <a href="https://thesystemlog.substack.com/" target="_blank" rel="noopener" class="btn btn-g">
+        Iscriviti a The System Log →
+      </a>
+      <p class="cta-micro" style="margin-top:12px;">Gratis. Nessuno spam. Disdici quando vuoi.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 11 — FOOTER CONTESTUALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="ctx-footer">
+  <div class="wrap">
+    <div class="ctx-grid">
+      <div>
+        <div class="ctx-section-title">altri segmenti</div>
+        <div class="ctx-links">
+          <a href="/agente-whatsapp-coach-high-ticket">Agente WhatsApp AI per Coach High-Ticket</a>
+          <a href="/agente-whatsapp-hotel">Agente WhatsApp AI per Hotel</a>
+          <a href="/agente-whatsapp-formatori">Agente WhatsApp AI per Formatori</a>
+          <a href="/agente-whatsapp-consulenti">Agente WhatsApp AI per Consulenti</a>
+        </div>
+      </div>
+      <div>
+        <div class="ctx-section-title">problemi correlati</div>
+        <div class="ctx-links">
+          <a href="/riduzione-no-show-appuntamenti">Come Ridurre i No-Show agli Appuntamenti</a>
+          <a href="/lead-whatsapp-senza-risposta">Lead WhatsApp Senza Risposta: Come Recuperarli</a>
+          <a href="/qualificazione-lead-automatica">Qualificazione Lead Automatica su WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ftr-inner">
+      <div>
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:24px;width:auto;opacity:0.6;display:block;margin-bottom:8px;"
+          onerror="this.style.display='none'">
+        <div class="ftr-copy">© 2026 · Autonomous Systems Studio™</div>
+      </div>
+      <nav class="ftr-links">
+        <a href="https://futurelens.xyz/informativa-privacy">Privacy Policy</a>
+        <a href="https://futurelens.xyz/termini-di-servizio">Termini di Servizio</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('scroll-progress');
+  window.addEventListener('scroll',function(){
+    var st=window.scrollY||document.documentElement.scrollTop;
+    var dh=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    bar.style.width=(dh>0?(st/dh)*100:0)+'%';
+  },{passive:true});
+})();
+</script>
+
+</body>
+</html>

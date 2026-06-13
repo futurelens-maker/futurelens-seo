@@ -1,0 +1,140 @@
+{
+  "template_type": "D",
+  "slug": "qualificazione-lead-automatica",
+  "meta_title": "Qualificazione Lead Automatica su WhatsApp | FutureLens",
+  "meta_description": "Qualificazione lead automatica su WhatsApp: come funziona il sistema AI, stack tecnico (Dify + n8n), framework BANT conversazionale, benchmark e costi reali 2026.",
+  "twitter_description": "Qualificazione lead automatica su WhatsApp: sistema AI, BANT conversazionale, costi e benchmark reali.",
+  "canonical_url": "https://seo.futurelens.xyz/qualificazione-lead-automatica",
+  "date_modified": "2026-06-13",
+  "schema_service_desc": "Sistema di qualificazione lead automatica su WhatsApp con AI conversazionale — framework BANT adattato, integrazione CRM, stack Dify + n8n + 2Chat per PMI e coach italiani.",
+  "schema_audience": "Coach High-Ticket, Formatori, Consulenti, PMI",
+  "hero_badge_label": "servizio · categoria d · qualificazione lead",
+  "h1_title": "Qualificazione Lead Automatica<br>su WhatsApp",
+  "hero_subtitle": "Per chi riceve lead da Meta Ads e non riesce a rispondere abbastanza velocemente",
+  "hero_pain_p1": "La qualificazione lead automatica su WhatsApp è un processo in cui un agente AI gestisce l'intera conversazione con un prospect — fa le domande giuste, interpreta le risposte in linguaggio naturale, valuta budget, urgenza e fit — e decide l'esito in autonomia: lead qualificato, lead da nurturare, lead non adatto. Il lead percepisce una conversazione naturale. Il sistema produce dati strutturati nel CRM senza intervento umano.",
+  "hero_specs": [
+    {"value": "21x", "label": "più alta conversione < 5 min"},
+    {"value": "60-75%", "label": "completamento flusso automatico"},
+    {"value": "90 min", "label": "setup operativo"},
+    {"value": "BANT", "label": "framework qualifica conversazionale"}
+  ],
+  "cos_e_h2": "Come funziona la qualificazione lead automatica con AI",
+  "cos_e_p1": "Il sistema applica una versione conversazionale del framework BANT (Budget, Authority, Need, Timeline) adattata al contesto specifico. L'agente AI non pone le domande in sequenza rigida come un form: introduce il budget in modo naturale, verifica chi è il decision-maker, esplora il problema con domande di discovery, valuta l'urgenza. L'ordine varia in base al flusso della conversazione, esattamente come farebbe un buon commerciale.",
+  "cos_e_p2": "Il flusso tecnico in 7 fasi: (1) il lead entra da Meta Ads, QR code o opt-in form → (2) il gateway WhatsApp riceve il messaggio via webhook e lo passa a n8n → (3) n8n verifica se esiste una sessione attiva per quel numero → (4) l'LLM elabora il messaggio con il system prompt configurato → (5) quando l'agente ha raccolto abbastanza informazioni, chiama il tool finalize_conversation con outcome, reason e summary → (6) azioni downstream: qualified → link calendario; nurture → contenuto; rejected → chiusura professionale → (7) tutto viene loggato automaticamente nel CRM.",
+  "cos_e_p3": "Il Qualification Intelligence Brief è il documento che definisce il sistema prima del go-live: profilo del cliente ideale (ICP), criteri di qualifica specifici (budget minimo, urgenza, fit), domande sequenziali, logica di decisione per outcome, tono e stile della comunicazione, istruzioni di fallback per domande fuori perimetro. Senza questo brief, il sistema qualifica secondo parametri generici. Con questo brief, qualifica secondo i tuoi criteri esatti.",
+  "tech_box_items": [
+    "Dify (AI framework, free cloud)",
+    "n8n Cloud (orchestrazione, €20/mese)",
+    "2Chat (gateway WhatsApp, $40/mese)",
+    "Claude Sonnet 4 / GPT-4o (LLM principale)",
+    "Claude Haiku / GPT-4o mini (fallback economico)",
+    "finalize_conversation (Custom Tool OpenAPI)",
+    "Google Sheets / HubSpot / Airtable (CRM)",
+    "Calendly / Cal.com (booking)",
+    "Meta Lead Ads (trigger speed-to-lead)",
+    "Slack / Teams (notifica team qualificati)",
+    "GDPR server EU",
+    "EU AI Act Art. 50 compliance"
+  ],
+  "cosa_fa_h2": "Cosa qualifica il sistema (e dove si ferma)",
+  "checklist_yes": [
+    "Risponde entro 60 secondi dall'opt-in Meta Ads — prima che il lead si raffreddi",
+    "Pone domande di qualifica in linguaggio naturale, non con form statici o menu a bottoni",
+    "Adatta la sequenza delle domande in base alle risposte precedenti — come un commerciale reale",
+    "Valuta budget, urgenza, autorità decisionale e fit con il profilo cliente ideale (framework BANT)",
+    "Gestisce le obiezioni più frequenti (prezzo, tempo, \"ci penso\") con risposte configurate",
+    "Produce output strutturato per ogni lead: outcome, reason, summary — direttamente nel CRM",
+    "Invia il link calendario solo ai lead qualificati — gli altri ricevono una risposta educativa",
+    "Loga ogni conversazione in Google Sheets, HubSpot o Airtable senza inserimento manuale",
+    "Notifica il team via Slack o email per ogni lead qualificato, con trascrizione completa",
+    "Opera 24/7 — qualifica anche alle 23:00 di domenica e durante i lanci con 500 lead/giorno"
+  ],
+  "checklist_no": [
+    "Non sostituisce la discovery call: prepara il lead, non chiude il contratto",
+    "Non qualifica correttamente senza un Qualification Intelligence Brief ben configurato — richiede 20-40 minuti di setup iniziale",
+    "Non gestisce contenuto multimediale (immagini, documenti) senza processing aggiuntivo",
+    "Non funziona su lead senza opt-in esplicito — il GDPR richiede consenso per il trattamento dei dati"
+  ],
+  "impl_h2": "Come si implementa la qualificazione lead automatica",
+  "impl_intro": "Il setup base con il Blueprint richiede 85-130 minuti divisi in 4 fasi. Il setup avanzato con Evolution API self-hosted aggiunge 60-90 minuti di provisioning VPS.",
+  "steps": [
+    {
+      "title": "Fase 0 — Qualification Intelligence Brief (20-40 min)",
+      "body": "Definire per iscritto: chi è il tuo cliente ideale (ICP), quale problema risolvi, qual è il budget minimo che qualifica un lead, quale urgenza è richiesta, chi è il decision-maker nel processo di acquisto. Queste informazioni diventano il system prompt dell'agente. Più specifico è il brief, più precisa è la qualifica.",
+      "output": "brief compilato con ICP, criteri di qualifica, tono e istruzioni di fallback"
+    },
+    {
+      "title": "Fase 1 — Setup Dify + personalizzazione agente (30-40 min)",
+      "body": "Creare account Dify su dify.ai → importare configurazione agent precompilata dal Blueprint → personalizzare il system prompt con i tuoi criteri specifici → configurare il modello LLM (Claude Sonnet 4 o GPT-4o come principale, Claude Haiku come fallback economico) → creare il Custom Tool finalize_conversation → testare nella console Dify prima di connettere al gateway.",
+      "output": "agente Dify configurato e testato con i tuoi criteri di qualifica"
+    },
+    {
+      "title": "Fase 2 — Import n8n bridge + configurazione webhook (15-20 min)",
+      "body": "In n8n: importare il workflow bridge dal Blueprint → configurare il nodo Webhook che riceverà i messaggi da 2Chat → configurare HTTP Request verso Dify API con le credenziali → configurare HTTP Request verso 2Chat per inviare risposte → aggiungere il filtro fromMe=true per evitare loop di messaggi → attivare il workflow.",
+      "output": "bridge n8n ↔ Dify ↔ 2Chat funzionante, filtro loop attivo"
+    },
+    {
+      "title": "Fase 3 — CRM sync + speed-to-lead + go-live (15-20 min)",
+      "body": "In n8n: importare il workflow CRM sync → configurare Google Sheets con OAuth (o HubSpot/Airtable se preferito) → collegare il webhook del CRM sync al tool finalize_conversation di Dify → configurare il trigger speed-to-lead (webhook dal form/landing page → n8n invia primo messaggio personalizzato entro 60 secondi) → test end-to-end con numero di test → attivare in produzione.",
+      "output": "sistema live: lead qualificati nel CRM, speed-to-lead < 60s attivo"
+    }
+  ],
+  "perf_h2": "Benchmark: qualificazione automatica vs manuale",
+  "risultati_table": [
+    {"metric": "Tasso conversione entro 5 min", "baseline": "baseline standard", "with_agent": "21x più alta rispetto a 30 min", "delta": "+2000%"},
+    {"metric": "Completamento flusso qualifica", "baseline": "30-40% (form statici)", "with_agent": "60-75% (conversazione AI)", "delta": "+2x"},
+    {"metric": "Lead qualificati sul totale", "baseline": "30-40%", "with_agent": "60-70%", "delta": "+2x"},
+    {"metric": "Ore setter/settimana", "baseline": "15-20h", "with_agent": "2-3h (supervisione)", "delta": "−85%"},
+    {"metric": "Dati CRM completati automaticamente", "baseline": "0% (inserimento manuale)", "with_agent": "100%", "delta": "zero lavoro manuale"}
+  ],
+  "risultati_note": "Fonte: MIT/InsideSales speed-to-lead study, Optifai Sales Ops Benchmark 2025-2026, Landbase Lead Qualification Statistics 2026. Dati su architettura Dify + n8n + 2Chat.",
+  "casi_duso_h2": "Per chi funziona la qualificazione lead automatica",
+  "casi_duso": [
+    {"cat": "coach e consulenti high-ticket", "titolo": "Offerte da €2.500+: qualifica automatica, zero setter, booking solo per i lead adatti", "url": "/agente-whatsapp-coach-high-ticket", "note": "vedi caso d'uso →"},
+    {"cat": "istituti di formazione", "titolo": "Corsi da €500-5.000: qualifica interesse e budget, riduce iscrizioni di lead non adatti", "url": "/agente-whatsapp-formatori", "note": "vedi caso d'uso →"},
+    {"cat": "consulenti e professionisti", "titolo": "Pre-qualifica prima della consulenza: filtra i lead per progetto, budget e tempistiche", "url": "/agente-whatsapp-consulenti", "note": "vedi caso d'uso →"},
+    {"cat": "agenzie immobiliari", "titolo": "Qualifica acquirenti su budget, zona e tempistiche prima della visita — zero appuntamenti persi", "url": "/agente-whatsapp-agenzie-immobiliari", "note": "vedi caso d'uso →"},
+    {"cat": "definizione tecnica", "titolo": "Cos'è un Agente AI WhatsApp: architettura tecnica, stack e GDPR", "url": "/agente-ai-whatsapp", "note": "approfondisci →"},
+    {"cat": "pricing e roi", "titolo": "Quanto costa implementarlo e qual è il ROI reale per il tuo segmento", "url": "/quanto-costa-agente-whatsapp-ai", "note": "vedi i costi →"}
+  ],
+  "faq_h2": "Domande frequenti sulla qualificazione lead automatica",
+  "faqs": [
+    {
+      "q": "Come fa l'agente AI a capire se un lead è qualificato o no?",
+      "a": "Il sistema applica i criteri che tu definisci nel Qualification Intelligence Brief: budget minimo, urgenza richiesta, fit con il profilo cliente ideale, autorità decisionale. L'LLM interpreta le risposte in linguaggio naturale e valuta se i criteri sono soddisfatti. Quando ha abbastanza informazioni, chiama il tool finalize_conversation con l'esito (qualified / nurture / rejected) e una motivazione testuale. Non è un sistema a punteggio rigido: è un ragionamento contestuale."
+    },
+    {
+      "q": "Cosa succede ai lead che non superano la qualifica?",
+      "a": "Dipende dall'esito configurato. I lead da nurturare ricevono un contenuto pertinente (link a un articolo, a una risorsa gratuita) e vengono inseriti in una sequenza di follow-up automatica. I lead non adatti ricevono una risposta professionale di chiusura con porta aperta — mai un rifiuto secco. In entrambi i casi, i dati vengono loggati nel CRM per analisi future."
+    },
+    {
+      "q": "Quanti lead al mese può gestire il sistema?",
+      "a": "Con architettura cloud (Dify + n8n Cloud + 2Chat): la scalabilità è praticamente illimitata per volume di conversazioni. Il limite pratico è il gateway WhatsApp: con 2Chat (non ufficiale), oltre 200-300 conversazioni/giorno per numero aumenta il rischio di ban. Per volumi enterprise si usa l'API ufficiale Meta tramite BSP certificato."
+    },
+    {
+      "q": "Il sistema funziona anche per chi non usa Meta Ads?",
+      "a": "Sì. Il trigger può essere qualsiasi canale: link WhatsApp in bio Instagram, QR code su materiale fisico, firma email, sito web con widget WhatsApp, oppure messaggio spontaneo al numero aziendale. La qualificazione funziona indipendentemente dal canale di entrata. Meta Ads è il caso d'uso più comune perché genera alti volumi di lead che richiedono risposta rapida."
+    },
+    {
+      "q": "Quanto è configurabile il sistema di qualifica?",
+      "a": "Completamente. Il Qualification Intelligence Brief definisce tutto: le domande specifiche, l'ordine, il tono, i criteri di scoring, le risposte alle obiezioni più frequenti, le istruzioni di escalation. Due business con lo stesso stack tecnico possono avere sistemi di qualifica radicalmente diversi. La personalizzazione del brief richiede 20-40 minuti e può essere aggiornata dopo ogni ciclo di campagna in base ai pattern reali delle conversazioni."
+    }
+  ],
+  "ai_copy_text": "La qualificazione lead automatica su WhatsApp usa un agente AI con framework BANT conversazionale per valutare budget, urgenza, autorità e timing in linguaggio naturale — senza form statici. Stack: Dify (AI framework) + n8n Cloud (orchestrazione, €20/mese) + 2Chat (gateway WhatsApp, $40/mese). Output: qualified / nurture / rejected con reason e summary nel CRM. Completamento automatico flusso qualifica: 60-75%. Ore setter risparmiate: −85%. Setup: 85-130 minuti. Prerequisito: Qualification Intelligence Brief con ICP, criteri di qualifica e tono. Trigger supportati: Meta Lead Ads, QR code, link WhatsApp, form opt-in (speed-to-lead < 60s). CRM compatibili: Google Sheets, HubSpot, Airtable, Pipedrive, Notion, ActiveCampaign. Compliance: GDPR server EU, EU AI Act Art. 50 disclosure obbligatoria. Target: coach, formatori, consulenti, PMI italiane.",
+  "esplora": [
+    {"cat": "definizione tecnica · servizio d", "titolo": "Cos'è un Agente AI WhatsApp e Come Funziona", "url": "/agente-ai-whatsapp", "note": "approfondisci →"},
+    {"cat": "appointment setting · servizio d", "titolo": "AI Appointment Setting in Italia: Guida Completa", "url": "/appointment-setting-ai-italia", "note": "approfondisci →"},
+    {"cat": "pricing e roi · categoria g", "titolo": "Quanto Costa un Agente WhatsApp AI in Italia nel 2026", "url": "/quanto-costa-agente-whatsapp-ai", "note": "vedi i costi →"}
+  ],
+  "footer_altri_segmenti": [
+    {"titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket"},
+    {"titolo": "Agente WhatsApp AI per Formatori", "url": "/agente-whatsapp-formatori"},
+    {"titolo": "Agente WhatsApp AI per Consulenti", "url": "/agente-whatsapp-consulenti"},
+    {"titolo": "AI Appointment Setting in Italia", "url": "/appointment-setting-ai-italia"}
+  ],
+  "footer_problemi_correlati": [
+    {"titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta"},
+    {"titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti"},
+    {"titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp"}
+  ]
+}

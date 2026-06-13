@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qualificazione Lead Automatica su WhatsApp | FutureLens</title>
+<meta name="description" content="Qualificazione lead automatica su WhatsApp: come funziona il sistema AI, stack tecnico (Dify + n8n), framework BANT conversazionale, benchmark e costi reali 2026.">
+<link rel="canonical" href="https://seo.futurelens.xyz/qualificazione-lead-automatica">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Qualificazione Lead Automatica su WhatsApp | FutureLens">
+<meta property="og:description" content="Qualificazione lead automatica su WhatsApp: come funziona il sistema AI, stack tecnico (Dify + n8n), framework BANT conversazionale, benchmark e costi reali 2026.">
+<meta property="og:url" content="https://seo.futurelens.xyz/qualificazione-lead-automatica">
+<meta property="og:site_name" content="FutureLens">
+<meta property="og:locale" content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qualificazione Lead Automatica su WhatsApp | FutureLens">
+<meta name="twitter:description" content="Qualificazione lead automatica su WhatsApp: sistema AI, BANT conversazionale, costi e benchmark reali.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Qualificazione Lead Automatica su WhatsApp | FutureLens",
+    "description": "Qualificazione lead automatica su WhatsApp: come funziona il sistema AI, stack tecnico (Dify + n8n), framework BANT conversazionale, benchmark e costi reali 2026.",
+    "url": "https://seo.futurelens.xyz/qualificazione-lead-automatica",
+    "dateModified": "2026-06-13",
+    "inLanguage": "it-IT",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Qualificazione Lead Automatica su WhatsApp",
+    "description": "Sistema di qualificazione lead automatica su WhatsApp con AI conversazionale — framework BANT adattato, integrazione CRM, stack Dify + n8n + 2Chat per PMI e coach italiani.",
+    "provider": {
+      "@type": "Organization",
+      "name": "FutureLens",
+      "url": "https://futurelens.xyz"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italia"
+    },
+    "serviceType": "WhatsApp AI Automation",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Coach High-Ticket, Formatori, Consulenti, PMI"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Come fa l'agente AI a capire se un lead è qualificato o no?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il sistema applica i criteri che tu definisci nel Qualification Intelligence Brief: budget minimo, urgenza richiesta, fit con il profilo cliente ideale, autorità decisionale. L'LLM interpreta le risposte in linguaggio naturale e valuta se i criteri sono soddisfatti. Quando ha abbastanza informazioni, chiama il tool finalize_conversation con l'esito (qualified / nurture / rejected) e una motivazione testuale. Non è un sistema a punteggio rigido: è un ragionamento contestuale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cosa succede ai lead che non superano la qualifica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dipende dall'esito configurato. I lead da nurturare ricevono un contenuto pertinente (link a un articolo, a una risorsa gratuita) e vengono inseriti in una sequenza di follow-up automatica. I lead non adatti ricevono una risposta professionale di chiusura con porta aperta — mai un rifiuto secco. In entrambi i casi, i dati vengono loggati nel CRM per analisi future."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanti lead al mese può gestire il sistema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con architettura cloud (Dify + n8n Cloud + 2Chat): la scalabilità è praticamente illimitata per volume di conversazioni. Il limite pratico è il gateway WhatsApp: con 2Chat (non ufficiale), oltre 200-300 conversazioni/giorno per numero aumenta il rischio di ban. Per volumi enterprise si usa l'API ufficiale Meta tramite BSP certificato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il sistema funziona anche per chi non usa Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Il trigger può essere qualsiasi canale: link WhatsApp in bio Instagram, QR code su materiale fisico, firma email, sito web con widget WhatsApp, oppure messaggio spontaneo al numero aziendale. La qualificazione funziona indipendentemente dal canale di entrata. Meta Ads è il caso d'uso più comune perché genera alti volumi di lead che richiedono risposta rapida."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto è configurabile il sistema di qualifica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Completamente. Il Qualification Intelligence Brief definisce tutto: le domande specifiche, l'ordine, il tono, i criteri di scoring, le risposte alle obiezioni più frequenti, le istruzioni di escalation. Due business con lo stesso stack tecnico possono avere sistemi di qualifica radicalmente diversi. La personalizzazione del brief richiede 20-40 minuti e può essere aggiornata dopo ogni ciclo di campagna in base ai pattern reali delle conversazioni."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<style>
+:root {
+  --c0:#0a0a0a; --c1:#0f0f0f; --c2:#141414; --c3:#1c1c1c; --cterm:#0d1117;
+  --ctxt:#f8fafc; --csec:#94a3b8; --cmut:#475569;
+  --cacc:#f87171; --cacc-d:#ef4444; --cacc-t:rgba(248,113,113,0.07); --cacc-b:rgba(248,113,113,0.18);
+  --cgrn:#4ade80; --cb:rgba(248,250,252,0.07); --cbk:rgba(248,250,252,0.13);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;}
+body{background:var(--c0);color:var(--ctxt);font-family:'Inter',sans-serif;line-height:1.72;}
+h1{font-size:clamp(1.85rem,4.2vw,2.9rem);font-weight:300;line-height:1.18;letter-spacing:-0.022em;}
+h2{font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:300;line-height:1.22;letter-spacing:-0.018em;}
+h3{font-size:1rem;font-weight:600;line-height:1.4;}
+p{line-height:1.75;}
+a{color:var(--csec);text-decoration:none;transition:color 150ms;}
+a:hover{color:var(--ctxt);}
+strong{font-weight:600;color:var(--ctxt);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 32px;}
+.wrap-sm{max-width:720px;margin:0 auto;padding:0 32px;}
+.wrap-md{max-width:860px;margin:0 auto;padding:0 32px;}
+.grid-bg{position:relative;overflow:hidden;}
+.grid-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(242,240,237,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(242,240,237,0.025) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0;}
+.grid-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 50%,transparent 30%,rgba(10,9,8,0.92) 100%);pointer-events:none;z-index:0;}
+.grid-bg>*{position:relative;z-index:1;}
+.scroll-progress{position:absolute;top:0;left:0;height:2px;background:var(--cacc);width:0%;transition:width 100ms linear;z-index:60;}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--cb);padding:14px 0;}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.hdr-cta{font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:0.055em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--cacc-b);border-radius:2px;color:#f87171;background:transparent;transition:background 130ms,border-color 130ms,color 130ms;text-decoration:none;white-space:nowrap;}
+.hdr-cta:hover{background:var(--cacc-t);border-color:var(--cacc);color:#fca5a5;}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--cbk);color:var(--cmut);}
+.badge-r{border-color:var(--cacc-b);color:var(--cacc);background:var(--cacc-t);}
+.badge-g{border-color:rgba(74,222,128,0.18);color:var(--cgrn);background:rgba(74,222,128,0.05);}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;padding:13px 26px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:all 150ms;white-space:nowrap;}
+.btn-p{background:var(--cacc);color:#fff;border-color:var(--cacc);}
+.btn-p:hover{background:var(--cacc-d);border-color:var(--cacc-d);color:#fff;}
+.btn-g{background:transparent;color:var(--csec);border-color:var(--cbk);}
+.btn-g:hover{border-color:var(--csec);color:var(--ctxt);}
+/* Spec row (hero specs) */
+.spec-row{display:flex;gap:0;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid var(--cb);}
+.spec-item{padding:0 24px 0 0;margin-right:24px;border-right:1px solid var(--cb);display:flex;flex-direction:column;gap:4px;}
+.spec-item:last-child{border-right:none;margin-right:0;}
+.spec-val{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:600;letter-spacing:-0.02em;color:var(--cacc);line-height:1;}
+.spec-lbl{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cmut);}
+/* Data box */
+.data-box{background:var(--cterm);border:1px solid var(--cb);border-left:2px solid var(--cacc);padding:24px 28px;margin:24px 0;}
+.data-box-title{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cacc);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:16px;}
+/* Steps */
+.steps{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.step-item{background:var(--c2);padding:24px 28px;display:flex;gap:20px;align-items:flex-start;}
+.step-num{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:600;color:var(--cacc);flex-shrink:0;min-width:28px;line-height:1.5;}
+.step-body{flex:1;}
+.step-title{font-size:14px;font-weight:600;color:var(--ctxt);margin-bottom:6px;}
+.step-desc{font-size:13px;color:var(--csec);line-height:1.65;}
+.step-output{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cgrn);text-transform:uppercase;letter-spacing:0.08em;margin-top:8px;}
+/* Checklist */
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:20px 0;}
+.check-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--csec);line-height:1.6;}
+.check-list li .ck{flex-shrink:0;color:var(--cgrn);font-size:13px;margin-top:2px;}
+.check-list li .cx{flex-shrink:0;color:var(--cmut);font-size:13px;margin-top:2px;}
+/* Int box */
+.int-box{border:1px solid var(--cb);padding:18px 22px;margin-top:24px;background:var(--c1);}
+.int-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:12px;}
+.int-list{display:flex;flex-wrap:wrap;gap:8px;}
+.int-tag{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 10px;border:1px solid var(--cbk);color:var(--csec);letter-spacing:0.06em;}
+/* Table */
+.cmp-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:13.5px;}
+.cmp-table th{background:var(--c2);color:var(--csec);font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:0.1em;padding:10px 14px;border:1px solid var(--cb);text-align:left;font-weight:500;}
+.cmp-table th.hl{color:var(--ctxt);background:var(--c3);}
+.cmp-table td{padding:10px 14px;border:1px solid var(--cb);color:var(--csec);line-height:1.5;vertical-align:top;}
+.cmp-table td.hl{color:var(--ctxt);background:rgba(248,113,113,0.04);font-weight:500;}
+.cmp-table tr:hover td{background:var(--c2);}
+.tbl-note{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;border-left:2px solid var(--cb);padding-left:12px;}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:1px;background:var(--cb);margin:24px 0;}
+.faq-item{background:var(--c2);padding:24px 28px;}
+.faq-q{font-size:15px;font-weight:600;color:var(--ctxt);margin-bottom:12px;line-height:1.4;}
+.faq-a{font-size:14px;color:var(--csec);line-height:1.72;}
+/* Explore */
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--cb);}
+.exp-card{background:var(--c2);padding:24px 22px;text-decoration:none;transition:all 180ms;border:1px solid transparent;margin:-1px;}
+.exp-card:hover{background:var(--c3);border-color:var(--cbk);}
+.exp-card:hover .exp-arrow{color:var(--cacc);}
+.exp-cat{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--cmut);margin-bottom:10px;}
+.exp-title{font-size:14px;font-weight:600;color:var(--ctxt);line-height:1.42;margin-bottom:8px;}
+.exp-footer{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;}
+.exp-arrow{color:var(--cb);transition:color 180ms;}
+/* CTA */
+.cta-box{border:1px solid var(--cb);border-top:2px solid var(--cacc);background:var(--c1);padding:48px 44px;}
+.cta-box-sec{border:1px solid var(--cb);border-top:2px solid var(--cgrn);background:var(--c1);padding:36px 44px;margin-top:1px;}
+.cta-micro{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);letter-spacing:0.06em;margin-top:12px;}
+/* Ctx footer */
+.ctx-footer{background:var(--c0);border-top:1px solid var(--cb);padding:48px 0;}
+.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+.ctx-section-title{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--cb);}
+.ctx-links{display:flex;flex-direction:column;gap:8px;}
+.ctx-links a{font-size:13.5px;color:var(--csec);transition:color 150ms;}
+.ctx-links a:hover{color:var(--ctxt);}
+.site-footer{background:var(--c0);border-top:1px solid var(--cb);padding:40px 0;}
+.ftr-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.ftr-copy{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--cmut);}
+.ftr-links{display:flex;gap:22px;}
+.ftr-links a{font-size:12.5px;color:var(--cmut);transition:color 150ms;}
+.ftr-links a:hover{color:var(--csec);}
+.ai-copy{background:var(--c1);border:1px solid var(--cb);padding:20px 24px;margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.72;color:var(--cmut);letter-spacing:0.02em;}
+.sec{border-top:1px solid var(--cb);padding:72px 0;}
+.sec-alt{background:var(--c1);}
+@media(max-width:768px){
+  .wrap,.wrap-sm,.wrap-md{padding:0 18px;}
+  .spec-row{flex-direction:column;gap:16px;}
+  .spec-item{border-right:none;padding-right:0;border-bottom:1px solid var(--cb);padding-bottom:16px;}
+  .spec-item:last-child{border-bottom:none;}
+  .exp-grid{grid-template-columns:1fr;}
+  .ctx-grid{grid-template-columns:1fr;gap:32px;}
+  .cta-box,.cta-box-sec{padding:28px 20px;}
+  .btn-row{flex-direction:column;}
+  .btn-row .btn{width:100%;justify-content:center;}
+  .cmp-table{font-size:12px;}
+  .cmp-table th,.cmp-table td{padding:8px 10px;}
+  .step-item{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="wrap">
+    <div class="hdr-inner">
+      <a href="https://futurelens.xyz" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;flex-shrink:0;">
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:28px;width:auto;display:block;"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1.05rem;letter-spacing:0.18em;color:var(--ctxt);text-transform:uppercase;">FUTURELENS</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cmut);">Autonomous Systems Studio</span>
+      </a>
+      <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="hdr-cta">Accedi al Blueprint →</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 1 — HERO: DEFINIZIONE E DIFFERENZIAZIONE
+     ═══════════════════════════════════════════════════════ -->
+<section style="padding:80px 0 72px;background:var(--c0);" class="grid-bg">
+  <div class="wrap-md">
+
+    <span class="badge badge-r" style="display:block;width:fit-content;margin-bottom:22px;">
+      [ servizio · categoria d · qualificazione lead ]
+    </span>
+
+    <h1 style="margin-bottom:18px;">
+      Qualificazione Lead Automatica<br>su WhatsApp
+    </h1>
+
+    <p style="font-size:1.05rem;color:var(--csec);margin-bottom:16px;font-weight:500;">
+      Per chi riceve lead da Meta Ads e non riesce a rispondere abbastanza velocemente
+    </p>
+
+    <p style="font-size:1rem;color:var(--cmut);max-width:600px;margin-bottom:32px;line-height:1.75;">
+      La qualificazione lead automatica su WhatsApp è un processo in cui un agente AI gestisce l'intera conversazione con un prospect — fa le domande giuste, interpreta le risposte in linguaggio naturale, valuta budget, urgenza e fit — e decide l'esito in autonomia: lead qualificato, lead da nurturare, lead non adatto. Il lead percepisce una conversazione naturale. Il sistema produce dati strutturati nel CRM senza intervento umano.
+    </p>
+
+    <!-- Tech specs -->
+    <div class="spec-row">
+      <div class="spec-item">
+        <div class="spec-val">21x</div>
+        <div class="spec-lbl">più alta conversione < 5 min</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">60-75%</div>
+        <div class="spec-lbl">completamento flusso automatico</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">90 min</div>
+        <div class="spec-lbl">setup operativo</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">BANT</div>
+        <div class="spec-lbl">framework qualifica conversazionale</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 2 — COS'È: SPIEGAZIONE TECNICA
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ definizione tecnica ]</span>
+    <h2 style="margin-bottom:24px;">
+      Come funziona la qualificazione lead automatica con AI
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:16px;">
+      Il sistema applica una versione conversazionale del framework BANT (Budget, Authority, Need, Timeline) adattata al contesto specifico. L'agente AI non pone le domande in sequenza rigida come un form: introduce il budget in modo naturale, verifica chi è il decision-maker, esplora il problema con domande di discovery, valuta l'urgenza. L'ordine varia in base al flusso della conversazione, esattamente come farebbe un buon commerciale.
+    </p>
+
+    <p style="color:var(--csec);margin-bottom:16px;">
+      Il flusso tecnico in 7 fasi: (1) il lead entra da Meta Ads, QR code o opt-in form → (2) il gateway WhatsApp riceve il messaggio via webhook e lo passa a n8n → (3) n8n verifica se esiste una sessione attiva per quel numero → (4) l'LLM elabora il messaggio con il system prompt configurato → (5) quando l'agente ha raccolto abbastanza informazioni, chiama il tool finalize_conversation con outcome, reason e summary → (6) azioni downstream: qualified → link calendario; nurture → contenuto; rejected → chiusura professionale → (7) tutto viene loggato automaticamente nel CRM.
+    </p>
+
+    <p style="color:var(--csec);margin-bottom:28px;">
+      Il Qualification Intelligence Brief è il documento che definisce il sistema prima del go-live: profilo del cliente ideale (ICP), criteri di qualifica specifici (budget minimo, urgenza, fit), domande sequenziali, logica di decisione per outcome, tono e stile della comunicazione, istruzioni di fallback per domande fuori perimetro. Senza questo brief, il sistema qualifica secondo parametri generici. Con questo brief, qualifica secondo i tuoi criteri esatti.
+    </p>
+
+    <div class="int-box">
+      <div class="int-title">// stack tecnico · requisiti · certificazioni</div>
+      <div class="int-list">
+        <span class="int-tag">Dify (AI framework, free cloud)</span>
+        <span class="int-tag">n8n Cloud (orchestrazione, €20/mese)</span>
+        <span class="int-tag">2Chat (gateway WhatsApp, $40/mese)</span>
+        <span class="int-tag">Claude Sonnet 4 / GPT-4o (LLM principale)</span>
+        <span class="int-tag">Claude Haiku / GPT-4o mini (fallback economico)</span>
+        <span class="int-tag">finalize_conversation (Custom Tool OpenAPI)</span>
+        <span class="int-tag">Google Sheets / HubSpot / Airtable (CRM)</span>
+        <span class="int-tag">Calendly / Cal.com (booking)</span>
+        <span class="int-tag">Meta Lead Ads (trigger speed-to-lead)</span>
+        <span class="int-tag">Slack / Teams (notifica team qualificati)</span>
+        <span class="int-tag">GDPR server EU</span>
+        <span class="int-tag">EU AI Act Art. 50 compliance</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 3 — COSA FA: SPECIFICHE COMPLETE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ specifiche ]</span>
+    <h2 style="margin-bottom:24px;">
+      Cosa qualifica il sistema (e dove si ferma)
+    </h2>
+
+    <ul class="check-list">
+      <li><span class="ck">✓</span> <span>Risponde entro 60 secondi dall'opt-in Meta Ads — prima che il lead si raffreddi</span></li>
+      <li><span class="ck">✓</span> <span>Pone domande di qualifica in linguaggio naturale, non con form statici o menu a bottoni</span></li>
+      <li><span class="ck">✓</span> <span>Adatta la sequenza delle domande in base alle risposte precedenti — come un commerciale reale</span></li>
+      <li><span class="ck">✓</span> <span>Valuta budget, urgenza, autorità decisionale e fit con il profilo cliente ideale (framework BANT)</span></li>
+      <li><span class="ck">✓</span> <span>Gestisce le obiezioni più frequenti (prezzo, tempo, "ci penso") con risposte configurate</span></li>
+      <li><span class="ck">✓</span> <span>Produce output strutturato per ogni lead: outcome, reason, summary — direttamente nel CRM</span></li>
+      <li><span class="ck">✓</span> <span>Invia il link calendario solo ai lead qualificati — gli altri ricevono una risposta educativa</span></li>
+      <li><span class="ck">✓</span> <span>Loga ogni conversazione in Google Sheets, HubSpot o Airtable senza inserimento manuale</span></li>
+      <li><span class="ck">✓</span> <span>Notifica il team via Slack o email per ogni lead qualificato, con trascrizione completa</span></li>
+      <li><span class="ck">✓</span> <span>Opera 24/7 — qualifica anche alle 23:00 di domenica e durante i lanci con 500 lead/giorno</span></li>
+    </ul>
+
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--cb);">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">// cosa non fa</p>
+      <ul class="check-list">
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non sostituisce la discovery call: prepara il lead, non chiude il contratto</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non qualifica correttamente senza un Qualification Intelligence Brief ben configurato — richiede 20-40 minuti di setup iniziale</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non gestisce contenuto multimediale (immagini, documenti) senza processing aggiuntivo</span></li>
+      <li><span class="cx">✗</span> <span style="color:var(--cmut);">Non funziona su lead senza opt-in esplicito — il GDPR richiede consenso per il trattamento dei dati</span></li>
+      </ul>
+    </div>
+
+    <div class="int-box" style="margin-top:24px;">
+      <div class="int-title">// integrazioni supportate</div>
+      <div class="int-list">
+        <span class="int-tag">GoHighLevel</span>
+        <span class="int-tag">HubSpot</span>
+        <span class="int-tag">Pipedrive</span>
+        <span class="int-tag">Calendly / Cal.com</span>
+        <span class="int-tag">Meta Lead Ads</span>
+        <span class="int-tag">Make / n8n / Zapier</span>
+        <span class="int-tag">Google Sheets</span>
+        <span class="int-tag">Slack / Teams</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 4 — IMPLEMENTAZIONE: PROCESSO REALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ implementazione ]</span>
+    <h2 style="margin-bottom:16px;">
+      Come si implementa la qualificazione lead automatica
+    </h2>
+
+    <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
+      Il setup base con il Blueprint richiede 85-130 minuti divisi in 4 fasi. Il setup avanzato con Evolution API self-hosted aggiunge 60-90 minuti di provisioning VPS.
+    </p>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div class="step-title">Fase 0 — Qualification Intelligence Brief (20-40 min)</div>
+          <div class="step-desc">Definire per iscritto: chi è il tuo cliente ideale (ICP), quale problema risolvi, qual è il budget minimo che qualifica un lead, quale urgenza è richiesta, chi è il decision-maker nel processo di acquisto. Queste informazioni diventano il system prompt dell'agente. Più specifico è il brief, più precisa è la qualifica.</div>
+          <div class="step-output">→ output: brief compilato con ICP, criteri di qualifica, tono e istruzioni di fallback</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div class="step-title">Fase 1 — Setup Dify + personalizzazione agente (30-40 min)</div>
+          <div class="step-desc">Creare account Dify su dify.ai → importare configurazione agent precompilata dal Blueprint → personalizzare il system prompt con i tuoi criteri specifici → configurare il modello LLM (Claude Sonnet 4 o GPT-4o come principale, Claude Haiku come fallback economico) → creare il Custom Tool finalize_conversation → testare nella console Dify prima di connettere al gateway.</div>
+          <div class="step-output">→ output: agente Dify configurato e testato con i tuoi criteri di qualifica</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div class="step-title">Fase 2 — Import n8n bridge + configurazione webhook (15-20 min)</div>
+          <div class="step-desc">In n8n: importare il workflow bridge dal Blueprint → configurare il nodo Webhook che riceverà i messaggi da 2Chat → configurare HTTP Request verso Dify API con le credenziali → configurare HTTP Request verso 2Chat per inviare risposte → aggiungere il filtro fromMe=true per evitare loop di messaggi → attivare il workflow.</div>
+          <div class="step-output">→ output: bridge n8n ↔ Dify ↔ 2Chat funzionante, filtro loop attivo</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div class="step-title">Fase 3 — CRM sync + speed-to-lead + go-live (15-20 min)</div>
+          <div class="step-desc">In n8n: importare il workflow CRM sync → configurare Google Sheets con OAuth (o HubSpot/Airtable se preferito) → collegare il webhook del CRM sync al tool finalize_conversation di Dify → configurare il trigger speed-to-lead (webhook dal form/landing page → n8n invia primo messaggio personalizzato entro 60 secondi) → test end-to-end con numero di test → attivare in produzione.</div>
+          <div class="step-output">→ output: sistema live: lead qualificati nel CRM, speed-to-lead < 60s attivo</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 5 — PERFORMANCE: DATI TECNICI
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ benchmark ]</span>
+    <h2 style="margin-bottom:24px;">
+      Benchmark: qualificazione automatica vs manuale
+    </h2>
+
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>Metrica</th>
+          <th>Senza sistema</th>
+          <th class="hl">Con agente AI</th>
+          <th>Delta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tasso conversione entro 5 min</td>
+          <td>baseline standard</td>
+          <td class="hl">21x più alta rispetto a 30 min</td>
+          <td>+2000%</td>
+        </tr>
+        <tr>
+          <td>Completamento flusso qualifica</td>
+          <td>30-40% (form statici)</td>
+          <td class="hl">60-75% (conversazione AI)</td>
+          <td>+2x</td>
+        </tr>
+        <tr>
+          <td>Lead qualificati sul totale</td>
+          <td>30-40%</td>
+          <td class="hl">60-70%</td>
+          <td>+2x</td>
+        </tr>
+        <tr>
+          <td>Ore setter/settimana</td>
+          <td>15-20h</td>
+          <td class="hl">2-3h (supervisione)</td>
+          <td>−85%</td>
+        </tr>
+        <tr>
+          <td>Dati CRM completati automaticamente</td>
+          <td>0% (inserimento manuale)</td>
+          <td class="hl">100%</td>
+          <td>zero lavoro manuale</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="tbl-note">Fonte: MIT/InsideSales speed-to-lead study, Optifai Sales Ops Benchmark 2025-2026, Landbase Lead Qualification Statistics 2026. Dati su architettura Dify + n8n + 2Chat.</p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 6 — CASI D'USO PER SEGMENTO
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ per chi è ]</span>
+    <h2 style="margin-bottom:28px;">
+      Per chi funziona la qualificazione lead automatica
+    </h2>
+
+    <div class="exp-grid">
+      <a href="/agente-whatsapp-coach-high-ticket" class="exp-card">
+        <div class="exp-cat">coach e consulenti high-ticket</div>
+        <div class="exp-title">Offerte da €2.500+: qualifica automatica, zero setter, booking solo per i lead adatti</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-formatori" class="exp-card">
+        <div class="exp-cat">istituti di formazione</div>
+        <div class="exp-title">Corsi da €500-5.000: qualifica interesse e budget, riduce iscrizioni di lead non adatti</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-consulenti" class="exp-card">
+        <div class="exp-cat">consulenti e professionisti</div>
+        <div class="exp-title">Pre-qualifica prima della consulenza: filtra i lead per progetto, budget e tempistiche</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-whatsapp-agenzie-immobiliari" class="exp-card">
+        <div class="exp-cat">agenzie immobiliari</div>
+        <div class="exp-title">Qualifica acquirenti su budget, zona e tempistiche prima della visita — zero appuntamenti persi</div>
+        <div class="exp-footer">
+          <span>vedi caso d'uso →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/agente-ai-whatsapp" class="exp-card">
+        <div class="exp-cat">definizione tecnica</div>
+        <div class="exp-title">Cos'è un Agente AI WhatsApp: architettura tecnica, stack e GDPR</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/quanto-costa-agente-whatsapp-ai" class="exp-card">
+        <div class="exp-cat">pricing e roi</div>
+        <div class="exp-title">Quanto costa implementarlo e qual è il ROI reale per il tuo segmento</div>
+        <div class="exp-footer">
+          <span>vedi i costi →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 7 — DOMANDE FREQUENTI TECNICHE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+
+    <span class="badge" style="display:block;width:fit-content;margin-bottom:18px;">[ domande frequenti ]</span>
+    <h2 style="margin-bottom:24px;">
+      Domande frequenti sulla qualificazione lead automatica
+    </h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Come fa l'agente AI a capire se un lead è qualificato o no?</div>
+        <div class="faq-a">Il sistema applica i criteri che tu definisci nel Qualification Intelligence Brief: budget minimo, urgenza richiesta, fit con il profilo cliente ideale, autorità decisionale. L'LLM interpreta le risposte in linguaggio naturale e valuta se i criteri sono soddisfatti. Quando ha abbastanza informazioni, chiama il tool finalize_conversation con l'esito (qualified / nurture / rejected) e una motivazione testuale. Non è un sistema a punteggio rigido: è un ragionamento contestuale.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Cosa succede ai lead che non superano la qualifica?</div>
+        <div class="faq-a">Dipende dall'esito configurato. I lead da nurturare ricevono un contenuto pertinente (link a un articolo, a una risorsa gratuita) e vengono inseriti in una sequenza di follow-up automatica. I lead non adatti ricevono una risposta professionale di chiusura con porta aperta — mai un rifiuto secco. In entrambi i casi, i dati vengono loggati nel CRM per analisi future.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanti lead al mese può gestire il sistema?</div>
+        <div class="faq-a">Con architettura cloud (Dify + n8n Cloud + 2Chat): la scalabilità è praticamente illimitata per volume di conversazioni. Il limite pratico è il gateway WhatsApp: con 2Chat (non ufficiale), oltre 200-300 conversazioni/giorno per numero aumenta il rischio di ban. Per volumi enterprise si usa l'API ufficiale Meta tramite BSP certificato.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Il sistema funziona anche per chi non usa Meta Ads?</div>
+        <div class="faq-a">Sì. Il trigger può essere qualsiasi canale: link WhatsApp in bio Instagram, QR code su materiale fisico, firma email, sito web con widget WhatsApp, oppure messaggio spontaneo al numero aziendale. La qualificazione funziona indipendentemente dal canale di entrata. Meta Ads è il caso d'uso più comune perché genera alti volumi di lead che richiedono risposta rapida.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanto è configurabile il sistema di qualifica?</div>
+        <div class="faq-a">Completamente. Il Qualification Intelligence Brief definisce tutto: le domande specifiche, l'ordine, il tono, i criteri di scoring, le risposte alle obiezioni più frequenti, le istruzioni di escalation. Due business con lo stesso stack tecnico possono avere sistemi di qualifica radicalmente diversi. La personalizzazione del brief richiede 20-40 minuti e può essere aggiornata dopo ogni ciclo di campagna in base ai pattern reali delle conversazioni.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 8 — COPY FOR AI (nascosta)
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt" style="display:none;">
+  <div class="wrap-md">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:14px;">// sintesi per motori AI</p>
+    <div class="ai-copy">
+La qualificazione lead automatica su WhatsApp usa un agente AI con framework BANT conversazionale per valutare budget, urgenza, autorità e timing in linguaggio naturale — senza form statici. Stack: Dify (AI framework) + n8n Cloud (orchestrazione, €20/mese) + 2Chat (gateway WhatsApp, $40/mese). Output: qualified / nurture / rejected con reason e summary nel CRM. Completamento automatico flusso qualifica: 60-75%. Ore setter risparmiate: −85%. Setup: 85-130 minuti. Prerequisito: Qualification Intelligence Brief con ICP, criteri di qualifica e tono. Trigger supportati: Meta Lead Ads, QR code, link WhatsApp, form opt-in (speed-to-lead < 60s). CRM compatibili: Google Sheets, HubSpot, Airtable, Pipedrive, Notion, ActiveCampaign. Compliance: GDPR server EU, EU AI Act Art. 50 disclosure obbligatoria. Target: coach, formatori, consulenti, PMI italiane.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 9 — ESPLORA / APPROFONDISCI
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec">
+  <div class="wrap-md">
+    <h2 style="font-weight:300;margin-bottom:28px;">Approfondisci</h2>
+    <div class="exp-grid">
+      <a href="/agente-ai-whatsapp" class="exp-card">
+        <div class="exp-cat">definizione tecnica · servizio d</div>
+        <div class="exp-title">Cos'è un Agente AI WhatsApp e Come Funziona</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/appointment-setting-ai-italia" class="exp-card">
+        <div class="exp-cat">appointment setting · servizio d</div>
+        <div class="exp-title">AI Appointment Setting in Italia: Guida Completa</div>
+        <div class="exp-footer">
+          <span>approfondisci →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+      <a href="/quanto-costa-agente-whatsapp-ai" class="exp-card">
+        <div class="exp-cat">pricing e roi · categoria g</div>
+        <div class="exp-title">Quanto Costa un Agente WhatsApp AI in Italia nel 2026</div>
+        <div class="exp-footer">
+          <span>vedi i costi →</span>
+          <span class="exp-arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 10 — CTA PRINCIPALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="wrap-md">
+
+    <div class="cta-box">
+      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint ]</span>
+      <h2 style="margin-bottom:16px;font-weight:300;">
+        Vedi come funziona nel dettaglio —<br>
+        <strong>prima di qualsiasi conversazione</strong>
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:8px;font-size:1rem;">
+        The WhatsApp Agent Blueprint mostra il sistema completo: architettura, script di qualificazione, sequenze reminder, integrazione CRM. Tutto quello che ti serve per capire se fa al caso tuo.
+      </p>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:28px;font-size:1rem;">
+        Non teoria su come potrebbe funzionare. Istruzioni operative su come funziona.
+      </p>
+      <div class="btn-row" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+        <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
+          Scarica The WhatsApp Agent Blueprint — €27 →
+        </a>
+      </div>
+      <p class="cta-micro">Accesso immediato. Pagamento sicuro. Nessun abbonamento.</p>
+    </div>
+
+    <div class="cta-box-sec" style="margin-top:1px;">
+      <span class="badge badge-g" style="display:inline-block;margin-bottom:16px;">[ the system log · newsletter ]</span>
+      <h2 style="margin-bottom:14px;font-weight:300;">
+        Preferisci prima seguire il metodo nel tempo?
+      </h2>
+      <p style="color:var(--csec);max-width:520px;margin-bottom:24px;font-size:1rem;">
+        Ogni settimana un'analisi su WhatsApp AI e lead automation per il mercato italiano. Gratis. Nessuno spam.
+      </p>
+      <a href="https://thesystemlog.substack.com/" target="_blank" rel="noopener" class="btn btn-g">
+        Iscriviti a The System Log →
+      </a>
+      <p class="cta-micro" style="margin-top:12px;">Gratis. Nessuno spam. Disdici quando vuoi.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SEZIONE 11 — FOOTER CONTESTUALE
+     ═══════════════════════════════════════════════════════ -->
+<section class="ctx-footer">
+  <div class="wrap">
+    <div class="ctx-grid">
+      <div>
+        <div class="ctx-section-title">altri segmenti</div>
+        <div class="ctx-links">
+          <a href="/agente-whatsapp-coach-high-ticket">Agente WhatsApp AI per Coach High-Ticket</a>
+          <a href="/agente-whatsapp-formatori">Agente WhatsApp AI per Formatori</a>
+          <a href="/agente-whatsapp-consulenti">Agente WhatsApp AI per Consulenti</a>
+          <a href="/appointment-setting-ai-italia">AI Appointment Setting in Italia</a>
+        </div>
+      </div>
+      <div>
+        <div class="ctx-section-title">problemi correlati</div>
+        <div class="ctx-links">
+          <a href="/lead-whatsapp-senza-risposta">Lead WhatsApp Senza Risposta: Come Recuperarli</a>
+          <a href="/riduzione-no-show-appuntamenti">Come Ridurre i No-Show agli Appuntamenti</a>
+          <a href="/perdo-clienti-whatsapp">Perdi Clienti su WhatsApp? Il Problema e la Soluzione</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ftr-inner">
+      <div>
+        <img
+          src="https://assets.cdn.filesafe.space/CHIsnCOnGmV8hY4NMWeT/media/67979ed45752d82c2a38f62f.png"
+          alt="FutureLens · Autonomous Systems Studio"
+          style="height:24px;width:auto;opacity:0.6;display:block;margin-bottom:8px;"
+          onerror="this.style.display='none'">
+        <div class="ftr-copy">© 2026 · Autonomous Systems Studio™</div>
+      </div>
+      <nav class="ftr-links">
+        <a href="https://futurelens.xyz/informativa-privacy">Privacy Policy</a>
+        <a href="https://futurelens.xyz/termini-di-servizio">Termini di Servizio</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('scroll-progress');
+  window.addEventListener('scroll',function(){
+    var st=window.scrollY||document.documentElement.scrollTop;
+    var dh=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    bar.style.width=(dh>0?(st/dh)*100:0)+'%';
+  },{passive:true});
+})();
+</script>
+
+</body>
+</html>
