@@ -2,17 +2,17 @@
   "template_type": "G",
   "slug": "roi-automazione-whatsapp-coach",
   "meta_title": "ROI dell'Automazione WhatsApp per Coach: Il Calcolo Reale | FutureLens",
-  "meta_description": "ROI automazione WhatsApp per coach high-ticket: calcolo reale con CPL, show rate e close rate. Da €90/mese di costo a €2.400+ di valore recuperato. Dati verificati 2026.",
-  "twitter_description": "ROI automazione WhatsApp per coach: calcolo reale CPL, show rate, close rate. Da €90/mese a €2.400+ recuperati.",
+  "meta_description": "ROI automazione WhatsApp per coach high-ticket: calcolo reale con CPL, show rate e close rate. Da €30-40/mese di costo a €2.400+ di valore recuperato. Dati verificati 2026.",
+  "twitter_description": "ROI automazione WhatsApp per coach: calcolo reale CPL, show rate, close rate. Da €30-40/mese a €2.400+ recuperati.",
   "canonical_url": "https://seo.futurelens.xyz/roi-automazione-whatsapp-coach",
   "date_modified": "2026-06-13",
   "schema_service_desc": "Analisi ROI dell'automazione WhatsApp AI per coach high-ticket: calcolo con dati reali di CPL, show rate, close rate e valore per lead — confronto prima/dopo il sistema.",
   "schema_audience": "Coach High-Ticket, Formatori, Consulenti",
-  "schema_offer_desc": "Stack agente AI WhatsApp: da €65/mese. The WhatsApp Agent Blueprint (documentazione completa architettura): €27 una tantum.",
+  "schema_offer_desc": "Stack agente AI WhatsApp: da €10-20/mese di infrastruttura. WhatsApp AI Autopilot™ (stack pre-costruito + installazione guidata da Claude Code): €17 una tantum.",
   "hero_badge_label": "roi · categoria g · coach high-ticket",
   "h1_title": "ROI dell'Automazione WhatsApp<br>per Coach: Il Calcolo Reale",
-  "hero_subtitle": "Per chi vuole capire se i numeri reggono prima di investire €90/mese in un sistema AI",
-  "hero_pain_p1": "Il ROI dell'automazione WhatsApp per coach dipende da tre variabili: il costo per lead (CPL), il tasso di show alle discovery call e il close rate. Con un CPL di €40, 80 lead/mese e un'offerta da €3.000, perdere il 20% dei lead per risposta lenta significa bruciare €640/mese in lead non qualificati. Il sistema AI costa €65-90/mese e recupera quella perdita già nel primo mese.",
+  "hero_subtitle": "Per chi vuole capire se i numeri reggono prima di investire €30-40/mese in un sistema AI",
+  "hero_pain_p1": "Il ROI dell'automazione WhatsApp per coach dipende da tre variabili: il costo per lead (CPL), il tasso di show alle discovery call e il close rate. Con un CPL di €40, 80 lead/mese e un'offerta da €3.000, perdere il 20% dei lead per risposta lenta significa bruciare €640/mese in lead non qualificati. Il sistema AI (WhatsApp AI Autopilot™, €17 una tantum + €30-40/mese di infrastruttura e API) recupera quella perdita già nel primo mese.",
   "nav_items": [
     "Quanto costa lo stack — tutti i costi inclusi",
     "I modelli di pricing: flat, stack, pay-per-use",
@@ -24,32 +24,33 @@
   "costi_h2": "Costi reali dell'automazione WhatsApp per coach",
   "costi_intro": "Questi sono i costi verificati a maggio 2026 per le architetture più usate dai coach high-ticket italiani.",
   "costi_table": [
-    {"category_label": "// stack consigliato per coach (no-code self-managed)"},
-    {"voce": "Dify (AI framework)", "cloud": "Gratuito", "selfhosted": "Gratuito (open source)", "note": "Gestisce LLM, system prompt, tool calling"},
-    {"voce": "n8n Cloud (orchestrazione)", "cloud": "€20/mese", "selfhosted": "Incluso nel VPS", "note": "Bridge WhatsApp ↔ Dify ↔ CRM"},
-    {"voce": "2Chat (gateway WhatsApp)", "cloud": "$40/mese", "selfhosted": "€0 (Evolution API)", "note": "Non ufficiale, setup rapido, zero burocrazia"},
-    {"voce": "API LLM (Claude Haiku)", "cloud": "€5-20/mese (80 lead/mese)", "selfhosted": "€5-20/mese (stesso)", "note": "~€0.005-0.02/conversazione con Haiku"},
-    {"voce": "CRM (Google Sheets)", "cloud": "Gratuito", "selfhosted": "Gratuito", "note": "HubSpot CRM gratuito come alternativa"},
-    {"voce": "TOTALE MENSILE", "cloud": "€70-90/mese", "selfhosted": "€25-55/mese", "note": "Costo fisso — scalabile a volumi alti"},
+    {"category_label": "// whatsapp ai autopilot™ per coach (stack self-hosted, unico percorso)"},
+    {"voce": "Orchestrazione + agente AI (n8n)", "cloud": "—", "selfhosted": "Incluso nel VPS", "note": "Gestisce LLM, system prompt, tool calling nello stesso workflow"},
+    {"voce": "Gateway WhatsApp (Evolution API)", "cloud": "—", "selfhosted": "€0 (self-hosted)", "note": "Connessione QR, setup rapido, zero burocrazia"},
+    {"voce": "VPS (Contabo / Hetzner)", "cloud": "—", "selfhosted": "€7,50-20/mese", "note": "Contabo Cloud VPS 6 ~€7,50/mese nei primi 24 mesi"},
+    {"voce": "API LLM (Claude Haiku)", "cloud": "—", "selfhosted": "€5-20/mese (80 lead/mese)", "note": "~€0.005-0.02/conversazione con Haiku"},
+    {"voce": "Claude Code (Metodo AI-Guidato™)", "cloud": "—", "selfhosted": "~€18/mese (abbonamento Claude Pro/Max)", "note": "Installa e mantiene lo stack in linguaggio naturale"},
+    {"voce": "CRM (Google Sheets)", "cloud": "—", "selfhosted": "Gratuito", "note": "HubSpot CRM gratuito come alternativa"},
+    {"voce": "TOTALE MENSILE", "cloud": "—", "selfhosted": "€10-20/mese (infra fissa)", "note": "API LLM e Claude Code a parte — totale realistico ~€30-40/mese"},
     {"category_label": "// alternativa setter umano (benchmark di confronto)"},
     {"voce": "Setter umano (part-time)", "cloud": "€800-1.500/mese", "selfhosted": "N/A", "note": "Solo orario lavorativo, collo di bottiglia nei lanci"},
     {"voce": "Setter umano (full-time)", "cloud": "€1.500-3.000/mese", "selfhosted": "N/A", "note": "Contratto, contributi, formazione, turn-over"},
     {"voce": "Il tuo tempo personale", "cloud": "€300-800/mese (implicito)", "selfhosted": "N/A", "note": "~5-10h/settimana a €15-20/h opportunità"}
   ],
-  "costi_note": "Fonte: n8n.io pricing, 2chat.io pricing, Anthropic API pricing — maggio 2026. Il costo del setter umano è stime di mercato italiano. Il costo del proprio tempo è calcolato a €15/h di costo-opportunità su 5h/settimana.",
+  "costi_note": "Fonte: n8n.io pricing, Evolution API, Contabo, Anthropic API pricing — maggio 2026. Il costo del setter umano è stime di mercato italiano. Il costo del proprio tempo è calcolato a €15/h di costo-opportunità su 5h/settimana.",
   "modelli_h2": "Come paghi il sistema: 3 modelli a confronto",
   "modelli_intro": "Per i coach, la scelta del modello di pricing impatta sul ROI a seconda del volume di lead mensili.",
   "modelli": [
     {
       "nome": "Stack a componenti (consigliato)",
-      "price": "€70-90",
-      "freq": "/mese fisso",
-      "desc": "Paghi n8n + 2Chat + API LLM separatamente. Costo fisso prevedibile, nessun vendor lock-in. Il sistema è tuo — nessuno può aumentare il prezzo arbitrariamente.",
+      "price": "€10-20",
+      "freq": "/mese fisso (infra)",
+      "desc": "Paghi n8n + Evolution API + API LLM separatamente, installati insieme da Claude Code. Costo fisso prevedibile, nessun vendor lock-in. Il sistema è tuo — nessuno può aumentare il prezzo arbitrariamente.",
       "items": [
-        "Costo fisso: €70-90/mese tutto incluso escluse API LLM",
+        "Costo fisso: €10-20/mese di infrastruttura, escluse API LLM e abbonamento Claude Code",
         "API LLM variabili: €5-20/mese con Claude Haiku su 80 lead/mese",
         "Architettura open source — può essere migrata senza costi aggiuntivi",
-        "Setup: 90 minuti con il Blueprint"
+        "Setup: 75 minuti, guidato da Claude Code (WhatsApp AI Autopilot™, €17 una tantum)"
       ],
       "recommended": true
     },
@@ -127,28 +128,28 @@
     {
       "segmento": "Coach entry (offerta €1.500)",
       "meta": "CPL €30, 50 lead/mese, close rate 15%",
-      "costo": "€90/mese",
+      "costo": "€30-40/mese",
       "valore": "€600-900 (lead recuperati + show rate)",
       "roi": "+570-900%"
     },
     {
       "segmento": "Coach mid (offerta €3.000)",
       "meta": "CPL €40, 80 lead/mese, close rate 20%",
-      "costo": "€90/mese",
+      "costo": "€30-40/mese",
       "valore": "€1.200-2.400 (lead recuperati + show rate)",
       "roi": "+1.200-2.600%"
     },
     {
       "segmento": "Coach high (offerta €5.000+)",
       "meta": "CPL €60, 60 lead/mese, close rate 25%",
-      "costo": "€90/mese",
+      "costo": "€30-40/mese",
       "valore": "€1.800-3.600 (lead recuperati + show rate)",
       "roi": "+1.900-3.900%"
     },
     {
       "segmento": "Formatore corsi (€800)",
       "meta": "CPL €25, 120 lead/mese, close rate 12%",
-      "costo": "€90/mese",
+      "costo": "€30-40/mese",
       "valore": "€700-1.400 (conversioni aggiuntive)",
       "roi": "+680-1.450%"
     }
@@ -176,7 +177,7 @@
   "faqs": [
     {
       "q": "Quanto tempo ci vuole per vedere il primo ROI positivo?",
-      "a": "Nella maggior parte dei casi, il primo mese. Se hai già 50+ lead/mese attivi, il sistema inizia a qualificare e recuperare lead dalla prima settimana di attività. Il sistema è live in 90 minuti — non hai un periodo di implementazione lungo prima di vedere risultati. Il ROI si misura confrontando il tasso di risposta entro 5 minuti prima e dopo il sistema."
+      "a": "Nella maggior parte dei casi, il primo mese. Se hai già 50+ lead/mese attivi, il sistema inizia a qualificare e recuperare lead dalla prima settimana di attività. Il sistema è live in 75 minuti, guidato passo passo da Claude Code — non hai un periodo di implementazione lungo prima di vedere risultati. Il ROI si misura confrontando il tasso di risposta entro 5 minuti prima e dopo il sistema."
     },
     {
       "q": "Vale la pena se ho già un setter umano?",
@@ -184,7 +185,7 @@
     },
     {
       "q": "Il sistema funziona anche per chi ha un CPL alto (€80-120)?",
-      "a": "Con CPL alto il ROI è ancora più evidente: ogni lead perso per risposta lenta ha un costo diretto maggiore. Con CPL €100 e 40 lead/mese, perdere il 20% per risposta lenta significa €800/mese bruciati — il sistema AI a €90/mese recupera almeno parte di quella perdita già nel primo mese. I dati MIT/InsideSales mostrano una differenza di conversione di 21x tra risposta entro 5 minuti e risposta oltre 30 minuti."
+      "a": "Con CPL alto il ROI è ancora più evidente: ogni lead perso per risposta lenta ha un costo diretto maggiore. Con CPL €100 e 40 lead/mese, perdere il 20% per risposta lenta significa €800/mese bruciati — il sistema AI a €30-40/mese recupera almeno parte di quella perdita già nel primo mese. I dati MIT/InsideSales mostrano una differenza di conversione di 21x tra risposta entro 5 minuti e risposta oltre 30 minuti."
     },
     {
       "q": "Il sistema funziona davvero come un setter — o si sente che è un bot?",
@@ -192,10 +193,10 @@
     },
     {
       "q": "Cosa succede se smetto di pagare lo stack?",
-      "a": "Con lo stack a componenti (Dify + n8n + 2Chat), ogni servizio è indipendente. Se smetti di pagare n8n, l'orchestrazione si ferma ma i dati nel CRM rimangono. Se smetti di pagare 2Chat, il gateway si disconnette. A differenza dei SaaS all-in-one (Wati, Respond.io), i tuoi dati, le configurazioni e il system prompt non sono ostaggio di nessun vendor — li esporti e li usi su qualsiasi altra piattaforma."
+      "a": "Con lo stack a componenti (n8n + Evolution API), ogni servizio è indipendente. Se smetti di pagare il VPS, l'orchestrazione si ferma ma i dati nel CRM rimangono. Se smetti l'abbonamento Claude Code, perdi solo il supporto guidato per manutenzione futura — lo stack già installato continua a funzionare. A differenza dei SaaS all-in-one (Wati, Respond.io), i tuoi dati, le configurazioni e il system prompt non sono ostaggio di nessun vendor — li esporti e li usi su qualsiasi altra piattaforma."
     }
   ],
-  "ai_copy_text": "ROI automazione WhatsApp per coach high-ticket Italia. Scenario base: CPL €40, 80 lead/mese, offerta €3.000. Costo sistema: €70-90/mese (Dify + n8n + 2Chat + API LLM). Valore recuperato: €1.200-2.400/mese (lead non persi per risposta lenta + show rate +20%). ROI mese 1: +1.200-2.600%. Fonte impatto: MIT/InsideSales (21x più alta conversione <5min), Optifai 2026 (show rate +20% con reminder WhatsApp). Stack: Dify (AI framework gratuito) + n8n Cloud €20/mese + 2Chat $40/mese + API LLM €8-15/mese (Claude Haiku). Costi nascosti: numero dedicato €5-20/mese, ottimizzazione Brief 3-5h prima settimana. Blueprint FutureLens: €27 una tantum per architettura completa. Target: coach high-ticket offerta €1.500-10.000+, 30-200 lead/mese da Meta Ads, Italia.",
+  "ai_copy_text": "ROI automazione WhatsApp per coach high-ticket Italia. Scenario base: CPL €40, 80 lead/mese, offerta €3.000. Costo sistema: €30-40/mese totale realistico (n8n + Evolution API self-hosted + API LLM + abbonamento Claude Code). Valore recuperato: €1.200-2.400/mese (lead non persi per risposta lenta + show rate +20%). ROI mese 1: +1.200-2.600%. Fonte impatto: MIT/InsideSales (21x più alta conversione <5min), Optifai 2026 (show rate +20% con reminder WhatsApp). Stack: n8n self-hosted (orchestrazione + agente AI) + Evolution API self-hosted (gateway WhatsApp, €10-20/mese di infrastruttura) + API LLM €8-15/mese (Claude Haiku) + Claude Code ~€18/mese (Metodo AI-Guidato™, installazione e manutenzione). Costi nascosti: numero dedicato €5-20/mese, ottimizzazione Brief 3-5h prima settimana. WhatsApp AI Autopilot™ FutureLens: €17 una tantum, setup guidato da Claude Code in 75 minuti. Target: coach high-ticket offerta €1.500-10.000+, 30-200 lead/mese da Meta Ads, Italia.",
   "esplora": [
     {"cat": "definizione tecnica · servizio d", "titolo": "Cos'è un Agente AI WhatsApp e Come Funziona", "url": "/agente-ai-whatsapp", "note": "approfondisci →"},
     {"cat": "coach high-ticket · segmento a", "titolo": "Agente WhatsApp AI per Coach High-Ticket", "url": "/agente-whatsapp-coach-high-ticket", "note": "vedi caso d'uso →"},

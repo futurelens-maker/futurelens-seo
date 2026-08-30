@@ -1,8 +1,8 @@
 # FutureLens — Template Completi per le 7 Categorie di Pagine SEO
 
-**Versione:** 1.3 — Maggio 2026 *(CTA definitivo: Blueprint $27 + Substack su tutte le categorie. Audit gratuito rimosso.)*
+**Versione:** 1.4 — Agosto 2026 *(CTA definitivo: WhatsApp AI Autopilot™ €17 + Substack su tutte le categorie. Audit gratuito rimosso. Sostituisce "The WhatsApp Agent Blueprint" €27, deprecato 2026-08-28.)*
 **Categorie:** A (Segmento) · B (Città) · C (Problema) · D (Servizio) · E (Combo) · F (Confronto) · G (Pricing/ROI)
-**Prodotti CTA:** The WhatsApp Agent Blueprint ($27) · Newsletter Substack
+**Prodotti CTA:** WhatsApp AI Autopilot™ (€17) · Newsletter Substack
 
 ---
 
@@ -127,7 +127,7 @@ Esempio: "Agente WhatsApp AI per Coach High-Ticket | FutureLens"
 DESCRIPTION (max 155 caratteri):
 [Dato sul problema del segmento]. [Cosa fa la soluzione]
 per [segmento] italiani con [contesto].
-Scopri il metodo completo nel Blueprint →
+Attiva WhatsApp AI Autopilot™ →
 → Deve contenere almeno un numero.
 
 URL SLUG:
@@ -389,17 +389,17 @@ H2: Approfondisci
 
 #### SEZIONE 10 — CTA Principale
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
-H2: Parti da qui: il metodo completo in un documento
+H2: Parti da qui: lo stack guidato, pronto in 75 minuti
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint è la guida operativa su come
-costruire e ottimizzare un sistema di lead automation su WhatsApp.
-[N] pagine. Applicabile da subito."
+"WhatsApp AI Autopilot™ è lo stack pre-costruito e collegato
+al tuo numero WhatsApp, installato da Claude Code in linguaggio
+naturale — Metodo AI-Guidato™. Applicabile da subito."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
 Micro-copy: "Accesso immediato. Pagamento sicuro. Nessun abbonamento."
 ```
@@ -421,7 +421,7 @@ Micro-copy: "Già [N] professionisti del coaching la leggono ogni settimana."
 ```
 
 **Logica CTA Cat. A:**
-Blueprint → intercetta chi è pronto ad agire.
+WhatsApp AI Autopilot™ → intercetta chi è pronto ad agire.
 Substack → intercetta chi vuole ancora informarsi.
 
 ---
@@ -485,7 +485,7 @@ Agente WhatsApp AI a [Città] | FutureLens
 DESCRIPTION (max 155 caratteri):
 Agente WhatsApp AI per coach e consulenti a [Città].
 [Dato locale se disponibile]. Risposta immediata ai lead,
-qualificazione automatica. Scopri il Blueprint →
+qualificazione automatica. Attiva WhatsApp AI Autopilot™ →
 
 URL SLUG:
 /agente-whatsapp-[città]
@@ -631,17 +631,17 @@ Clienti attivi in [Regione]."
 
 #### SEZIONE 10 — CTA
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
 H2: Il metodo per gestire i lead su WhatsApp — da subito
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint è il sistema completo
+"WhatsApp AI Autopilot™ è lo stack completo, pronto in 75 minuti,
 per rispondere, qualificare e convertire i lead su WhatsApp.
 Applicabile da qualsiasi città italiana."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
 Micro-copy: "Accesso immediato. Pagamento sicuro. Nessun abbonamento."
 ```
@@ -928,19 +928,19 @@ Risultato medio: [metrica] in [tempo] per [profilo].
 
 #### SEZIONE 10 — CTA
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
-H2: Il protocollo completo per risolvere [Problema] — in un documento
+H2: Lo stack pronto per risolvere [Problema] — in 75 minuti
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint include il sistema step-by-step
+"WhatsApp AI Autopilot™ include lo stack self-hosted
 per eliminare [problema] con un agente WhatsApp AI.
-Non teoria — istruzioni operative."
+Non teoria — un sistema operativo, guidato da Claude Code."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
-Micro-copy: "Accesso immediato. [N] pagine. Applicabile da subito."
+Micro-copy: "Accesso immediato. Setup guidato. Applicabile da subito."
 ```
 
 **CTA SECONDARIA — Newsletter Substack**
@@ -961,7 +961,7 @@ Micro-copy: "Nessuno spam. Solo contenuto operativo."
 **Nota:** la Q5 nelle FAQ ("primo passo concreto") deve rimandare alla newsletter Substack — è coerente con il tono informativo della categoria.
 
 **Logica CTA Cat. C:**
-Blueprint → per chi ha letto la diagnosi e vuole il metodo completo da subito.
+WhatsApp AI Autopilot™ → per chi ha letto la diagnosi e vuole il metodo completo da subito.
 Substack → per chi è ancora in fase di ricerca e vuole seguire nel tempo.
 
 ---
@@ -1010,7 +1010,7 @@ TITLE (max 60 caratteri):
 DESCRIPTION (max 155 caratteri):
 [Definizione tecnica in 10 parole].
 [Metrica principale]. [Compatibilità]. Guida completa
-con specifiche tecniche, implementazione e Blueprint →
+con specifiche tecniche, implementazione e Autopilot →
 ```
 
 ---
@@ -1188,20 +1188,20 @@ Integrazioni: [lista]. Target: [profilo] con [volume] lead/mese."
 **Elemento demo opzionale (sopra i bottoni):**
 Link a video demo o screenshot del sistema. Posizionato prima delle CTA — il visitatore Cat. D vuole vedere prima di agire.
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
 H2: Vedi come funziona nel dettaglio — prima di qualsiasi conversazione
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint mostra il sistema completo:
+"WhatsApp AI Autopilot™ è il sistema completo, pronto all'uso:
 architettura, script di qualificazione, sequenze reminder,
-integrazione CRM. Tutto quello che ti serve per capire
-se fa al caso tuo."
+integrazione CRM, installato da Claude Code sul tuo numero
+WhatsApp in 75 minuti."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
-Micro-copy: "Accesso immediato. [N] pagine. Applicabile da subito."
+Micro-copy: "Accesso immediato. Setup guidato. Applicabile da subito."
 ```
 
 **CTA SECONDARIA — Newsletter Substack**
@@ -1220,7 +1220,7 @@ Micro-copy: "Nessuno spam. Solo contenuto operativo."
 ```
 
 **Logica CTA Cat. D:**
-Blueprint → per chi vuole capire il dettaglio tecnico da solo prima di qualsiasi call.
+WhatsApp AI Autopilot™ → per chi vuole capire il dettaglio tecnico da solo prima di qualsiasi call.
 Substack → per chi ha bisogno di più tempo e contesto.
 
 ---
@@ -1268,7 +1268,7 @@ Agente WhatsApp AI per [Segmento] a [Città] | FutureLens
 DESCRIPTION (max 155 caratteri):
 [Servizio] per [segmento] di [Città] con Meta Ads attive.
 [Dato locale o di segmento]. Risposta immediata ai lead,
-qualificazione automatica. Scopri il Blueprint →
+qualificazione automatica. Attiva WhatsApp AI Autopilot™ →
 
 URL SLUG: /[segmento]-[città]
 Esempi: /coach-high-ticket-milano · /consulenti-roma
@@ -1393,17 +1393,18 @@ Setup in 7–10 giorni. Target: [segmento] con Meta Ads."
 
 #### SEZIONE 9 — CTA
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
-H2: Il metodo per [segmento] come te — in un documento
+H2: Il metodo per [segmento] come te — pronto in 75 minuti
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint è il sistema completo
-per rispondere, qualificare e convertire i lead su WhatsApp.
-Scritto per chi lavora nel coaching e nella consulenza italiana."
+"WhatsApp AI Autopilot™ è lo stack completo, installato da
+Claude Code, per rispondere, qualificare e convertire i lead
+su WhatsApp. Pensato per chi lavora nel coaching e nella
+consulenza italiana."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
 Micro-copy: "Accesso immediato. Applicabile da subito, ovunque tu lavori."
 ```
@@ -1424,7 +1425,7 @@ Micro-copy: "Nessuno spam. Solo contenuto operativo."
 ```
 
 **Logica CTA Cat. E:**
-Blueprint → intercetta chi è pronto ad agire dopo aver riconosciuto il suo caso specifico.
+WhatsApp AI Autopilot™ → intercetta chi è pronto ad agire dopo aver riconosciuto il suo caso specifico.
 Substack → intercetta chi vuole seguire il metodo nel tempo prima di decidere.
 
 ---
@@ -1629,17 +1630,17 @@ Fonte: confronto aggiornato a [mese anno]."
 
 #### SEZIONE 9 — CTA (tono consulenziale)
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
 H2: Vuoi capire nel dettaglio come funziona FutureLens prima di decidere?
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint mostra l'intero sistema —
-architettura, script, integrazioni, costi reali.
-Leggilo. Poi decidi."
+"WhatsApp AI Autopilot™ è lo stack pronto — architettura,
+script, integrazioni, costi reali, installato da Claude Code.
+Vedi come funziona. Poi decidi."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
 Micro-copy: "Accesso immediato. Se preferisci [Competitor], nessun problema."
 ```
@@ -1660,9 +1661,9 @@ Micro-copy: "Nessuno spam. Aggiornamenti ogni volta che i dati cambiano."
 ```
 
 **Logica CTA Cat. F:**
-Blueprint → per chi vuole capire FutureLens nel dettaglio prima di comparare con il competitor.
+WhatsApp AI Autopilot™ → per chi vuole capire FutureLens nel dettaglio prima di comparare con il competitor.
 Substack → per chi è ancora in fase di ricerca e vuole più dati nel tempo.
-Il micro-copy del Blueprint ("se preferisci [Competitor], nessun problema") continua la narrativa di onestà costruita nella pagina ed è coerente con il disclaimer iniziale.
+Il micro-copy della CTA ("se preferisci [Competitor], nessun problema") continua la narrativa di onestà costruita nella pagina ed è coerente con il disclaimer iniziale.
 
 ---
 
@@ -1714,7 +1715,7 @@ Quanto Costa [Servizio] in Italia [Anno] | FutureLens
 
 DESCRIPTION (max 155 caratteri):
 Tutti i costi reali: canone, API, setup, integrazioni.
-Nessun costo nascosto. Scarica il Blueprint per il calcolo
+Nessun costo nascosto. Attiva WhatsApp AI Autopilot™ per il calcolo
 ROI sul tuo scenario. Guida completa [anno].
 → Deve contenere "tutti i costi" o equivalente.
 ```
@@ -1905,19 +1906,19 @@ ROI medio [X]x in [N] giorni su [profilo]."
 
 #### SEZIONE 10 — CTA
 
-**CTA PRIMARIA — The WhatsApp Agent Blueprint**
+**CTA PRIMARIA — WhatsApp AI Autopilot™**
 
 ```
-H2: Vedi tutti i costi e il metodo completo nel documento
+H2: Vedi tutti i costi e il sistema completo, pronto in 75 minuti
 
 Testo di supporto (2 righe):
-"The WhatsApp Agent Blueprint include i costi reali di setup,
+"WhatsApp AI Autopilot™ include i costi reali di setup,
 le integrazioni necessarie e il calcolo ROI sul tuo scenario.
-[N] pagine. Tutto quello che ti serve per decidere."
+Tutto quello che ti serve per decidere — e attivare subito."
 
-Bottone: Scarica The WhatsApp Agent Blueprint — $27 →
+Bottone: Attiva WhatsApp AI Autopilot™ — €17 →
 
-Micro-copy: "Accesso immediato. Porti i tuoi numeri al documento — non a una call."
+Micro-copy: "Accesso immediato. Porti i tuoi numeri al sistema — non a una call."
 ```
 
 **CTA SECONDARIA — Newsletter Substack**
@@ -1936,7 +1937,7 @@ Micro-copy: "Gratis. Nessuno spam. Solo aggiornamenti utili."
 ```
 
 **Logica CTA Cat. G:**
-Blueprint → risponde alla domanda "ma cosa include davvero?" meglio di qualsiasi testo statico. L'intento transazionale si sposa perfettamente con un prodotto da $27 — abbassa la barriera rispetto a una call.
+WhatsApp AI Autopilot™ → risponde alla domanda "ma cosa include davvero?" meglio di qualsiasi testo statico. L'intento transazionale si sposa perfettamente con un prodotto da €17 — abbassa la barriera rispetto a una call.
 Substack → cattura chi vuole confrontare i prezzi nel tempo prima di comprare.
 
 ---
@@ -1958,7 +1959,7 @@ Totale: minimo 4 link interni
 
 - [ ] URL slug: keyword, minuscolo, trattini, max 5 parole
 - [ ] Meta title: max 60 caratteri, keyword nelle prime 3 parole
-- [ ] Meta description: max 155 caratteri, keyword + dato + riferimento al Blueprint
+- [ ] Meta description: max 155 caratteri, keyword + dato + riferimento a WhatsApp AI Autopilot™
 - [ ] H1: unico per pagina, contiene keyword, diverso dal meta title
 - [ ] Almeno 3 H2 con keyword secondarie
 - [ ] Keyword primaria nelle prime 100 parole
@@ -1973,7 +1974,7 @@ Totale: minimo 4 link interni
 - [ ] Nessun link esterno senza `rel="nofollow"`
 - [ ] FAQ presenti (minimo 4 domande con risposta completa)
 - [ ] Copy for AI presente, visibile, max 100 parole
-- [ ] CTA Blueprint presente come primaria
+- [ ] CTA WhatsApp AI Autopilot™ presente come primaria
 - [ ] CTA Substack presente come secondaria
 - [ ] Nessun riferimento ad "Audit gratuito" nel testo
 - [ ] URL Substack compilato (non placeholder)
@@ -2025,7 +2026,7 @@ Totale: minimo 4 link interni
 - [ ] Meta Preview → `metatags.io`
 - [ ] Lettura della pagina a voce alta (test di naturalezza)
 - [ ] Verifica tutti i link interni funzionanti
-- [ ] Verifica link Blueprint funzionante
+- [ ] Verifica link WhatsApp AI Autopilot™ funzionante
 - [ ] Verifica link Substack funzionante
 
 ---
@@ -2043,7 +2044,7 @@ Totale: minimo 4 link interni
 | **Schema principale** | Service | Service+City | HowTo | Service | Service+City | WebPage | Service+Offer |
 | **Schema sempre** | WebPage+FAQ | WebPage+FAQ | WebPage+FAQ | WebPage+FAQ | WebPage+FAQ | WebPage+FAQ | WebPage+FAQ |
 | **Parole target** | 900–1.100 | 600–900 | 1.000–1.200 | 1.000–1.200 | 600–900 | 800–1.000 | 1.100–1.300 |
-| **CTA primaria** | Blueprint $27 | Blueprint $27 | Blueprint $27 | Blueprint $27 | Blueprint $27 | Blueprint $27 | Blueprint $27 |
+| **CTA primaria** | Autopilot €17 | Autopilot €17 | Autopilot €17 | Autopilot €17 | Autopilot €17 | Autopilot €17 | Autopilot €17 |
 | **CTA secondaria** | Substack | Substack | Substack | Substack | Substack | Substack | Substack |
 | **Link interni** | C+D+G+Blog | E+A+G | C+D+Blog | A+C+G | A+B+E+G | A+G+F | F+A+D |
 | **E-E-A-T focus** | Experience | Experience | Expertise | Expertise+Trust | Experience | Trust | Trust |
@@ -2083,7 +2084,7 @@ Totale Mese 1: 14 pagine SEO + 3 blog + 3 Substack = 20 pezzi
 |------------|-----------|--------|--------|
 | Tool interattivo ROI | G6 | 🔴 Bloccante | Costruire in Mese 1 prima di pubblicare G6 |
 | URL Substack definitivo | Tutte | 🔴 Bloccante | Sostituire `[URL Substack FutureLens]` in ogni CTA prima di pubblicare |
-| Numero pagine Blueprint | Tutte | 🟠 Urgente | Sostituire `[N] pagine` nel micro-copy con il numero reale |
+| ~~Numero pagine Blueprint~~ | — | ✅ N/A | Placeholder obsoleto: Autopilot è uno stack pre-costruito, non un documento a pagine — nessuna sostituzione richiesta |
 | Dati clienti per segmento | Cat. A (badge) | 🟡 Opzionale | Usare dati aggregati finché non disponibili |
 | Caso studio localizzato | Cat. B/E Sez. 5 | 🟡 Opzionale | Usare fallback "servizio remoto" |
 | Recensioni competitor aggiornate | Cat. F | 🟠 Urgente | Impostare reminder mensile verifica Trustpilot |
@@ -2097,7 +2098,7 @@ Lista completa di tutti i placeholder presenti nel documento:
 
 ```
 [URL Substack FutureLens]  → URL della newsletter Substack
-[N] pagine                 → Numero reale di pagine del Blueprint
+~~[N] pagine~~              → Obsoleto: Autopilot è uno stack pre-costruito, non un documento a pagine
 [N] professionisti         → Numero iscritti Substack (aggiornare)
 [Anno]                     → Anno corrente (2026)
 [DATA]                     → Data ultima modifica della pagina
@@ -2107,7 +2108,7 @@ Tutti i valori [N]         → Numeri reali (clienti, lead, ecc.)
 
 ---
 
-*Documento: FutureLens — Template SEO v1.3 · Maggio 2026*
-*CTA aggiornate: Blueprint $27 + Substack su tutte le 7 categorie. Audit gratuito rimosso.*
+*Documento: FutureLens — Template SEO v1.4 · Agosto 2026*
+*CTA aggiornate: WhatsApp AI Autopilot™ €17 + Substack su tutte le 7 categorie. Audit gratuito rimosso. Sostituisce "The WhatsApp Agent Blueprint" $27, deprecato 2026-08-28.*
 *Da aggiornare con dati reali di performance dopo i primi 60 giorni di pubblicazione*
 *Revisione successiva: Agosto 2026*

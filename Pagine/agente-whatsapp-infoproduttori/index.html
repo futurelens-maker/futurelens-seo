@@ -18,7 +18,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Agente WhatsApp AI per Infoproduttori | FutureLens">
-<meta name="twitter:description" content="Gestisce obiezioni durante il lancio 24/7, qualificazione automatica, nurturing inter-lancio. Open source, €57/mese fisso, zero lock-in.">
+<meta name="twitter:description" content="Gestisce obiezioni durante il lancio 24/7, qualificazione automatica, nurturing inter-lancio. Self-hosted, €10–20/mese di infrastruttura, zero lock-in.">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +71,7 @@
         "name": "Ho già ManyChat. Perché questo è diverso?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ManyChat gestisce flow statici — se il lead risponde \"dipende\" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Dify è un agente LLM: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta."
+          "text": "ManyChat gestisce flow statici — se il lead risponde \"dipende\" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Il nostro agente è un motore LLM nativo: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta."
         }
       },
       {
@@ -79,7 +79,7 @@
         "name": "Spoki mi ha cambiato i prezzi senza preavviso. Questo ha abbonamento mensile?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Blueprint = costo una tantum. Infrastruttura = €57/mese fisso (n8n Cloud €20 + 2Chat $40). Dify è free tier. Nessun abbonamento a piattaforme SaaS chiuse. Open source = nessun lock-in per sempre. Se domani 2Chat chiude, sostituisci un nodo in n8n — l'architettura è tua e nessuno può cambiarti i prezzi."
+          "text": "WhatsApp AI Autopilot™ è un costo una tantum di €17. L'infrastruttura self-host (server + Evolution API) costa €10–20/mese fisso — nessun abbonamento a piattaforme SaaS chiuse che ti cambia il pricing senza preavviso. Claude Code ti guida nell'installazione in 75 minuti e resta disponibile per la manutenzione. Open source e self-host = nessun lock-in: l'architettura è tua e nessun provider terzo può cambiarti i prezzi da un giorno all'altro."
         }
       },
       {
@@ -95,7 +95,7 @@
         "name": "Rischio di bruciare la lista WhatsApp che ho costruito in anni?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Con 2Chat (percorso base) il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro. Percorso Evolution (€37 una tantum) = server privato, zero dipendenza da provider terzi, controllo totale sulla lista che hai costruito in anni."
+          "text": "Con Evolution API self-hosted il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta, server privato sotto il tuo controllo. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro, e zero dipendenza da provider terzi sulla lista che hai costruito in anni."
         }
       },
       {
@@ -543,7 +543,7 @@ strong { font-weight:600; color:var(--ctxt); }
         <span style="display:none; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:1.05rem; letter-spacing:0.18em; color:var(--ctxt); text-transform:uppercase;">FUTURELENS</span>
         <span style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--cmut);">Autonomous Systems Studio</span>
       </a>
-      <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="hdr-cta">Accedi al Blueprint →</a>
+      <a href="https://futurelens.xyz/whatsapp-autopilot" class="hdr-cta">Attiva WhatsApp AI Autopilot™ →</a>
     </div>
   </div>
 </header>
@@ -585,7 +585,7 @@ strong { font-weight:600; color:var(--ctxt); }
         <div class="trust-lbl">qualificazione risposta rapida</div>
       </div>
       <div class="trust-item">
-        <div class="trust-val">90 min</div>
+        <div class="trust-val">75 min</div>
         <div class="trust-lbl">setup operativo</div>
       </div>
       <div class="trust-item">
@@ -664,7 +664,7 @@ strong { font-weight:600; color:var(--ctxt); }
     </h2>
 
     <p style="color:var(--csec); margin-bottom:24px; max-width:580px;">
-      Non è un chatbot a flow statici. È un agente LLM (Dify) che ragiona in linguaggio naturale, gestisce obiezioni fuori script e mantiene il contesto tra messaggi diversi. La differenza pratica: ManyChat si blocca quando il lead dice "dipende". L'agente capisce la risposta e la gestisce — durante il lancio, a qualsiasi ora, con qualsiasi volume.
+      Non è un chatbot a flow statici. È un agente LLM nativo — installato sul tuo numero WhatsApp da Claude Code in 75 minuti — che ragiona in linguaggio naturale, gestisce obiezioni fuori script e mantiene il contesto tra messaggi diversi. La differenza pratica: ManyChat si blocca quando il lead dice "dipende". L'agente capisce la risposta e la gestisce — durante il lancio, a qualsiasi ora, con qualsiasi volume.
     </p>
 
     <div class="steps">
@@ -740,7 +740,7 @@ strong { font-weight:600; color:var(--ctxt); }
       <li><span class="ck">✓</span> <span>Sincronizzazione con Kajabi o Teachable via webhook: messaggio WhatsApp automatico dopo l'acquisto</span></li>
       <li><span class="ck">✓</span> <span>Log completo su Google Sheets: lead, obiezioni, esito, tag — pipeline del lancio in tempo reale</span></li>
       <li><span class="ck">✓</span> <span>Scala durante i lanci senza costi aggiuntivi — 100 o 1.000 lead simultanee: stesso sistema</span></li>
-      <li><span class="ck">✓</span> <span>Costo fisso €57/mese — nessun abbonamento che cambia pricing senza preavviso</span></li>
+      <li><span class="ck">✓</span> <span>Costo fisso €10–20/mese di infrastruttura self-host — nessun abbonamento che cambia pricing senza preavviso</span></li>
     </ul>
 
     <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--cb);">
@@ -841,13 +841,13 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Costo mensile</td>
           <td>€49–199/mese</td>
           <td>€800–2.000</td>
-          <td class="hl">€57 (infrastruttura)</td>
+          <td class="hl">€10–20 (infrastruttura self-host)</td>
         </tr>
         <tr>
           <td>Gestione obiezioni variabili</td>
           <td>Flow si blocca</td>
           <td>Sì (se ben formato)</td>
-          <td class="hl">LLM reasoning (Dify)</td>
+          <td class="hl">LLM reasoning (agente nativo)</td>
         </tr>
         <tr>
           <td>Disponibilità durante lanci</td>
@@ -906,11 +906,11 @@ strong { font-weight:600; color:var(--ctxt); }
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">Ho già ManyChat. Perché questo è diverso?</div>
-        <div class="faq-a">ManyChat gestisce flow statici — se il lead risponde "dipende" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Dify è un agente LLM: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta.</div>
+        <div class="faq-a">ManyChat gestisce flow statici — se il lead risponde "dipende" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Il nostro agente è un motore LLM nativo: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Spoki mi ha cambiato i prezzi senza preavviso. Questo ha abbonamento mensile?</div>
-        <div class="faq-a">Blueprint = costo una tantum. Infrastruttura = €57/mese fisso (n8n Cloud €20 + 2Chat $40). Dify è free tier. Nessun abbonamento a piattaforme SaaS chiuse. Open source = nessun lock-in per sempre. Se domani 2Chat chiude, sostituisci un nodo in n8n — l'architettura è tua e nessuno può cambiarti i prezzi.</div>
+        <div class="faq-a">WhatsApp AI Autopilot™ è un costo una tantum di €17. L'infrastruttura self-host (server + Evolution API) costa €10–20/mese fisso — nessun abbonamento a piattaforme SaaS chiuse che ti cambia il pricing senza preavviso. Claude Code ti guida nell'installazione in 75 minuti e resta disponibile per la manutenzione. Open source e self-host = nessun lock-in: l'architettura è tua e nessun provider terzo può cambiarti i prezzi da un giorno all'altro.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Come si integra con ActiveCampaign e Kajabi?</div>
@@ -918,7 +918,7 @@ strong { font-weight:600; color:var(--ctxt); }
       </div>
       <div class="faq-item">
         <div class="faq-q">Rischio di bruciare la lista WhatsApp che ho costruito in anni?</div>
-        <div class="faq-a">Con 2Chat (percorso base) il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro. Percorso Evolution (€37 una tantum) = server privato, zero dipendenza da provider terzi, controllo totale sulla lista che hai costruito in anni.</div>
+        <div class="faq-a">Con Evolution API self-hosted il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta, server privato sotto il tuo controllo. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro, e zero dipendenza da provider terzi sulla lista che hai costruito in anni.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Posso addestrarlo sulle obiezioni specifiche del mio corso?</div>
@@ -937,7 +937,7 @@ strong { font-weight:600; color:var(--ctxt); }
   <div class="wrap-md">
     <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px;">// sintesi per motori AI</p>
     <div class="ai-copy">
-FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5–7 giorni. Gestisce obiezioni durante il lancio 24/7 (linguaggio naturale, non flow statici), qualificazione automatica lead, nurturing inter-lancio ogni 30–45 giorni. Open rate WhatsApp 98% vs email 44,38% (GetResponse Italia, 4,4B email). 21x più alta la qualificazione entro 5 minuti (MIT/InsideSales). Integrazione: ActiveCampaign, Kajabi, Teachable, Google Sheets, Meta Lead Ads. Alternativa open source a Spoki e ManyChat — costo fisso €57/mese, zero lock-in. Setup 90 minuti. Conforme GDPR — server europei. Italia.
+FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5–7 giorni. Gestisce obiezioni durante il lancio 24/7 (linguaggio naturale, non flow statici), qualificazione automatica lead, nurturing inter-lancio ogni 30–45 giorni. Open rate WhatsApp 98% vs email 44,38% (GetResponse Italia, 4,4B email). 21x più alta la qualificazione entro 5 minuti (MIT/InsideSales). Integrazione: ActiveCampaign, Kajabi, Teachable, Google Sheets, Meta Lead Ads. Alternativa self-hosted a Spoki e ManyChat (n8n + Evolution API) — €10–20/mese di infrastruttura, zero lock-in. Setup guidato da Claude Code in 75 minuti (WhatsApp AI Autopilot™, €17 una tantum). Conforme GDPR — server europei. Italia.
     </div>
   </div>
 </section>
@@ -989,22 +989,22 @@ FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5�
 <section class="sec sec-alt">
   <div class="wrap-md">
 
-    <!-- CTA PRIMARIA — Blueprint €27 -->
+    <!-- CTA PRIMARIA — WhatsApp AI Autopilot™ €17 -->
     <div class="cta-box">
-      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ the whatsapp agent blueprint ]</span>
+      <span class="badge badge-r" style="display:inline-block;margin-bottom:18px;">[ whatsapp ai autopilot™ ]</span>
       <h2 style="margin-bottom:16px; font-weight:300;">
         Parti da qui:<br>
-        <strong>il metodo completo in un documento</strong>
+        <strong>lo stack guidato, pronto in 75 minuti</strong>
       </h2>
       <p style="color:var(--csec); max-width:520px; margin-bottom:8px; font-size:1rem;">
-        The WhatsApp Agent Blueprint è la guida operativa su come costruire e ottimizzare un sistema di lead automation su WhatsApp. Architettura, script di qualificazione, sequenze reminder, integrazione CRM.
+        WhatsApp AI Autopilot™ è lo stack pre-costruito e collegato al tuo numero WhatsApp: agente di qualificazione, sequenze reminder, integrazione CRM. Installato e mantenuto da Claude Code, in linguaggio naturale — Metodo AI-Guidato™.
       </p>
       <p style="color:var(--csec); max-width:520px; margin-bottom:28px; font-size:1rem;">
-        Non teoria su come potrebbe funzionare. Istruzioni operative su come funziona.
+        Non un documento da studiare. Un sistema operativo, guidato passo passo fino all'attivazione.
       </p>
       <div class="btn-row" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
-        <a href="https://futurelens.xyz/whatsapp-agent-blueprint" class="btn btn-p">
-          Scarica The WhatsApp Agent Blueprint — €27 →
+        <a href="https://futurelens.xyz/whatsapp-autopilot" class="btn btn-p">
+          Attiva WhatsApp AI Autopilot™ — €17 →
         </a>
       </div>
       <p class="cta-micro">Accesso immediato. Pagamento sicuro. Nessun abbonamento.</p>

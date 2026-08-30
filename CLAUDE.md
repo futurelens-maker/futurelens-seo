@@ -41,7 +41,7 @@ futurelens-seo/
 
 - `canonical_url`: sempre `https://seo.futurelens.xyz/[slug]`
 - `date_modified`: data odierna (YYYY-MM-DD)
-- Blueprint URL: `https://futurelens.xyz/whatsapp-agent-blueprint` · Prezzo: `€27`
+- Prodotto/prezzo da citare come CTA: WhatsApp AI Autopilot™, €17 (non più "The WhatsApp Agent Blueprint" €27 — deprecato 2026-08-28, vedi `~/.claude/kb/04_offerte/offerta-whatsapp-autopilot.md`). CTA URL: `https://futurelens.xyz/whatsapp-autopilot` — risolto 2026-08-29, propagato nei 4 template sorgente (`template-a/c/d/g.html`) e rigenerato su tutte le pagine live
 - Substack URL: `https://thesystemlog.substack.com/`
 - Sezione 8 (Copy for AI): `style="display:none;"` — già in template, non toccare
 - Zero placeholder: nessun campo vuoto nei JSON prima del build
@@ -55,6 +55,16 @@ futurelens-seo/
 | agente-whatsapp-accademie-digitali | Accademie Digitali |
 | agente-whatsapp-infoproduttori | Infoproduttori |
 | agente-whatsapp-formatori | Formatori |
+| agente-ai-whatsapp | Definizione tecnica agente AI WhatsApp |
+| appointment-setting-ai-italia | AI Appointment Setting Italia |
+| riduzione-no-show-appuntamenti | Riduzione No-Show Appuntamenti |
+| perdo-clienti-whatsapp | Perdo Clienti su WhatsApp |
+| lead-whatsapp-senza-risposta | Lead WhatsApp Senza Risposta |
+| roi-automazione-whatsapp-coach | ROI Automazione WhatsApp per Coach |
+| quanto-costa-agente-whatsapp-ai | Quanto Costa un Agente WhatsApp AI |
+| qualificazione-lead-automatica | Qualificazione Lead Automatica |
+
+Nota: questa tabella va tenuta sincronizzata con `content/*.json` (fonte di verità sulle pagine esistenti) — ogni nuovo `content/[slug].json` corrisponde a una pagina in `Pagine/[slug]/`.
 
 ## Checklist SEO pre-push
 

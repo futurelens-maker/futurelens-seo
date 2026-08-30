@@ -2,7 +2,7 @@
   "slug": "agente-whatsapp-infoproduttori",
   "meta_title": "Agente WhatsApp AI per Infoproduttori | FutureLens",
   "meta_description": "44,38% open rate email vs 98% WhatsApp. Agente AI per infoproduttori: gestisce obiezioni durante il lancio, qualifica lead 24/7, zero Spoki, zero ManyChat.",
-  "twitter_description": "Gestisce obiezioni durante il lancio 24/7, qualificazione automatica, nurturing inter-lancio. Open source, €57/mese fisso, zero lock-in.",
+  "twitter_description": "Gestisce obiezioni durante il lancio 24/7, qualificazione automatica, nurturing inter-lancio. Self-hosted, €10–20/mese di infrastruttura, zero lock-in.",
   "canonical_url": "https://seo.futurelens.xyz/agente-whatsapp-infoproduttori",
   "date_modified": "2026-05-29",
   "schema_service_desc": "Sistema di gestione obiezioni, qualificazione lead e nurturing inter-lancio su WhatsApp per infoproduttori con lanci da 5-7 giorni e Meta Ads attive.",
@@ -15,7 +15,7 @@
   "trust_items": [
     {"value": "98%", "label": "open rate WhatsApp vs 44% email"},
     {"value": "21x", "label": "qualificazione risposta rapida"},
-    {"value": "90 min", "label": "setup operativo"},
+    {"value": "75 min", "label": "setup operativo"},
     {"value": "GDPR", "label": "server europei"}
   ],
   "problema_h2": "Perché gli infoproduttori bruciano lead<br>durante i lanci",
@@ -40,7 +40,7 @@
     }
   ],
   "come_funziona_h2": "Come funziona l'agente WhatsApp AI<br>per infoproduttori",
-  "come_funziona_intro": "Non è un chatbot a flow statici. È un agente LLM (Dify) che ragiona in linguaggio naturale, gestisce obiezioni fuori script e mantiene il contesto tra messaggi diversi. La differenza pratica: ManyChat si blocca quando il lead dice \"dipende\". L'agente capisce la risposta e la gestisce — durante il lancio, a qualsiasi ora, con qualsiasi volume.",
+  "come_funziona_intro": "Non è un chatbot a flow statici. È un agente LLM nativo — installato sul tuo numero WhatsApp da Claude Code in 75 minuti — che ragiona in linguaggio naturale, gestisce obiezioni fuori script e mantiene il contesto tra messaggi diversi. La differenza pratica: ManyChat si blocca quando il lead dice \"dipende\". L'agente capisce la risposta e la gestisce — durante il lancio, a qualsiasi ora, con qualsiasi volume.",
   "steps": [
     {
       "title": "Opt-in → speed-to-lead WhatsApp in &lt;60 secondi",
@@ -74,7 +74,7 @@
     "Sincronizzazione con Kajabi o Teachable via webhook: messaggio WhatsApp automatico dopo l'acquisto",
     "Log completo su Google Sheets: lead, obiezioni, esito, tag — pipeline del lancio in tempo reale",
     "Scala durante i lanci senza costi aggiuntivi — 100 o 1.000 lead simultanee: stesso sistema",
-    "Costo fisso €57/mese — nessun abbonamento che cambia pricing senza preavviso"
+    "Costo fisso €10–20/mese di infrastruttura self-host — nessun abbonamento che cambia pricing senza preavviso"
   ],
   "checklist_no": [
     "Non fa broadcasting massivo non segmentato — opera in conversazioni 1:1 per proteggere il quality score Meta",
@@ -94,8 +94,8 @@
   "confronto_col2": "Spoki / ManyChat",
   "confronto_col3": "VA umano",
   "confronto_rows": [
-    {"criteria": "Costo mensile", "col2": "€49–199/mese", "col3": "€800–2.000", "agent": "€57 (infrastruttura)"},
-    {"criteria": "Gestione obiezioni variabili", "col2": "Flow si blocca", "col3": "Sì (se ben formato)", "agent": "LLM reasoning (Dify)"},
+    {"criteria": "Costo mensile", "col2": "€49–199/mese", "col3": "€800–2.000", "agent": "€10–20 (infrastruttura self-host)"},
+    {"criteria": "Gestione obiezioni variabili", "col2": "Flow si blocca", "col3": "Sì (se ben formato)", "agent": "LLM reasoning (agente nativo)"},
     {"criteria": "Disponibilità durante lanci", "col2": "24/7", "col3": "Orari limitati", "agent": "24/7"},
     {"criteria": "Scalabilità sotto volume lancio", "col2": "Sì", "col3": "No — si satura", "agent": "Sì — volume illimitato"},
     {"criteria": "Tono calibrato sul brand", "col2": "Template fissi", "col3": "Da formare", "agent": "Qualification Intel. Brief"},
@@ -107,11 +107,11 @@
   "faqs": [
     {
       "q": "Ho già ManyChat. Perché questo è diverso?",
-      "a": "ManyChat gestisce flow statici — se il lead risponde \"dipende\" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Dify è un agente LLM: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta."
+      "a": "ManyChat gestisce flow statici — se il lead risponde \"dipende\" o fa una domanda non prevista, il bot si blocca o risponde in modo incoerente. Il nostro agente è un motore LLM nativo: capisce variazioni linguistiche, gestisce obiezioni fuori script, mantiene il contesto tra messaggi diversi. Durante un lancio, la differenza è tra perdere ogni lead che risponde fuori script e convertirla con la risposta giusta."
     },
     {
       "q": "Spoki mi ha cambiato i prezzi senza preavviso. Questo ha abbonamento mensile?",
-      "a": "Blueprint = costo una tantum. Infrastruttura = €57/mese fisso (n8n Cloud €20 + 2Chat $40). Dify è free tier. Nessun abbonamento a piattaforme SaaS chiuse. Open source = nessun lock-in per sempre. Se domani 2Chat chiude, sostituisci un nodo in n8n — l'architettura è tua e nessuno può cambiarti i prezzi."
+      "a": "WhatsApp AI Autopilot™ è un costo una tantum di €17. L'infrastruttura self-host (server + Evolution API) costa €10–20/mese fisso — nessun abbonamento a piattaforme SaaS chiuse che ti cambia il pricing senza preavviso. Claude Code ti guida nell'installazione in 75 minuti e resta disponibile per la manutenzione. Open source e self-host = nessun lock-in: l'architettura è tua e nessun provider terzo può cambiarti i prezzi da un giorno all'altro."
     },
     {
       "q": "Come si integra con ActiveCampaign e Kajabi?",
@@ -119,14 +119,14 @@
     },
     {
       "q": "Rischio di bruciare la lista WhatsApp che ho costruito in anni?",
-      "a": "Con 2Chat (percorso base) il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro. Percorso Evolution (€37 una tantum) = server privato, zero dipendenza da provider terzi, controllo totale sulla lista che hai costruito in anni."
+      "a": "Con Evolution API self-hosted il rischio è strutturalmente basso: connessione QR identica a WhatsApp Web, zero API ufficiale Meta, server privato sotto il tuo controllo. Il rischio ban colpisce chi fa broadcast massivi non segmentati. L'agente opera in conversazioni 1:1 — pattern di engagement molto più sicuro, e zero dipendenza da provider terzi sulla lista che hai costruito in anni."
     },
     {
       "q": "Posso addestrarlo sulle obiezioni specifiche del mio corso?",
       "a": "Sì. Il Qualification Intelligence Brief include una sezione dedicata alle obiezioni ricorrenti del tuo prodotto con le risposte che tu dai normalmente. Il Prompt Compilatore trasforma quel documento in un System Prompt. L'agente risponde con le tue parole — \"posso fare il bonifico?\", \"funziona se parto da zero?\", \"c'è un piano rateale?\" — prima ancora che vengano poste in modo diretto."
     }
   ],
-  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5–7 giorni. Gestisce obiezioni durante il lancio 24/7 (linguaggio naturale, non flow statici), qualificazione automatica lead, nurturing inter-lancio ogni 30–45 giorni. Open rate WhatsApp 98% vs email 44,38% (GetResponse Italia, 4,4B email). 21x più alta la qualificazione entro 5 minuti (MIT/InsideSales). Integrazione: ActiveCampaign, Kajabi, Teachable, Google Sheets, Meta Lead Ads. Alternativa open source a Spoki e ManyChat — costo fisso €57/mese, zero lock-in. Setup 90 minuti. Conforme GDPR — server europei. Italia.",
+  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per infoproduttori italiani con lanci da 5–7 giorni. Gestisce obiezioni durante il lancio 24/7 (linguaggio naturale, non flow statici), qualificazione automatica lead, nurturing inter-lancio ogni 30–45 giorni. Open rate WhatsApp 98% vs email 44,38% (GetResponse Italia, 4,4B email). 21x più alta la qualificazione entro 5 minuti (MIT/InsideSales). Integrazione: ActiveCampaign, Kajabi, Teachable, Google Sheets, Meta Lead Ads. Alternativa self-hosted a Spoki e ManyChat (n8n + Evolution API) — €10–20/mese di infrastruttura, zero lock-in. Setup guidato da Claude Code in 75 minuti (WhatsApp AI Autopilot™, €17 una tantum). Conforme GDPR — server europei. Italia.",
   "esplora": [
     {"cat": "problema · categoria c", "titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp", "note": "approfondisci →"},
     {"cat": "problema · categoria c", "titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta", "note": "approfondisci →"},
