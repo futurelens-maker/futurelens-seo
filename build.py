@@ -520,6 +520,17 @@ def render_schema(c, page_title, date_modified):
 
 # ── Core builder ────────────────────────────────────────────────────────────
 
+def load_cta():
+    cta_file = os.path.join('content', '_cta.json')
+    with open(cta_file, 'r', encoding='utf-8') as f:
+        cta = json.load(f)
+    return {
+        '{{CTA_URL}}':        cta['cta_url'],
+        '{{CTA_TEXT_HEADER}}': cta['cta_text_header'],
+        '{{CTA_TEXT_MAIN}}':   cta['cta_text_main'],
+    }
+
+
 def build_page(slug):
     content_file = os.path.join('content', f'{slug}.json')
     if not os.path.exists(content_file):
@@ -690,6 +701,8 @@ def build_page(slug):
             '{{ESPLORA_HTML}}':        render_correlati(c.get('esplora', [])),
             '{{CTX_FOOTER_HTML}}':     render_ctx_footer(c),
         }
+
+    replacements.update(load_cta())
 
     output = tmpl
     for marker, value in replacements.items():

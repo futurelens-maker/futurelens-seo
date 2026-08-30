@@ -15,7 +15,7 @@
   "trust_items": [
     {"value": "57%", "label": "no-show medio webinar"},
     {"value": "+27%", "label": "attendance con reminder"},
-    {"value": "90 min", "label": "setup operativo"},
+    {"value": "75 min", "label": "setup operativo"},
     {"value": "GDPR", "label": "server europei"}
   ],
   "problema_h2": "Perché le accademie digitali perdono iscritti<br>dopo il webinar",
@@ -40,7 +40,7 @@
     }
   ],
   "come_funziona_h2": "Come funziona l'agente WhatsApp AI<br>per accademie digitali",
-  "come_funziona_intro": "Non è ManyChat. Non è Spoki. È un agente conversazionale open source che gestisce l'intero ciclo del webinar — prima, durante e dopo — senza abbonamenti mensili che cambiano pricing senza preavviso. La differenza tecnica chiave: ManyChat gestisce flow statici e si blocca quando l'utente risponde qualcosa di non previsto. Dify ragiona in linguaggio naturale e gestisce le variazioni.",
+  "come_funziona_intro": "Non è ManyChat. Non è Spoki. È un agente conversazionale open source che gestisce l'intero ciclo del webinar — prima, durante e dopo — senza abbonamenti mensili che cambiano pricing senza preavviso. La differenza tecnica chiave: ManyChat gestisce flow statici e si blocca quando l'utente risponde qualcosa di non previsto. Il workflow n8n con LLM integrato ragiona in linguaggio naturale e gestisce le variazioni.",
   "steps": [
     {
       "title": "Reminder pre-webinar automatici: −24h · −1h · live",
@@ -74,7 +74,7 @@
     "Sincronizzazione automatica con Kajabi, Teachable, ActiveCampaign o HubSpot tramite n8n webhook",
     "Log completo su Google Sheets: nome, corso di interesse, budget, urgenza, esito di ogni conversazione",
     "Scala durante i lanci senza aumentare i costi — 50 lead o 5.000 al giorno: stesso sistema",
-    "Costo fisso €57/mese di infrastruttura — nessun abbonamento che cambia pricing senza preavviso"
+    "Costo fisso €10-20/mese di infrastruttura — nessun abbonamento che cambia pricing senza preavviso"
   ],
   "checklist_no": [
     "Non fa broadcasting massivo non segmentato — opera in conversazioni 1:1, più sicuro per il quality score Meta",
@@ -94,10 +94,10 @@
   "confronto_col2": "Spoki / ManyChat",
   "confronto_col3": "Risposta manuale",
   "confronto_rows": [
-    {"criteria": "Costo mensile", "col2": "€49–199/mese", "col3": "Tempo del team", "agent": "€57 (infrastruttura)"},
+    {"criteria": "Costo mensile", "col2": "€49–199/mese", "col3": "Tempo del team", "agent": "€10-20 (infrastruttura)"},
     {"criteria": "Reminder pre-webinar", "col2": "Sì (flow statici)", "col3": "Spesso dimenticati", "agent": "Automatici −24h/−1h/live"},
     {"criteria": "Qualificazione post-webinar", "col2": "Limitata", "col3": "Non scalabile", "agent": "Conversazionale 24/7"},
-    {"criteria": "Gestione variazioni linguistiche", "col2": "Flow si blocca", "col3": "Umana", "agent": "LLM reasoning (Dify)"},
+    {"criteria": "Gestione variazioni linguistiche", "col2": "Flow si blocca", "col3": "Umana", "agent": "LLM reasoning (n8n + Claude)"},
     {"criteria": "Scalabilità durante lanci", "col2": "Sì", "col3": "No — team si satura", "agent": "Sì — volume illimitato"},
     {"criteria": "Rischio cambio pricing", "col2": "Documentato (Trustpilot)", "col3": "N/A", "agent": "Zero — open source"},
     {"criteria": "GDPR compliant", "col2": "Variabile", "col3": "Sì", "agent": "Sì — server EU"}
@@ -119,14 +119,14 @@
     },
     {
       "q": "Rischio di essere bannato su WhatsApp durante un lancio?",
-      "a": "Il percorso Base usa 2Chat via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con 2Chat il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo. Per chi vuole massima stabilità durante i lanci, il Percorso Evolution (server privato, €37 una tantum) garantisce controllo totale senza dipendenze da provider terzi."
+      "a": "Lo stack usa Evolution API via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con Evolution API il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo, ed è installato su un server privato che gestisci tu — controllo totale senza dipendenze da provider terzi, garantito fin dal setup guidato da Claude Code."
     },
     {
       "q": "Come personalizzo il tono dell'agente al mio brand?",
       "a": "Compili il Qualification Intelligence Brief con il tuo stile comunicativo, le FAQ del tuo corso, i criteri di qualificazione per ogni prodotto e il tono che usi normalmente. Poi usi il Prompt Compilatore — incolla in ChatGPT o Claude e ottieni il System Prompt calibrato su di te. Nessun codice. Il tuo brand rimane intatto — l'agente parla come parli tu, non come un template generico."
     }
   ],
-  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Costo infrastruttura €57/mese fisso. Setup 90 minuti. Conforme GDPR — server europei. Italia.",
+  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Stack n8n + Evolution API installato da Claude Code col Metodo AI-Guidato™. Costo infrastruttura €10-20/mese fisso (totale realistico €30-40/mese con API LLM e abbonamento Claude Code). Setup 75 minuti, guidato da Claude Code. Conforme GDPR — server europei. Italia.",
   "esplora": [
     {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
     {"cat": "problema · categoria c", "titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp", "note": "approfondisci →"},

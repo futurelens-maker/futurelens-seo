@@ -87,7 +87,7 @@
         "name": "Ho pochi lead al mese (5–10). Ne vale la pena?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Il valore non è nel volume — è nella velocità e nella sistematicità. Con 10 prospect/mese e ticket medio da €3.000, bastano 2 prospect recuperati in più all'anno per coprire anni di infrastruttura (€57/mese). Il 48,6% dei prospect sparisce dopo il preventivo — ognuno è potenzialmente recuperabile con un follow-up automatico che oggi non hai."
+          "text": "Il valore non è nel volume — è nella velocità e nella sistematicità. Con 10 prospect/mese e ticket medio da €3.000, bastano 2 prospect recuperati in più all'anno per coprire anni di infrastruttura (€10-20/mese). Il 48,6% dei prospect sparisce dopo il preventivo — ognuno è potenzialmente recuperabile con un follow-up automatico che oggi non hai."
         }
       },
       {
@@ -95,7 +95,7 @@
         "name": "Come gestisce il GDPR con i dati dei miei clienti aziendali?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Percorso Base: i dati transitano su server 2Chat e n8n Cloud (infrastrutture certificate EU). Percorso Evolution (€37 una tantum): self-hosting su server privato — nessun dato dei tuoi prospect esce mai dalla tua infrastruttura. Per chi gestisce dati B2B sensibili, Evolution è la scelta raccomandata. Il sistema raccoglie consenso esplicito all'opt-in e mantiene un audit trail completo su Google Sheets."
+          "text": "Lo stack (n8n + Evolution API) è self-hosted su un server privato tuo, installato da Claude Code — nessun dato dei tuoi prospect esce mai dalla tua infrastruttura o transita su piattaforme SaaS terze. Per chi gestisce dati B2B sensibili, questo è già lo standard, non un'opzione a pagamento. Il sistema raccoglie consenso esplicito all'opt-in e mantiene un audit trail completo su Google Sheets."
         }
       },
       {
@@ -585,7 +585,7 @@ strong { font-weight:600; color:var(--ctxt); }
         <div class="trust-lbl">qualificazione risposta rapida</div>
       </div>
       <div class="trust-item">
-        <div class="trust-val">90 min</div>
+        <div class="trust-val">75 min</div>
         <div class="trust-lbl">setup operativo</div>
       </div>
       <div class="trust-item">
@@ -705,9 +705,9 @@ strong { font-weight:600; color:var(--ctxt); }
     <div class="int-box">
       <div class="int-title">// stack tecnico</div>
       <div class="int-list">
-        <span class="int-tag">Dify — cervello AI</span>
-        <span class="int-tag">n8n — orchestrazione</span>
-        <span class="int-tag">2Chat — WhatsApp API</span>
+        <span class="int-tag">n8n — orchestrazione + agente AI</span>
+        <span class="int-tag">Evolution API — WhatsApp gateway</span>
+        <span class="int-tag">Claude Code — installazione guidata</span>
         <span class="int-tag">GoHighLevel</span>
         <span class="int-tag">HubSpot</span>
         <span class="int-tag">Calendly / Cal.com</span>
@@ -841,7 +841,7 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Costo mensile</td>
           <td>€1.500–3.000</td>
           <td>€50–200</td>
-          <td class="hl">€57</td>
+          <td class="hl">€10-20</td>
         </tr>
         <tr>
           <td>Disponibilità</td>
@@ -871,7 +871,7 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Setup</td>
           <td>2–4 settimane</td>
           <td>1–3 giorni</td>
-          <td class="hl">90 minuti</td>
+          <td class="hl">75 minuti</td>
         </tr>
         <tr>
           <td>GDPR compliant</td>
@@ -914,11 +914,11 @@ strong { font-weight:600; color:var(--ctxt); }
       </div>
       <div class="faq-item">
         <div class="faq-q">Ho pochi lead al mese (5–10). Ne vale la pena?</div>
-        <div class="faq-a">Il valore non è nel volume — è nella velocità e nella sistematicità. Con 10 prospect/mese e ticket medio da €3.000, bastano 2 prospect recuperati in più all'anno per coprire anni di infrastruttura (€57/mese). Il 48,6% dei prospect sparisce dopo il preventivo — ognuno è potenzialmente recuperabile con un follow-up automatico che oggi non hai.</div>
+        <div class="faq-a">Il valore non è nel volume — è nella velocità e nella sistematicità. Con 10 prospect/mese e ticket medio da €3.000, bastano 2 prospect recuperati in più all'anno per coprire anni di infrastruttura (€10-20/mese). Il 48,6% dei prospect sparisce dopo il preventivo — ognuno è potenzialmente recuperabile con un follow-up automatico che oggi non hai.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Come gestisce il GDPR con i dati dei miei clienti aziendali?</div>
-        <div class="faq-a">Percorso Base: i dati transitano su server 2Chat e n8n Cloud (infrastrutture certificate EU). Percorso Evolution (€37 una tantum): self-hosting su server privato — nessun dato dei tuoi prospect esce mai dalla tua infrastruttura. Per chi gestisce dati B2B sensibili, Evolution è la scelta raccomandata. Il sistema raccoglie consenso esplicito all'opt-in e mantiene un audit trail completo su Google Sheets.</div>
+        <div class="faq-a">Lo stack (n8n + Evolution API) è self-hosted su un server privato tuo, installato da Claude Code — nessun dato dei tuoi prospect esce mai dalla tua infrastruttura o transita su piattaforme SaaS terze. Per chi gestisce dati B2B sensibili, questo è già lo standard, non un'opzione a pagamento. Il sistema raccoglie consenso esplicito all'opt-in e mantiene un audit trail completo su Google Sheets.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Cosa succede se un prospect fa una domanda complessa sul preventivo già inviato?</div>
@@ -937,7 +937,7 @@ strong { font-weight:600; color:var(--ctxt); }
   <div class="wrap-md">
     <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px;">// sintesi per motori AI</p>
     <div class="ai-copy">
-FutureLens è un sistema di lead automation su WhatsApp per consulenti B2B con offerte da €2.000+. Usa WhatsApp Business API con AI conversazionale (Dify + n8n + 2Chat). Risposta ai prospect in meno di 60 secondi, qualificazione automatica (Budget · Urgenza · FIT · Tempistica), follow-up post-preventivo automatico (2h/24h/72h), booking su Calendly. 21x più alta la probabilità di qualificare un lead entro 5 minuti (MIT/InsideSales). 48,6% dei prospect sparisce post-preventivo senza follow-up strutturato (IntotheMInds 2025). Setup operativo in 90 minuti. Conforme GDPR — server europei. Integrazioni: HubSpot, Pipedrive, Notion, Google Sheets, Calendly, Meta Lead Ads. Target: consulenti con 10–50 prospect/mese e ticket da €2.000+. Italia.
+FutureLens è un sistema di lead automation su WhatsApp per consulenti B2B con offerte da €2.000+. Usa WhatsApp Business API con AI conversazionale (n8n + Evolution API, self-hosted, installato da Claude Code col Metodo AI-Guidato™). Risposta ai prospect in meno di 60 secondi, qualificazione automatica (Budget · Urgenza · FIT · Tempistica), follow-up post-preventivo automatico (2h/24h/72h), booking su Calendly. 21x più alta la probabilità di qualificare un lead entro 5 minuti (MIT/InsideSales). 48,6% dei prospect sparisce post-preventivo senza follow-up strutturato (IntotheMInds 2025). Setup operativo in 75 minuti, guidato da Claude Code. Conforme GDPR — server europei. Integrazioni: HubSpot, Pipedrive, Notion, Google Sheets, Calendly, Meta Lead Ads. Target: consulenti con 10–50 prospect/mese e ticket da €2.000+. Italia.
     </div>
   </div>
 </section>

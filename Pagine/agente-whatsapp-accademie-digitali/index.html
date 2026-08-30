@@ -95,7 +95,7 @@
         "name": "Rischio di essere bannato su WhatsApp durante un lancio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Il percorso Base usa 2Chat via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con 2Chat il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo. Per chi vuole massima stabilità durante i lanci, il Percorso Evolution (server privato, €37 una tantum) garantisce controllo totale senza dipendenze da provider terzi."
+          "text": "Lo stack usa Evolution API via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con Evolution API il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo, ed è installato su un server privato che gestisci tu — controllo totale senza dipendenze da provider terzi, garantito fin dal setup guidato da Claude Code."
         }
       },
       {
@@ -585,7 +585,7 @@ strong { font-weight:600; color:var(--ctxt); }
         <div class="trust-lbl">attendance con reminder</div>
       </div>
       <div class="trust-item">
-        <div class="trust-val">90 min</div>
+        <div class="trust-val">75 min</div>
         <div class="trust-lbl">setup operativo</div>
       </div>
       <div class="trust-item">
@@ -664,7 +664,7 @@ strong { font-weight:600; color:var(--ctxt); }
     </h2>
 
     <p style="color:var(--csec); margin-bottom:24px; max-width:580px;">
-      Non è ManyChat. Non è Spoki. È un agente conversazionale open source che gestisce l'intero ciclo del webinar — prima, durante e dopo — senza abbonamenti mensili che cambiano pricing senza preavviso. La differenza tecnica chiave: ManyChat gestisce flow statici e si blocca quando l'utente risponde qualcosa di non previsto. Dify ragiona in linguaggio naturale e gestisce le variazioni.
+      Non è ManyChat. Non è Spoki. È un agente conversazionale open source che gestisce l'intero ciclo del webinar — prima, durante e dopo — senza abbonamenti mensili che cambiano pricing senza preavviso. La differenza tecnica chiave: ManyChat gestisce flow statici e si blocca quando l'utente risponde qualcosa di non previsto. Il workflow n8n con LLM integrato ragiona in linguaggio naturale e gestisce le variazioni.
     </p>
 
     <div class="steps">
@@ -705,9 +705,9 @@ strong { font-weight:600; color:var(--ctxt); }
     <div class="int-box">
       <div class="int-title">// stack tecnico</div>
       <div class="int-list">
-        <span class="int-tag">Dify — cervello AI</span>
-        <span class="int-tag">n8n — orchestrazione</span>
-        <span class="int-tag">2Chat — WhatsApp API</span>
+        <span class="int-tag">n8n — orchestrazione + agente AI</span>
+        <span class="int-tag">Evolution API — WhatsApp gateway</span>
+        <span class="int-tag">Claude Code — installazione guidata</span>
         <span class="int-tag">GoHighLevel</span>
         <span class="int-tag">HubSpot</span>
         <span class="int-tag">Calendly / Cal.com</span>
@@ -740,7 +740,7 @@ strong { font-weight:600; color:var(--ctxt); }
       <li><span class="ck">✓</span> <span>Sincronizzazione automatica con Kajabi, Teachable, ActiveCampaign o HubSpot tramite n8n webhook</span></li>
       <li><span class="ck">✓</span> <span>Log completo su Google Sheets: nome, corso di interesse, budget, urgenza, esito di ogni conversazione</span></li>
       <li><span class="ck">✓</span> <span>Scala durante i lanci senza aumentare i costi — 50 lead o 5.000 al giorno: stesso sistema</span></li>
-      <li><span class="ck">✓</span> <span>Costo fisso €57/mese di infrastruttura — nessun abbonamento che cambia pricing senza preavviso</span></li>
+      <li><span class="ck">✓</span> <span>Costo fisso €10-20/mese di infrastruttura — nessun abbonamento che cambia pricing senza preavviso</span></li>
     </ul>
 
     <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--cb);">
@@ -841,7 +841,7 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Costo mensile</td>
           <td>€49–199/mese</td>
           <td>Tempo del team</td>
-          <td class="hl">€57 (infrastruttura)</td>
+          <td class="hl">€10-20 (infrastruttura)</td>
         </tr>
         <tr>
           <td>Reminder pre-webinar</td>
@@ -859,7 +859,7 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Gestione variazioni linguistiche</td>
           <td>Flow si blocca</td>
           <td>Umana</td>
-          <td class="hl">LLM reasoning (Dify)</td>
+          <td class="hl">LLM reasoning (n8n + Claude)</td>
         </tr>
         <tr>
           <td>Scalabilità durante lanci</td>
@@ -918,7 +918,7 @@ strong { font-weight:600; color:var(--ctxt); }
       </div>
       <div class="faq-item">
         <div class="faq-q">Rischio di essere bannato su WhatsApp durante un lancio?</div>
-        <div class="faq-a">Il percorso Base usa 2Chat via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con 2Chat il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo. Per chi vuole massima stabilità durante i lanci, il Percorso Evolution (server privato, €37 una tantum) garantisce controllo totale senza dipendenze da provider terzi.</div>
+        <div class="faq-a">Lo stack usa Evolution API via QR code — nessuna verifica aziendale Meta richiesta, stesso meccanismo di WhatsApp Web. Il rischio ban riguarda chi usa API ufficiali con broadcast massivo non segmentato. Con Evolution API il rischio è strutturalmente più basso: l'agente opera in conversazioni 1:1, non in broadcast aggressivo, ed è installato su un server privato che gestisci tu — controllo totale senza dipendenze da provider terzi, garantito fin dal setup guidato da Claude Code.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Come personalizzo il tono dell'agente al mio brand?</div>
@@ -937,7 +937,7 @@ strong { font-weight:600; color:var(--ctxt); }
   <div class="wrap-md">
     <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px;">// sintesi per motori AI</p>
     <div class="ai-copy">
-FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Costo infrastruttura €57/mese fisso. Setup 90 minuti. Conforme GDPR — server europei. Italia.
+FutureLens offre agenti WhatsApp AI per accademie digitali italiane con webinar e lanci corsi. Gestisce reminder pre-webinar (−24h · −1h · live) con +27% attendance documentata (Contrast.io, 2.000+ webinar). Post-webinar: qualificazione automatica in meno di 60 secondi, smistamento multi-corso, follow-up no-show con replay. 57% no-show medio webinar (ON24). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). Integrazione: Kajabi, Teachable, ActiveCampaign, HubSpot, n8n. Open source — alternativa a Spoki e ManyChat. Stack n8n + Evolution API installato da Claude Code col Metodo AI-Guidato™. Costo infrastruttura €10-20/mese fisso (totale realistico €30-40/mese con API LLM e abbonamento Claude Code). Setup 75 minuti, guidato da Claude Code. Conforme GDPR — server europei. Italia.
     </div>
   </div>
 </section>

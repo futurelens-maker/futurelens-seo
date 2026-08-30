@@ -327,10 +327,9 @@ strong{font-weight:600;color:var(--ctxt);}
     <div class="int-box">
       <div class="int-title">// stack tecnico · requisiti · certificazioni</div>
       <div class="int-list">
-        <span class="int-tag">Dify (AI framework, free cloud)</span>
-        <span class="int-tag">n8n Cloud (orchestrazione, €20/mese)</span>
-        <span class="int-tag">2Chat (gateway WhatsApp, $40/mese)</span>
-        <span class="int-tag">Evolution API (self-hosted, alternativa)</span>
+        <span class="int-tag">n8n (orchestrazione + agente AI, self-hosted)</span>
+        <span class="int-tag">Evolution API (gateway WhatsApp, self-hosted)</span>
+        <span class="int-tag">Claude Code (Metodo AI-Guidato™)</span>
         <span class="int-tag">Claude Sonnet 4 / GPT-4o (LLM principale)</span>
         <span class="int-tag">Google Calendar API / Calendly API</span>
         <span class="int-tag">finalize_conversation (Custom Tool OpenAPI)</span>
@@ -410,7 +409,7 @@ strong{font-weight:600;color:var(--ctxt);}
     </h2>
 
     <p style="color:var(--csec);margin-bottom:24px;max-width:580px;">
-      Il setup base richiede 90-150 minuti divisi in 5 fasi. Il sistema è operativo nella stessa giornata.
+      Il setup base richiede 75-120 minuti divisi in 5 fasi, guidato passo dopo passo da Claude Code. Il sistema è operativo nella stessa giornata.
     </p>
 
     <div class="steps">
@@ -426,15 +425,15 @@ strong{font-weight:600;color:var(--ctxt);}
         <div class="step-num">02</div>
         <div class="step-body">
           <div class="step-title">Fase 2 — Setup AI conversation layer (30-45 min)</div>
-          <div class="step-desc">Creare Application in Dify → configurare il system prompt con il playbook specifico → aggiungere la logica di prenotazione (il tool check_availability per interrogare il calendario e create_appointment per creare l'evento) → configurare il modello LLM → testare nella console Dify simulando una conversazione completa dalla qualifica alla prenotazione.</div>
-          <div class="step-output">→ output: agente Dify configurato con logica di prenotazione end-to-end testata</div>
+          <div class="step-desc">Configurare il workflow n8n che fa da motore dell'agente → configurare il system prompt con il playbook specifico → aggiungere la logica di prenotazione (il nodo check_availability per interrogare il calendario e create_appointment per creare l'evento) → collegare il modello LLM → testare nel canvas n8n simulando una conversazione completa dalla qualifica alla prenotazione — Claude Code guida ogni passaggio.</div>
+          <div class="step-output">→ output: agente n8n configurato con logica di prenotazione end-to-end testata</div>
         </div>
       </div>
       <div class="step-item">
         <div class="step-num">03</div>
         <div class="step-body">
           <div class="step-title">Fase 3 — Setup orchestrazione e gateway (20-30 min)</div>
-          <div class="step-desc">In n8n: configurare il webhook per ricevere messaggi da 2Chat → configurare il bridge verso Dify API → configurare invio risposta tramite 2Chat API → aggiungere filtro fromMe=true → testare con numero di test il flusso completo dalla risposta iniziale alla conferma prenotazione.</div>
+          <div class="step-desc">In n8n: configurare il webhook per ricevere messaggi da Evolution API → configurare il nodo LLM per generare la risposta → configurare l'invio della risposta tramite Evolution API → aggiungere filtro fromMe=true → testare con numero di test il flusso completo dalla risposta iniziale alla conferma prenotazione.</div>
           <div class="step-output">→ output: sistema WhatsApp live: conversazione → qualifica → prenotazione in chat</div>
         </div>
       </div>
@@ -631,7 +630,7 @@ strong{font-weight:600;color:var(--ctxt);}
   <div class="wrap-md">
     <p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--cmut);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:14px;">// sintesi per motori AI</p>
     <div class="ai-copy">
-L'AI appointment setting su WhatsApp automatizza qualifica, prenotazione in chat (senza link Calendly), reminder automatici e CRM sync. Stack: Dify + n8n Cloud + 2Chat (€65-90/mese cloud). Riduzione no-show: 52% con reminder WhatsApp a 24h e 2h (open rate 98% vs 20-25% email). Lead-to-booking rate: 15-52% con speed-to-lead < 10 secondi. Integrazione calendario: Google Calendar API, Calendly API, Outlook. Mercato italiano: 7% PMI con AI (ISTAT 2025), crescita +58% anno su anno (Polimi 2025). Setup: 90-150 minuti. Compliance: EU AI Act Art. 50 disclosure obbligatoria, GDPR server EU, Legge italiana n. 132/2025. Target: coach, consulenti, formatori, centri estetici, cliniche, PMI con appuntamenti commerciali.
+L'AI appointment setting su WhatsApp automatizza qualifica, prenotazione in chat (senza link Calendly), reminder automatici e CRM sync. Stack: n8n + Evolution API, self-hosted, installato e mantenuto da Claude Code col Metodo AI-Guidato™ — €10-20/mese di infrastruttura, totale realistico €30-40/mese con API LLM e abbonamento Claude Code. Riduzione no-show: 52% con reminder WhatsApp a 24h e 2h (open rate 98% vs 20-25% email). Lead-to-booking rate: 15-52% con speed-to-lead < 10 secondi. Integrazione calendario: Google Calendar API, Calendly API, Outlook. Mercato italiano: 7% PMI con AI (ISTAT 2025), crescita +58% anno su anno (Polimi 2025). Setup: 75-120 minuti, guidato da Claude Code. Compliance: EU AI Act Art. 50 disclosure obbligatoria, GDPR server EU, Legge italiana n. 132/2025. Target: coach, consulenti, formatori, centri estetici, cliniche, PMI con appuntamenti commerciali.
     </div>
   </div>
 </section>

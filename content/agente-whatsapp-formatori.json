@@ -2,7 +2,7 @@
   "slug": "agente-whatsapp-formatori",
   "meta_title": "Agente WhatsApp AI per Formatori | FutureLens",
   "meta_description": "8–10 ore/settimana in burocrazia amministrativa. Agente WhatsApp AI per formatori: gestisce iscrizioni, reminder automatici, qualificazione preventivi aziendali.",
-  "twitter_description": "Sistema operativo della tua attività formativa: iscrizioni, reminder, qualificazione preventivi B2B, nurturing ex-partecipanti. Setup 90 minuti.",
+  "twitter_description": "Sistema operativo della tua attività formativa: iscrizioni, reminder, qualificazione preventivi B2B, nurturing ex-partecipanti. Setup 75 minuti.",
   "canonical_url": "https://seo.futurelens.xyz/agente-whatsapp-formatori",
   "date_modified": "2026-05-29",
   "schema_service_desc": "Sistema di gestione iscrizioni, reminder automatici, qualificazione preventivi aziendali e nurturing ex-partecipanti su WhatsApp per formatori italiani B2B e B2C.",
@@ -15,7 +15,7 @@
   "trust_items": [
     {"value": "8–10h", "label": "settimana in burocrazia"},
     {"value": "48.6%", "label": "silenzio post-preventivo"},
-    {"value": "90 min", "label": "setup operativo"},
+    {"value": "75 min", "label": "setup operativo"},
     {"value": "GDPR", "label": "server europei"}
   ],
   "problema_h2": "Perché i formatori perdono tempo, preventivi<br>e clienti senza un sistema",
@@ -94,7 +94,7 @@
   "confronto_col2": "Gestione manuale",
   "confronto_col3": "Chatbot base",
   "confronto_rows": [
-    {"criteria": "Costo mensile", "col2": "Solo tempo (8–10h/sett.)", "col3": "€50–200", "agent": "€57 (infrastruttura)"},
+    {"criteria": "Costo mensile", "col2": "Solo tempo (8–10h/sett.)", "col3": "€50–200", "agent": "€10-20 (infrastruttura)"},
     {"criteria": "Risposta fuori orario", "col2": "Non disponibile", "col3": "24/7 (flow fissi)", "agent": "24/7 (linguaggio naturale)"},
     {"criteria": "Qualificazione preventivi B2B", "col2": "Manuale, lenta", "col3": "Non supportata", "agent": "Automatica, strutturata"},
     {"criteria": "Reminder automatici", "col2": "Spesso dimenticati", "col3": "Sì (base)", "agent": "7gg/24h/2h personalizzati"},
@@ -107,15 +107,15 @@
   "faqs": [
     {
       "q": "Posso usare un numero WhatsApp separato dal mio personale?",
-      "a": "Sì — è la prima cosa da fare. 2Chat permette di connettere un secondo numero (SIM business o numero virtuale) via QR code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale."
+      "a": "Sì — è la prima cosa da fare. Evolution API permette di connettere un secondo numero (SIM business o numero virtuale) via QR code, installato sul tuo server da Claude Code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale."
     },
     {
       "q": "Come gestisce il GDPR con i dati dei partecipanti ai corsi?",
-      "a": "La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Percorso Evolution (€37 una tantum) = self-hosting su server privato — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali)."
+      "a": "La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Lo stack (n8n + Evolution API) è self-hosting su server privato per default — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali)."
     },
     {
       "q": "Non ho competenze tecniche. Quanto è complesso configurarlo?",
-      "a": "Setup guidato in 90 minuti totali: Fase 1 (30–40 min) + Fase 2 (15–20 min) + Fase 3 (15–20 min) + Fase 4 (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase."
+      "a": "Setup guidato in 75 minuti totali, un comando alla volta con Claude Code: Fase 1 — provisioning e installazione (25–30 min) + Fase 2 — configurazione agente (15–20 min) + Fase 3 — test conversazione (15–20 min) + Fase 4 — integrazione CRM (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT o Claude, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase."
     },
     {
       "q": "Ho già un LMS (Moodle, TalentLMS, Docebo). Come si integra?",
@@ -126,7 +126,7 @@
       "a": "Sì — è uno dei casi d'uso principali. L'agente risponde in meno di 1 minuto a ogni richiesta aziendale, fa le 3–4 domande di qualificazione (settore, numero partecipanti, budget, urgenza, decisore) e ti passa il riepilogo strutturato. Tu prepari l'offerta dettagliata solo per i prospect qualificati. Il follow-up automatico post-preventivo (2h · 24h · 72h) cambia strutturalmente il tasso di risposta del 48,6% che oggi sparisce nel silenzio."
     }
   ],
-  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Conforme GDPR — Percorso Evolution server privato disponibile. Setup 90 minuti. €57/mese fisso. Italia.",
+  "ai_copy_text": "FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Stack n8n + Evolution API self-hosted, installato da Claude Code col Metodo AI-Guidato™. Conforme GDPR — server privato per default. Setup 75 minuti. €10-20/mese di infrastruttura fisso (totale realistico €30-40/mese con API LLM e abbonamento Claude Code). Italia.",
   "esplora": [
     {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
     {"cat": "problema · categoria c", "titolo": "Perdi Clienti su WhatsApp? Il Problema e la Soluzione", "url": "/perdo-clienti-whatsapp", "note": "approfondisci →"},

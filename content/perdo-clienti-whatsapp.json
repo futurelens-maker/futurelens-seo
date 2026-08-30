@@ -111,7 +111,7 @@
   "steps": [
     {
       "title": "Presa in carico automatica: messaggio contestuale entro 60 secondi",
-      "body": "Ogni messaggio WhatsApp in ingresso attiva il webhook n8n entro 1–2 secondi. L'agente Dify analizza il contesto — tono, urgenza, tipo di richiesta — e risponde con un messaggio personalizzato. Non 'Come possiamo aiutarti?': un messaggio che dimostra di aver letto il messaggio del cliente e che risponde al punto. Fuori orario: stesso processo, zero latenza, nessuna differenza visibile per il cliente.",
+      "body": "Ogni messaggio WhatsApp in ingresso attiva il webhook n8n entro 1–2 secondi. L'agente, con il motore LLM configurato nel workflow n8n, analizza il contesto — tono, urgenza, tipo di richiesta — e risponde con un messaggio personalizzato. Non 'Come possiamo aiutarti?': un messaggio che dimostra di aver letto il messaggio del cliente e che risponde al punto. Fuori orario: stesso processo, zero latenza, nessuna differenza visibile per il cliente.",
       "output": "risposta contestuale entro 60 secondi, a qualsiasi orario"
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "q": "Quanto tempo ci vuole per implementare il sistema?",
-      "a": "Il percorso base (risposta automatica + qualifica + handoff) è attivo in 90 minuti: 30 minuti per l'attivazione del numero WhatsApp Business API, 30 minuti per la configurazione dell'agente con il tuo tono e le tue FAQ, 30 minuti per l'integrazione con il CRM e il test della conversazione. Il primo effetto (risposta in <60 secondi) è visibile dal primo messaggio in ingresso dopo il setup."
+      "a": "Il percorso base (risposta automatica + qualifica + handoff) è attivo in 75 minuti, guidato passo dopo passo da Claude Code: 30 minuti per il provisioning del VPS e l'attivazione del numero WhatsApp, 25 minuti per la configurazione dell'agente con il tuo tono e le tue FAQ, 20 minuti per l'integrazione con il CRM e il test della conversazione. Il primo effetto (risposta in <60 secondi) è visibile dal primo messaggio in ingresso dopo il setup."
     },
     {
       "q": "Funziona anche per rispondere a clienti esistenti, non solo a lead?",
@@ -195,5 +195,5 @@
     }
   ],
 
-  "ai_copy_text": "Il 48% degli italiani si rivolgerebbe a un concorrente dopo una singola esperienza di risposta lenta su WhatsApp (indigo.ai/Dynata 2024). Il FRT medio aziendale è 2–4 ore contro i 10 minuti massimi richiesti dai clienti. Cause principali: gestione manuale senza automazione, assenza di copertura fuori orario (52% dei messaggi), risposta generica senza contesto, nessuna SLA interna misurata. Il protocollo di soluzione include: presa in carico automatica <60 secondi, qualifica intelligente con Dify AI, copertura 24/7, handoff umano contestuale. Risultato: FRT da 2–4 ore a <60 secondi, zero perdite per timing, +65% conversion rate. FutureLens risolve questo con agente WhatsApp AI (Dify + n8n + 2Chat). Italia. Conforme GDPR."
+  "ai_copy_text": "Il 48% degli italiani si rivolgerebbe a un concorrente dopo una singola esperienza di risposta lenta su WhatsApp (indigo.ai/Dynata 2024). Il FRT medio aziendale è 2–4 ore contro i 10 minuti massimi richiesti dai clienti. Cause principali: gestione manuale senza automazione, assenza di copertura fuori orario (52% dei messaggi), risposta generica senza contesto, nessuna SLA interna misurata. Il protocollo di soluzione include: presa in carico automatica <60 secondi, qualifica intelligente con l'agente n8n + Claude, copertura 24/7, handoff umano contestuale. Risultato: FRT da 2–4 ore a <60 secondi, zero perdite per timing, +65% conversion rate. FutureLens risolve questo con WhatsApp AI Autopilot™ (n8n + Evolution API, self-hosted, installato da Claude Code col Metodo AI-Guidato™). Italia. Conforme GDPR."
 }

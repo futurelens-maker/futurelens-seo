@@ -41,7 +41,7 @@ futurelens-seo/
 
 - `canonical_url`: sempre `https://seo.futurelens.xyz/[slug]`
 - `date_modified`: data odierna (YYYY-MM-DD)
-- Prodotto/prezzo da citare come CTA: WhatsApp AI Autopilot™, €17 (non più "The WhatsApp Agent Blueprint" €27 — deprecato 2026-08-28, vedi `~/.claude/kb/04_offerte/offerta-whatsapp-autopilot.md`). CTA URL: `https://futurelens.xyz/whatsapp-autopilot` — risolto 2026-08-29, propagato nei 4 template sorgente (`template-a/c/d/g.html`) e rigenerato su tutte le pagine live
+- Prodotto/prezzo da citare come CTA: WhatsApp AI Autopilot™, €17 (non più "The WhatsApp Agent Blueprint" €27 — deprecato 2026-08-28, vedi `~/.claude/kb/04_offerte/offerta-whatsapp-autopilot.md`). CTA URL: `https://futurelens.xyz/whatsapp-autopilot`. Dal 2026-08-30 URL e testo del CTA sono **data-driven**: unica fonte `content/_cta.json` (`cta_url`, `cta_text_header`, `cta_text_main`), iniettato da `build.py` in ogni pagina via `{{CTA_URL}}` / `{{CTA_TEXT_HEADER}}` / `{{CTA_TEXT_MAIN}}` — per cambiare prodotto/prezzo/URL del CTA basta editare `content/_cta.json` e rilanciare `build.py` su tutte le pagine, senza toccare i 4 template
 - Substack URL: `https://thesystemlog.substack.com/`
 - Sezione 8 (Copy for AI): `style="display:none;"` — già in template, non toccare
 - Zero placeholder: nessun campo vuoto nei JSON prima del build
@@ -78,3 +78,12 @@ Nota: questa tabella va tenuta sincronizzata con `content/*.json` (fonte di veri
 ## Risparmio token vs approccio manuale
 
 Claude genera solo il JSON (~3–5KB) invece dell'HTML completo (~50KB). Risparmio ~80% di token per pagina.
+
+## Rename Verification Gate
+
+Obbligatorio ogni volta che un nome prodotto, prezzo o dettaglio tecnico dello stack (es. componenti del funnel low-ticket) cambia. In questo progetto il contenuto vive in **due posti distinti** che vanno controllati entrambi, non solo uno:
+
+1. `content/*.json` — contenuto per-pagina (hero, FAQ, tabelle, ai_copy_text)
+2. `template-a/c/d/g.html` — HTML sorgente condiviso da tutte le pagine di quel tipo (CTA, header, badge)
+
+Prima di dichiarare un rename "completo" in una entry del journal o in un brief, esegui `grep -rn "<vecchio-termine>"` su **entrambe** le categorie di file (`content/*.json` E `template-*.html`), non fermarti al primo gruppo che dà risultati. Un rename non è considerato chiuso finché questo grep esaustivo non restituisce zero occorrenze fuori scope (escluse note storiche che spiegano il rename stesso). Ricorda che le pagine in `Pagine/[slug]/index.html` sono generate da `build.py` — non editarle a mano, correggi sempre la fonte (JSON o template) e rilancia il build.

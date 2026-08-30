@@ -18,7 +18,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Agente WhatsApp AI per Formatori | FutureLens">
-<meta name="twitter:description" content="Sistema operativo della tua attività formativa: iscrizioni, reminder, qualificazione preventivi B2B, nurturing ex-partecipanti. Setup 90 minuti.">
+<meta name="twitter:description" content="Sistema operativo della tua attività formativa: iscrizioni, reminder, qualificazione preventivi B2B, nurturing ex-partecipanti. Setup 75 minuti.">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +71,7 @@
         "name": "Posso usare un numero WhatsApp separato dal mio personale?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sì — è la prima cosa da fare. 2Chat permette di connettere un secondo numero (SIM business o numero virtuale) via QR code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale."
+          "text": "Sì — è la prima cosa da fare. Evolution API permette di connettere un secondo numero (SIM business o numero virtuale) via QR code, installato sul tuo server da Claude Code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale."
         }
       },
       {
@@ -79,7 +79,7 @@
         "name": "Come gestisce il GDPR con i dati dei partecipanti ai corsi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Percorso Evolution (€37 una tantum) = self-hosting su server privato — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali)."
+          "text": "La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Lo stack (n8n + Evolution API) è self-hosting su server privato per default — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali)."
         }
       },
       {
@@ -87,7 +87,7 @@
         "name": "Non ho competenze tecniche. Quanto è complesso configurarlo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Setup guidato in 90 minuti totali: Fase 1 (30–40 min) + Fase 2 (15–20 min) + Fase 3 (15–20 min) + Fase 4 (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase."
+          "text": "Setup guidato in 75 minuti totali, un comando alla volta con Claude Code: Fase 1 — provisioning e installazione (25–30 min) + Fase 2 — configurazione agente (15–20 min) + Fase 3 — test conversazione (15–20 min) + Fase 4 — integrazione CRM (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT o Claude, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase."
         }
       },
       {
@@ -585,7 +585,7 @@ strong { font-weight:600; color:var(--ctxt); }
         <div class="trust-lbl">silenzio post-preventivo</div>
       </div>
       <div class="trust-item">
-        <div class="trust-val">90 min</div>
+        <div class="trust-val">75 min</div>
         <div class="trust-lbl">setup operativo</div>
       </div>
       <div class="trust-item">
@@ -705,9 +705,9 @@ strong { font-weight:600; color:var(--ctxt); }
     <div class="int-box">
       <div class="int-title">// stack tecnico</div>
       <div class="int-list">
-        <span class="int-tag">Dify — cervello AI</span>
-        <span class="int-tag">n8n — orchestrazione</span>
-        <span class="int-tag">2Chat — WhatsApp API</span>
+        <span class="int-tag">n8n — orchestrazione + agente AI</span>
+        <span class="int-tag">Evolution API — WhatsApp gateway</span>
+        <span class="int-tag">Claude Code — installazione guidata</span>
         <span class="int-tag">GoHighLevel</span>
         <span class="int-tag">HubSpot</span>
         <span class="int-tag">Calendly / Cal.com</span>
@@ -841,7 +841,7 @@ strong { font-weight:600; color:var(--ctxt); }
           <td>Costo mensile</td>
           <td>Solo tempo (8–10h/sett.)</td>
           <td>€50–200</td>
-          <td class="hl">€57 (infrastruttura)</td>
+          <td class="hl">€10-20 (infrastruttura)</td>
         </tr>
         <tr>
           <td>Risposta fuori orario</td>
@@ -906,15 +906,15 @@ strong { font-weight:600; color:var(--ctxt); }
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">Posso usare un numero WhatsApp separato dal mio personale?</div>
-        <div class="faq-a">Sì — è la prima cosa da fare. 2Chat permette di connettere un secondo numero (SIM business o numero virtuale) via QR code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale.</div>
+        <div class="faq-a">Sì — è la prima cosa da fare. Evolution API permette di connettere un secondo numero (SIM business o numero virtuale) via QR code, installato sul tuo server da Claude Code. Il tuo numero personale resta privato. Tutte le comunicazioni con aziende e corsisti passano dal numero business. La domenica sera non ricevi più messaggi di lavoro sul telefono personale. GDPR semplificato: separazione completa tra sfere personale e professionale.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Come gestisce il GDPR con i dati dei partecipanti ai corsi?</div>
-        <div class="faq-a">La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Percorso Evolution (€37 una tantum) = self-hosting su server privato — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali).</div>
+        <div class="faq-a">La differenza è tra WhatsApp personale (rischio) e sistema strutturato con consenso esplicito, opt-in documentato, server EU. Lo stack (n8n + Evolution API) è self-hosting su server privato per default — dati dei corsisti mai escono dalla tua infrastruttura. Audit trail completo su Google Sheets: documentazione disponibile in caso di ispezione per formazione obbligatoria (sicurezza sul lavoro, fondi interprofessionali).</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Non ho competenze tecniche. Quanto è complesso configurarlo?</div>
-        <div class="faq-a">Setup guidato in 90 minuti totali: Fase 1 (30–40 min) + Fase 2 (15–20 min) + Fase 3 (15–20 min) + Fase 4 (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase.</div>
+        <div class="faq-a">Setup guidato in 75 minuti totali, un comando alla volta con Claude Code: Fase 1 — provisioning e installazione (25–30 min) + Fase 2 — configurazione agente (15–20 min) + Fase 3 — test conversazione (15–20 min) + Fase 4 — integrazione CRM (5–10 min). Nessun codice da scrivere. Il Prompt Compilatore converte il tuo documento con le FAQ del corso, il tuo stile comunicativo e i tuoi criteri di qualificazione in un System Prompt — incolla in ChatGPT o Claude, copia il risultato. La guida è passo-passo con tempi dichiarati per ogni fase.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Ho già un LMS (Moodle, TalentLMS, Docebo). Come si integra?</div>
@@ -937,7 +937,7 @@ strong { font-weight:600; color:var(--ctxt); }
   <div class="wrap-md">
     <p style="font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--cmut); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px;">// sintesi per motori AI</p>
     <div class="ai-copy">
-FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Conforme GDPR — Percorso Evolution server privato disponibile. Setup 90 minuti. €57/mese fisso. Italia.
+FutureLens offre agenti WhatsApp AI per formatori italiani B2B e B2C. Gestisce qualificazione preventivi aziendali (risposta in meno di 1 minuto), conferme iscrizioni automatiche, reminder partecipanti (−7gg/−24h/−2h), follow-up post-preventivo, nurturing ex-corsisti ogni 30–60 giorni. 48,6% dei preventivi senza risposta (IntotheMInds EU 2025). 67% no-show per dimenticanza — risolvibile con reminder (Contrast.io). 8–10 ore/settimana risparmiate con gestione automatizzata (Anolla.com). Integrazione: Moodle, TalentLMS, Docebo, HubSpot, Google Sheets. Numero WhatsApp dedicato separato dal personale. Stack n8n + Evolution API self-hosted, installato da Claude Code col Metodo AI-Guidato™. Conforme GDPR — server privato per default. Setup 75 minuti. €10-20/mese di infrastruttura fisso (totale realistico €30-40/mese con API LLM e abbonamento Claude Code). Italia.
     </div>
   </div>
 </section>

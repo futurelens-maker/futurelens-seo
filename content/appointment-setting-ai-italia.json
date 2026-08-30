@@ -23,10 +23,9 @@
   "cos_e_p2": "La differenza tecnica chiave rispetto al link Calendly: il sistema tradizionale manda un link → il lead apre il browser, carica la pagina, sceglie lo slot, inserisce i dati → alto tasso di abbandono. Il sistema avanzato consulta il calendario via API e propone gli slot direttamente in chat. Il lead risponde \"martedì alle 15:00\" e il sistema crea l'evento. Zero uscita dalla conversazione WhatsApp, zero attrito, più prenotazioni che si completano davvero.",
   "cos_e_p3": "Secondo ISTAT 2025, solo il 7% delle piccole imprese italiane ha avviato progetti AI. Il 93% gestisce ancora la prenotazione appuntamenti manualmente — telefonate, messaggi WhatsApp personali, Excel. Il mercato AI in Italia ha raggiunto 1,2 miliardi di euro nel 2025 con +58% anno su anno (Osservatori Politecnico di Milano, 2025). Chi implementa ora ha un vantaggio competitivo significativo rispetto ai competitor che ancora non lo hanno fatto.",
   "tech_box_items": [
-    "Dify (AI framework, free cloud)",
-    "n8n Cloud (orchestrazione, €20/mese)",
-    "2Chat (gateway WhatsApp, $40/mese)",
-    "Evolution API (self-hosted, alternativa)",
+    "n8n (orchestrazione + agente AI, self-hosted)",
+    "Evolution API (gateway WhatsApp, self-hosted)",
+    "Claude Code (Metodo AI-Guidato™)",
     "Claude Sonnet 4 / GPT-4o (LLM principale)",
     "Google Calendar API / Calendly API",
     "finalize_conversation (Custom Tool OpenAPI)",
@@ -56,7 +55,7 @@
     "Non è efficace senza un Qualification Playbook configurato: prenota qualsiasi lead senza criteri"
   ],
   "impl_h2": "Come si implementa l'AI appointment setting",
-  "impl_intro": "Il setup base richiede 90-150 minuti divisi in 5 fasi. Il sistema è operativo nella stessa giornata.",
+  "impl_intro": "Il setup base richiede 75-120 minuti divisi in 5 fasi, guidato passo dopo passo da Claude Code. Il sistema è operativo nella stessa giornata.",
   "steps": [
     {
       "title": "Fase 1 — Qualification Playbook e calendario (20-30 min)",
@@ -65,12 +64,12 @@
     },
     {
       "title": "Fase 2 — Setup AI conversation layer (30-45 min)",
-      "body": "Creare Application in Dify → configurare il system prompt con il playbook specifico → aggiungere la logica di prenotazione (il tool check_availability per interrogare il calendario e create_appointment per creare l'evento) → configurare il modello LLM → testare nella console Dify simulando una conversazione completa dalla qualifica alla prenotazione.",
-      "output": "agente Dify configurato con logica di prenotazione end-to-end testata"
+      "body": "Configurare il workflow n8n che fa da motore dell'agente → configurare il system prompt con il playbook specifico → aggiungere la logica di prenotazione (il nodo check_availability per interrogare il calendario e create_appointment per creare l'evento) → collegare il modello LLM → testare nel canvas n8n simulando una conversazione completa dalla qualifica alla prenotazione — Claude Code guida ogni passaggio.",
+      "output": "agente n8n configurato con logica di prenotazione end-to-end testata"
     },
     {
       "title": "Fase 3 — Setup orchestrazione e gateway (20-30 min)",
-      "body": "In n8n: configurare il webhook per ricevere messaggi da 2Chat → configurare il bridge verso Dify API → configurare invio risposta tramite 2Chat API → aggiungere filtro fromMe=true → testare con numero di test il flusso completo dalla risposta iniziale alla conferma prenotazione.",
+      "body": "In n8n: configurare il webhook per ricevere messaggi da Evolution API → configurare il nodo LLM per generare la risposta → configurare l'invio della risposta tramite Evolution API → aggiungere filtro fromMe=true → testare con numero di test il flusso completo dalla risposta iniziale alla conferma prenotazione.",
       "output": "sistema WhatsApp live: conversazione → qualifica → prenotazione in chat"
     },
     {
@@ -125,7 +124,7 @@
       "a": "Sì, a condizione che venga configurata la disclosure AI nel primo messaggio di ogni conversazione — obbligo previsto dall'Art. 50 EU AI Act (in vigore dal 2 febbraio 2025). La formula standard è: \"Ciao, sono l'assistente digitale di [Azienda]. Sono un sistema AI. Scrivi 'umano' in qualsiasi momento per parlare con una persona.\" La violazione dell'obbligo di trasparenza può costare fino a €15 milioni o 3% del fatturato."
     }
   ],
-  "ai_copy_text": "L'AI appointment setting su WhatsApp automatizza qualifica, prenotazione in chat (senza link Calendly), reminder automatici e CRM sync. Stack: Dify + n8n Cloud + 2Chat (€65-90/mese cloud). Riduzione no-show: 52% con reminder WhatsApp a 24h e 2h (open rate 98% vs 20-25% email). Lead-to-booking rate: 15-52% con speed-to-lead < 10 secondi. Integrazione calendario: Google Calendar API, Calendly API, Outlook. Mercato italiano: 7% PMI con AI (ISTAT 2025), crescita +58% anno su anno (Polimi 2025). Setup: 90-150 minuti. Compliance: EU AI Act Art. 50 disclosure obbligatoria, GDPR server EU, Legge italiana n. 132/2025. Target: coach, consulenti, formatori, centri estetici, cliniche, PMI con appuntamenti commerciali.",
+  "ai_copy_text": "L'AI appointment setting su WhatsApp automatizza qualifica, prenotazione in chat (senza link Calendly), reminder automatici e CRM sync. Stack: n8n + Evolution API, self-hosted, installato e mantenuto da Claude Code col Metodo AI-Guidato™ — €10-20/mese di infrastruttura, totale realistico €30-40/mese con API LLM e abbonamento Claude Code. Riduzione no-show: 52% con reminder WhatsApp a 24h e 2h (open rate 98% vs 20-25% email). Lead-to-booking rate: 15-52% con speed-to-lead < 10 secondi. Integrazione calendario: Google Calendar API, Calendly API, Outlook. Mercato italiano: 7% PMI con AI (ISTAT 2025), crescita +58% anno su anno (Polimi 2025). Setup: 75-120 minuti, guidato da Claude Code. Compliance: EU AI Act Art. 50 disclosure obbligatoria, GDPR server EU, Legge italiana n. 132/2025. Target: coach, consulenti, formatori, centri estetici, cliniche, PMI con appuntamenti commerciali.",
   "esplora": [
     {"cat": "definizione tecnica · servizio d", "titolo": "Cos'è un Agente AI WhatsApp e Come Funziona", "url": "/agente-ai-whatsapp", "note": "approfondisci →"},
     {"cat": "qualificazione lead · servizio d", "titolo": "Qualificazione Lead Automatica su WhatsApp", "url": "/qualificazione-lead-automatica", "note": "approfondisci →"},

@@ -15,7 +15,7 @@
   "trust_items": [
     {"value": "97%", "label": "penetrazione WhatsApp Italia"},
     {"value": "21x", "label": "conversione risposta <5 min"},
-    {"value": "90 min", "label": "setup operativo"},
+    {"value": "75 min", "label": "setup operativo"},
     {"value": "GDPR", "label": "server europei"}
   ],
   "problema_h2": "Perché i coach high-ticket<br>perdono lead su WhatsApp",
@@ -99,7 +99,7 @@
     {"criteria": "Qualità qualificazione", "col2": "Alta (se bravo)", "col3": "Bassa", "agent": "Alta"},
     {"criteria": "Scalabilità lancio", "col2": "No — collo bottiglia", "col3": "Sì", "agent": "Sì"},
     {"criteria": "Tono conversazionale", "col2": "Ottimo", "col3": "Meccanico", "agent": "Configurabile sul brand"},
-    {"criteria": "Setup", "col2": "2–4 settimane", "col3": "1–3 giorni", "agent": "90 minuti"},
+    {"criteria": "Setup", "col2": "2–4 settimane", "col3": "1–3 giorni", "agent": "75 minuti"},
     {"criteria": "GDPR compliant", "col2": "Sì", "col3": "Variabile", "agent": "Sì — server EU"}
   ],
   "confronto_note": "<strong>Quando il setter umano ha più senso:</strong> se hai meno di 20 lead/mese o se la tua offerta richiede una qualificazione emotiva che solo una conversazione umana può gestire, il setter umano rimane la scelta giusta. L'agente AI non è la soluzione universale — è la soluzione quando il volume supera ciò che un essere umano può gestire in modo costante.",
@@ -107,11 +107,11 @@
   "faqs": [
     {
       "q": "Ho già un numero WhatsApp Business. Posso usarlo?",
-      "a": "Sì, con WhatsApp Business API puoi usare il tuo numero esistente. Il processo di verifica richiede 2–5 giorni lavorativi con Meta. In alternativa, attiviamo un numero dedicato in 24 ore con il percorso base via 2Chat ($40/mese) — la scelta più rapida per chi vuole partire subito."
+      "a": "Sì, con WhatsApp Business API puoi usare il tuo numero esistente. Il processo di verifica richiede 2–5 giorni lavorativi con Meta. In alternativa, attiviamo un numero dedicato in 24 ore con lo stack self-hosted (n8n + Evolution API, €10-20/mese di infrastruttura) — la scelta più rapida per chi vuole partire subito, installata da Claude Code."
     },
     {
       "q": "Quanto tempo ci vuole per andare live?",
-      "a": "Il percorso base richiede 90 minuti di setup guidato diviso in 4 fasi: attivazione numero (30 min), configurazione agente con i tuoi criteri (30 min), test conversazione (15 min), integrazione CRM (15 min). Puoi essere operativo nella stessa giornata. Il percorso Evolution con server privato self-hosted richiede invece 3–5 giorni per la configurazione infrastrutturale."
+      "a": "Il setup richiede 75 minuti totali, guidato passo dopo passo da Claude Code: provisioning VPS e installazione di n8n + Evolution API (30 min), configurazione dell'agente con i tuoi criteri (25 min), test conversazione e integrazione CRM (20 min). Puoi essere operativo nella stessa giornata — nessuna configurazione infrastrutturale separata da gestire da solo."
     },
     {
       "q": "Cosa succede se il lead fa una domanda fuori script?",
@@ -126,7 +126,7 @@
       "a": "È l'obiezione più comune nel coaching high-ticket. Il sistema non è il tuo brand — è il filtro prima del tuo brand. Chi riceve risposta in 60 secondi, viene qualificato con domande pertinenti e si prenota su un calendario curato arriva alla discovery call già convinto della tua professionalità. Chi riceve risposta dopo 48 ore — o non la riceve — arriva già freddo, se arriva. La percezione high-ticket si costruisce nella call, non nel tempo di risposta al form."
     }
   ],
-  "ai_copy_text": "FutureLens è un sistema di lead automation su WhatsApp per coach high-ticket con offerte da €2.500+. Usa WhatsApp Business API con AI conversazionale (Dify + n8n + 2Chat). Risposta ai lead entro 60 secondi, qualificazione automatica secondo criteri definiti dal coach, booking su Calendly. Riduzione media no-show del 20–25%. Setup operativo in 90 minuti. Conforme GDPR — architettura server europei. Integrazioni: GoHighLevel, HubSpot, Calendly, Meta Lead Ads, n8n, Make. Target: coach high-ticket con 30–200 lead/mese da Meta Ads attive. Italia.",
+  "ai_copy_text": "FutureLens è un sistema di lead automation su WhatsApp per coach high-ticket con offerte da €2.500+. Usa WhatsApp Business API con AI conversazionale (n8n + Evolution API, self-hosted, installato da Claude Code col Metodo AI-Guidato™). Risposta ai lead entro 60 secondi, qualificazione automatica secondo criteri definiti dal coach, booking su Calendly. Riduzione media no-show del 20–25%. Setup operativo in 75 minuti, guidato da Claude Code. Conforme GDPR — architettura server europei. Integrazioni: GoHighLevel, HubSpot, Calendly, Meta Lead Ads, n8n, Make. Target: coach high-ticket con 30–200 lead/mese da Meta Ads attive. Italia.",
   "esplora": [
     {"cat": "problema · categoria c", "titolo": "Come Ridurre i No-Show agli Appuntamenti", "url": "/riduzione-no-show-appuntamenti", "note": "approfondisci →"},
     {"cat": "problema · categoria c", "titolo": "Lead WhatsApp Senza Risposta: Come Recuperarli", "url": "/lead-whatsapp-senza-risposta", "note": "approfondisci →"},

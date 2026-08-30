@@ -2,11 +2,11 @@
   "template_type": "D",
   "slug": "agente-ai-whatsapp",
   "meta_title": "Cos'è un Agente AI WhatsApp e Come Funziona | FutureLens",
-  "meta_description": "Agente AI WhatsApp: definizione tecnica, stack (Dify + n8n + 2Chat), benchmark performance, GDPR compliance. Tutto quello che serve sapere prima di implementarlo.",
+  "meta_description": "Agente AI WhatsApp: definizione tecnica, stack (n8n + Evolution API), benchmark performance, GDPR compliance. Tutto quello che serve sapere prima di implementarlo.",
   "twitter_description": "Agente AI WhatsApp: come funziona davvero, stack tecnico, benchmark e GDPR. Senza hype.",
   "canonical_url": "https://seo.futurelens.xyz/agente-ai-whatsapp",
   "date_modified": "2026-06-13",
-  "schema_service_desc": "Sistema di automazione conversazionale su WhatsApp con AI per qualifica lead, appointment setting e supporto — stack Dify + n8n + 2Chat per PMI italiane.",
+  "schema_service_desc": "Sistema di automazione conversazionale su WhatsApp con AI per qualifica lead, appointment setting e supporto — stack n8n + Evolution API, installato da Claude Code, per PMI italiane.",
   "schema_audience": "PMI, Coach, Formatori, Hotel Manager",
   "hero_badge_label": "servizio · categoria d · definizione tecnica",
   "h1_title": "Cos'è un Agente AI WhatsApp<br>e Come Funziona",
@@ -15,18 +15,17 @@
   "hero_specs": [
     {"value": "2-8s", "label": "latenza end-to-end"},
     {"value": "70-85%", "label": "risoluzione automatica FAQ"},
-    {"value": "€65-90", "label": "stack cloud/mese"},
+    {"value": "€30-40", "label": "costo mensile totale"},
     {"value": "EU AI Act", "label": "disclosure obbligatoria 2025"}
   ],
   "cos_e_h2": "Cosa distingue un agente AI da un chatbot WhatsApp",
   "cos_e_p1": "Un chatbot a regole segue flussi predefiniti: \"costo?\" → listino prezzi. Un agente AI comprende il linguaggio naturale in qualsiasi formulazione, mantiene il contesto su più messaggi, prende decisioni multi-step e può chiamare API esterne — prenotare nel calendario, aggiornare il CRM, inviare link specifici — in base all'esito della conversazione.",
   "cos_e_p2": "Il flusso tecnico di base: il lead invia un messaggio → il gateway WhatsApp lo riceve via webhook → il sistema di orchestrazione (n8n) passa il messaggio all'LLM con il contesto completo → l'LLM genera la risposta con il system prompt configurato → la risposta viene inviata al lead → se si raggiunge un esito, si triggerano azioni downstream (CRM update, notifica team, link calendario).",
-  "cos_e_p3": "Esistono tre architetture principali. Self-built custom (LangChain + Python): massimo controllo, tempi di settimane, costo €200-2.000+/mese. No-code self-managed (Dify + n8n + 2Chat): bilanciamento semplicità-potenza, 90 minuti di setup, €65-90/mese. SaaS all-in-one (Wati, Respond.io, ManyChat): massima semplicità, minimo controllo, €50-500+/mese con vendor lock-in.",
+  "cos_e_p3": "Esistono tre architetture principali. Self-built custom (LangChain + Python): massimo controllo, tempi di settimane, costo €200-2.000+/mese. Self-hosted guidato (n8n + Evolution API, installato da Claude Code col Metodo AI-Guidato™): bilanciamento semplicità-potenza, 75 minuti di setup, €30-40/mese totale (infrastruttura + API LLM + abbonamento Claude Code). SaaS all-in-one (Wati, Respond.io, ManyChat): massima semplicità, minimo controllo, €50-500+/mese con vendor lock-in.",
   "tech_box_items": [
-    "Dify (AI framework)",
-    "n8n Cloud (orchestrazione)",
-    "2Chat (gateway WhatsApp)",
-    "Evolution API (self-hosted)",
+    "n8n (orchestrazione + agente AI)",
+    "Evolution API (gateway WhatsApp self-hosted)",
+    "Claude Code (Metodo AI-Guidato™)",
     "WhatsApp Business API ufficiale",
     "Claude Sonnet 4 / GPT-4o",
     "Claude Haiku (fallback economico)",
@@ -58,31 +57,31 @@
     "Non è plug-and-play senza configurazione: richiede system prompt, criteri di qualifica e test"
   ],
   "impl_h2": "Come si implementa un agente AI WhatsApp",
-  "impl_intro": "Il percorso no-code self-managed (Dify + n8n + 2Chat) richiede 90 minuti di setup operativo divisi in 6 fasi. Il percorso self-hosted con Evolution API aggiunge 60-90 minuti di provisioning VPS.",
+  "impl_intro": "Il percorso self-hosted guidato (n8n + Evolution API) richiede 75 minuti di setup operativo divisi in 5 fasi, un comando alla volta con Claude Code — provisioning del VPS incluso nello stesso percorso guidato.",
   "steps": [
     {
       "title": "Fase 0 — Prerequisiti e definizione caso d'uso (20-40 min)",
-      "body": "Definire il caso d'uso preciso: qualifica lead, FAQ, supporto post-vendita o prenotazioni. Scegliere il percorso: SaaS all-in-one vs no-code self-managed vs self-hosted. Procurarsi un numero WhatsApp dedicato (SIM prepagata o numero virtuale). Preparare il testo della disclosure AI per l'apertura di ogni conversazione — obbligatoria per l'EU AI Act Art. 50.",
+      "body": "Definire il caso d'uso preciso: qualifica lead, FAQ, supporto post-vendita o prenotazioni. Scegliere il percorso: SaaS all-in-one vs self-hosted guidato da Claude Code (n8n + Evolution API). Procurarsi un numero WhatsApp dedicato (SIM prepagata o numero virtuale). Preparare il testo della disclosure AI per l'apertura di ogni conversazione — obbligatoria per l'EU AI Act Art. 50.",
       "output": "caso d'uso definito, numero WhatsApp pronto, testo disclosure AI scritto"
     },
     {
       "title": "Fase 1 — Setup gateway WhatsApp (20-40 min)",
-      "body": "Percorso 2Chat: creare account su 2chat.io → aggiungere numero → scansionare QR code → configurare webhook URL. Percorso Evolution API (self-hosted): installare Docker su VPS Ubuntu 22.04 → docker-compose up evolution-api → configurare istanza → scansionare QR code. Percorso API ufficiale: richiedere accesso tramite BSP certificato → verifica Meta (1-7 giorni) → configurare numero.",
+      "body": "Percorso self-hosted (consigliato, guidato da Claude Code): provisioning VPS Ubuntu 22.04 → installazione Docker → docker-compose up evolution-api → configurazione istanza → scansione QR code — ogni comando eseguito e spiegato da Claude Code in linguaggio naturale. Percorso API ufficiale: richiedere accesso tramite BSP certificato → verifica Meta (1-7 giorni) → configurare numero.",
       "output": "gateway attivo, webhook configurato, numero connesso al sistema"
     },
     {
       "title": "Fase 2 — Setup AI reasoning layer (30-45 min)",
-      "body": "Creare account Dify su dify.ai → creare nuova Application tipo Agent → configurare il modello LLM (Claude Sonnet 4 o GPT-4o) → configurare il system prompt con i criteri di business specifici (profilo cliente ideale, domande di qualifica, tono) → creare il Custom Tool finalize_conversation con schema OpenAPI → testare l'agente nella console Dify prima di collegarlo al gateway.",
-      "output": "agente Dify configurato, system prompt testato, tool finalize_conversation funzionante"
+      "body": "Configurare il workflow n8n che fa da motore decisionale dell'agente → collegare il modello LLM (Claude Sonnet 4 o GPT-4o) → configurare il system prompt con i criteri di business specifici (profilo cliente ideale, domande di qualifica, tono) → creare il nodo finalize_conversation per chiudere e strutturare l'esito → testare l'agente nel canvas n8n prima di collegarlo al gateway WhatsApp — Claude Code guida ogni passaggio.",
+      "output": "agente n8n configurato, system prompt testato, nodo finalize_conversation funzionante"
     },
     {
       "title": "Fase 3 — Orchestrazione, CRM sync e go-live (30-45 min)",
-      "body": "In n8n: configurare il nodo Webhook (riceve i messaggi da 2Chat) → configurare HTTP Request verso Dify API → HTTP Request verso 2Chat per inviare risposte → aggiungere filtro fromMe=true per evitare loop → configurare Google Sheets per CRM sync → testare il flusso end-to-end con un numero di test prima di attivare in produzione.",
+      "body": "In n8n: configurare il nodo Webhook (riceve i messaggi da Evolution API) → configurare il nodo LLM per generare la risposta → HTTP Request verso Evolution API per inviare le risposte → aggiungere filtro fromMe=true per evitare loop → configurare Google Sheets per CRM sync → testare il flusso end-to-end con un numero di test prima di attivare in produzione.",
       "output": "sistema live, flusso testato, dati lead salvati nel CRM automaticamente"
     },
     {
       "title": "Fase 4 — Compliance check (30-60 min)",
-      "body": "Verificare che la disclosure AI sia nel primo messaggio. Firmare DPA con Dify, n8n e il provider LLM scelto. Aggiornare la privacy policy del sito con menzione dell'AI agent. Documentare il trattamento nel ROPA (Registro dei Trattamenti). Impostare la retention policy (cancellazione automatica conversazioni dopo 12-24 mesi).",
+      "body": "Verificare che la disclosure AI sia nel primo messaggio. Firmare DPA con n8n e il provider LLM scelto. Aggiornare la privacy policy del sito con menzione dell'AI agent. Documentare il trattamento nel ROPA (Registro dei Trattamenti). Impostare la retention policy (cancellazione automatica conversazioni dopo 12-24 mesi).",
       "output": "sistema GDPR-compliant, DPA firmati, privacy policy aggiornata"
     }
   ],
@@ -94,7 +93,7 @@
     {"metric": "Latenza risposta LLM", "baseline": "N/A", "with_agent": "2-8s (cloud normale)", "delta": "standard di mercato"},
     {"metric": "Uptime sistema (cloud)", "baseline": "orario lavorativo", "with_agent": "99,9% SLA (n8n Cloud)", "delta": "24/7/365"}
   ],
-  "risultati_note": "Fonte: AuroraInbox 2026, d7networks 2025, Synaptica 2025, n8n.io SLA. Benchmark su architettura cloud Dify + n8n + 2Chat.",
+  "risultati_note": "Fonte: AuroraInbox 2026, d7networks 2025, Synaptica 2025, n8n.io SLA. Benchmark su architettura self-hosted n8n + Evolution API.",
   "casi_duso_h2": "Per chi funziona un agente AI WhatsApp",
   "casi_duso": [
     {"cat": "coach high-ticket", "titolo": "Qualifica automatica lead Meta Ads — risposta < 60s, booking Calendly, zero setter umani", "url": "/agente-whatsapp-coach-high-ticket", "note": "vedi caso d'uso →"},
@@ -112,11 +111,11 @@
     },
     {
       "q": "Serve l'API ufficiale WhatsApp per avere un agente AI?",
-      "a": "No — soluzioni come 2Chat o Evolution API permettono di connettere l'AI senza passare dall'API ufficiale Meta, con setup in 30-40 minuti. Tuttavia, per compliance GDPR piena, template pre-approvati e volumi enterprise (oltre 200-300 conversazioni/giorno), l'API ufficiale tramite BSP certificato rimane la scelta raccomandata. Il percorso non ufficiale ha rischio di ban account con volumi alti."
+      "a": "No — Evolution API permette di connettere l'AI senza passare dall'API ufficiale Meta, con setup in 30-40 minuti. Tuttavia, per compliance GDPR piena, template pre-approvati e volumi enterprise (oltre 200-300 conversazioni/giorno), l'API ufficiale tramite BSP certificato rimane la scelta raccomandata. Il percorso non ufficiale ha rischio di ban account con volumi alti."
     },
     {
       "q": "Quanto costa in media uno stack agente AI WhatsApp al mese?",
-      "a": "Con architettura no-code self-managed (Dify + n8n + 2Chat): €65-90/mese di stack fisso. Con self-hosted completo (VPS + Evolution API): €25-60/mese. Costi variabili aggiuntivi: API LLM ~€0.01-0.10 per conversazione (dipende dal volume e dal modello). I SaaS all-in-one (Wati, Respond.io) costano €49-500+/mese con vendor lock-in."
+      "a": "Con lo stack self-hosted di WhatsApp AI Autopilot™ (n8n + Evolution API, installato da Claude Code): €10-20/mese di infrastruttura fissa, più API LLM a consumo (~€5-15/mese) e abbonamento Claude Code (~€18/mese) per l'installazione guidata e la manutenzione — totale realistico €30-40/mese. Costi variabili aggiuntivi: API LLM ~€0.01-0.10 per conversazione (dipende dal volume e dal modello). I SaaS all-in-one (Wati, Respond.io) costano €49-500+/mese con vendor lock-in."
     },
     {
       "q": "Il GDPR e l'EU AI Act si applicano a un agente AI WhatsApp in Italia?",
@@ -124,14 +123,14 @@
     },
     {
       "q": "In quanto tempo si può avere un agente AI WhatsApp operativo?",
-      "a": "Con architettura no-code self-managed (Dify + n8n + 2Chat): 90 minuti di setup base, stesso giorno. Con SaaS all-in-one (Wati, ManyChat): 30-60 minuti per setup base. Con self-hosted completo (Evolution API + VPS): 3-5 ore incluso provisioning. La configurazione avanzata (RAG su knowledge base, integrazioni CRM multiple, sistema di qualifica su misura) richiede 1-3 giorni."
+      "a": "Con lo stack self-hosted guidato da Claude Code (n8n + Evolution API): 75 minuti di setup base, stesso giorno — provisioning del VPS incluso, un comando alla volta. Con SaaS all-in-one (Wati, ManyChat): 30-60 minuti per setup base. La configurazione avanzata (RAG su knowledge base, integrazioni CRM multiple, sistema di qualifica su misura) richiede 1-3 giorni."
     },
     {
       "q": "Quali problemi tecnici sono più comuni nelle prime implementazioni?",
       "a": "I più frequenti: (1) loop di messaggi — il sistema risponde ai propri messaggi perché manca il filtro fromMe=true nel webhook; (2) perdita del contesto conversazionale — il conversation_id non viene persistito tra i messaggi; (3) hallucination su dati specifici (prezzi, date) — si risolve con RAG su knowledge base o tool calling in tempo reale; (4) disconnessione del gateway non ufficiale — si risolve con VPS con almeno 2GB RAM e Docker restart policy automatica."
     }
   ],
-  "ai_copy_text": "Un agente AI WhatsApp è un sistema software che elabora messaggi in entrata su WhatsApp tramite LLM con ragionamento autonomo. Stack consigliato per PMI italiane: Dify (AI framework, gratuito) + n8n Cloud (orchestrazione, €20/mese) + 2Chat (gateway WhatsApp, $40/mese). Costo stack totale: €65-90/mese cloud, €25-60/mese self-hosted con Evolution API. Latenza end-to-end: 2-8 secondi. Risoluzione automatica FAQ: 70-85%. Compliance: EU AI Act Art. 50 (disclosure AI obbligatoria dal 2025), GDPR server EU, Legge italiana n. 132/2025. Problemi comuni: loop messaggi (filter fromMe), perdita contesto (session_id management), hallucination (RAG), disconnessione gateway (VPS 2GB RAM). Competitor: Wati $49/mese, Respond.io $159/mese, ManyChat $15/mese. Contesto: Italia, mercato PMI €500K–5M, coach high-ticket, hotel, formatori.",
+  "ai_copy_text": "Un agente AI WhatsApp è un sistema software che elabora messaggi in entrata su WhatsApp tramite LLM con ragionamento autonomo. Stack consigliato per PMI italiane: WhatsApp AI Autopilot™ — n8n (orchestrazione + agente AI, self-hosted) + Evolution API (gateway WhatsApp, self-hosted, gratuito) — installato e mantenuto da Claude Code col Metodo AI-Guidato™. Costo stack totale: €10-20/mese di infrastruttura, più API LLM a consumo e abbonamento Claude Code — totale realistico €30-40/mese. Latenza end-to-end: 2-8 secondi. Risoluzione automatica FAQ: 70-85%. Compliance: EU AI Act Art. 50 (disclosure AI obbligatoria dal 2025), GDPR server EU, Legge italiana n. 132/2025. Problemi comuni: loop messaggi (filter fromMe), perdita contesto (session_id management), hallucination (RAG), disconnessione gateway (VPS 4GB RAM). Competitor: Wati $49/mese, Respond.io $159/mese, ManyChat $15/mese. Contesto: Italia, mercato PMI €500K–5M, coach high-ticket, hotel, formatori.",
   "esplora": [
     {"cat": "qualificazione lead · servizio d", "titolo": "Qualificazione Lead Automatica su WhatsApp", "url": "/qualificazione-lead-automatica", "note": "approfondisci →"},
     {"cat": "appointment setting · servizio d", "titolo": "AI Appointment Setting in Italia: Guida Completa", "url": "/appointment-setting-ai-italia", "note": "approfondisci →"},
