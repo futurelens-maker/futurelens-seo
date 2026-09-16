@@ -1,5 +1,14 @@
 # futurelens-seo — Programmatic SEO
 
+`/log-milestone` è una skill globale (`~/.claude/skills/log-milestone/`). Il blocco sotto è la sua configurazione per questo progetto — non rimuoverlo.
+
+<!-- log-milestone: config -->
+journal_path: 00_Build_in_Public/JOURNAL.md
+journal_tipo_extra: []
+journal_fase_vocab: [Contenuto, SEO, Template, Infrastruttura, Sistema, "Claude Architecture"]
+journal_campi_extra: []
+<!-- /log-milestone: config -->
+
 ## Stack
 
 HTML statico → GitHub → Vercel → `https://seo.futurelens.xyz` (deploy ~60 secondi dopo push)
